@@ -42,6 +42,6 @@ COALESCE(STRING(bethadba.GeContador.RESPONSAVEL_LEGAL_EMPRESA_JUNTO_BASE_RFB), '
 
 FROM bethadba.gecontador
 
-WHERE bethadba.gecontador.codi_con <> 0
+WHERE bethadba.gecontador.codi_con > 1
 
 ORDER BY bethadba.gecontador.codi_con

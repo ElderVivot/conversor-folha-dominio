@@ -37,7 +37,7 @@ class ExtractData():
 
             folderToSaveCsv = os.path.join(folderBeforeSrc, 'data', self.__nameSql.replace('.sql', '.csv'))
 
-            df.to_csv(folderToSaveCsv, sep='|', mode='a', header=False, index=False)
+            df.to_csv(folderToSaveCsv, sep='|', mode='a', header=False, index=False, encoding='cp1252')
         except Exception as e:
             raise FetchSQLExcepction(e)
         finally:

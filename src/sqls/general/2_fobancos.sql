@@ -10,6 +10,6 @@ COALESCE(STRING(bethadba.fobancos.origem_reg), 'NULO')
 
 FROM bethadba.fobancos
 
-WHERE bethadba.fobancos.i_bancos <> 0
+WHERE bethadba.fobancos.i_bancos > 2
 
 ORDER BY bethadba.fobancos.i_bancos
