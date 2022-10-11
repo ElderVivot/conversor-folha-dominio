@@ -17,14 +17,13 @@ from extract_data import ExtractData
 
 
 class LoopSqls:
-    def __init__(self, logger: Logger, args: Dict[str, Any]) -> None:
+    def __init__(self, logger: Logger, folderToLoop: str, args: Dict[str, Any]) -> None:
         self.__logger = logger
+        self.__folderToLoop = folderToLoop
         self.__args = args
 
     def main(self):
-        folderToSaveCsv = os.path.join(folderSrc, 'sqls')
-
-        for root, _, files in os.walk(folderToSaveCsv):
+        for root, _, files in os.walk(self.__folderToLoop):
             for file in files:
                 if file.lower().endswith(('.sql')):
                     self.__logger.info(f'\t {file}')

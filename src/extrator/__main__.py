@@ -5,6 +5,8 @@ import logging
 import os
 import sys
 import shutil
+import json
+from typing import List
 
 currentFolder = os.path.dirname(__file__)
 folderSrc = os.path.join(currentFolder, '..')
@@ -23,17 +25,26 @@ handler.setFormatter(formatter)
 logger.addHandler(handler)
 logger.setLevel(logging.INFO)
 
+dataEnv = json.load(open(os.path.join(folderBeforeSrc, 'env.json')))
+COMPANIES_MIGRATE: List[int] = dataEnv["companies_migrate"]
+
 
 class MainExtrator:
     def __init__(self) -> None:
         folderData = os.path.join(folderBeforeSrc, 'data')
-        shutil.rmtree(folderData)
+        if os.path.exists(folderData) is True:
+            shutil.rmtree(folderData)
         os.makedirs(folderData)
 
     def main(self):
-        for codiEmp in [3, 4]:
+        folderSqlsFilterCompanie = os.path.join(folderSrc, 'sqls', 'filter_companie')
+        folderSqlsGeneral = os.path.join(folderSrc, 'sqls', 'general')
+
+        for codiEmp in COMPANIES_MIGRATE:
             logger.info(f'Exportando empresa {codiEmp}')
-            LoopSqls(logger, {"codi_emp": str(codiEmp)}).main()
+            LoopSqls(logger, folderSqlsFilterCompanie, {"codi_emp": str(codiEmp)}).main()
+
+        LoopSqls(logger, folderSqlsGeneral, {}).main()
 
 
 if __name__ == "__main__":
