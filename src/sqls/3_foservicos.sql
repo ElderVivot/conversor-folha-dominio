@@ -1,0 +1,42 @@
+SELECT IsNull( String( bethadba.foservicos.codi_emp ), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.i_servicos), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.cgc), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.tipo_insc), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.codigo_terceiro), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.perc_terceiro), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.perc_inss_empresa), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.perc_acid_trabalho), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.codigo_sat), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.perc_autonomos), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.codigo_fpas), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.codigo_atividade), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.codigo_gfip), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.codigo_gps), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.i_bancos), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.numero_fgts), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.nome), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.endereco), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.numero), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.bairro), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.cep), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.cidade), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.estado), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.i_filiais), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.sequencia_gps), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.filantropia), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.origem_reg), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.tipo), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.codi_mun), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.codigo_municipio), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.I_FPAS), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.DATA_INICIO), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.SITUACAO), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.DATA_INATIVACAO), 'NULO'),
+        COALESCE(STRING(bethadba.foservicos.CODIGO_ESOCIAL), 'NULO')
+
+    FROM bethadba.foservicos
+    
+   WHERE bethadba.foservicos.codi_emp = '#codi_emp#'
+
+ORDER BY bethadba.foservicos.codi_emp ASC, 
+         bethadba.foservicos.i_servicos ASC
