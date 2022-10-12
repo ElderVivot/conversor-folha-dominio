@@ -7,3 +7,4 @@ SELECT tab.table_name, col.column_id, col.column_name, col.remarks AS descriptio
             ON    domain.domain_id = col.domain_id
  WHERE tab.table_name = 'gecontador'
    AND col.column_id <= 41
+ORDER BY col.column_id
