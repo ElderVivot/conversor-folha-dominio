@@ -34,6 +34,7 @@ class ExtractData():
             sql = readSql(self.__pathSql, self.__nameSql, self.__args)
 
             df = pd.read_sql_query(sql, self.__connection)
+            df = df.replace({r'\n': ''}, regex=True)
 
             folderToSaveCsv = os.path.join(folderBeforeSrc, 'data', self.__nameSql.replace('.sql', '.csv'))
 
