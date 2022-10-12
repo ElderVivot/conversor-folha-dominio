@@ -529,6 +529,6 @@ COALESCE(STRING(bethadba.foparmto.ALTERAR_INSCRICAO_EMPRESA), 'NULO'),
 COALESCE(STRING(bethadba.foparmto.ADIANTAMENTO_PROPORCIONAL_OUTROS_AFASTAMENTOS_DIAS_TRAB), 'NULO'),
 COALESCE(STRING(bethadba.foparmto.CALC_INSS_8_TRAB_RURAL_CONTRATO_PRAZO_DETERMINADO), 'NULO')
 
-FROM bethadba.foparmto.codi_emp
+FROM bethadba.foparmto
 
 WHERE bethadba.foparmto.codi_emp = '#codi_emp#'
