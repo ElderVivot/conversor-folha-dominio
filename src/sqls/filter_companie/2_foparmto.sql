@@ -4,7 +4,7 @@ COALESCE(STRING(bethadba.foparmto.tem_folha_semanal), 'NULO'),
 COALESCE(STRING(bethadba.foparmto.tem_folha_quinzenal), 'NULO'),
 COALESCE(STRING(bethadba.foparmto.data_proces), 'NULO'),
 COALESCE(STRING(bethadba.foparmto.tipo_proces), 'NULO'),
-COALESCE(STRING(bethadba.foparmto.codi_emp), 'NULO'), /* codi_emp_eve (usar rubrica de qual empresa) -> vai usar a propria empresa*/
+'100027', /* codi_emp_eve (usar rubrica de qual empresa) -> vai usar a propria empresa*/
 COALESCE(STRING(bethadba.foparmto.adiant_tiposal), 'NULO'),
 COALESCE(STRING(bethadba.foparmto.adiant_percentual), 'NULO'),
 COALESCE(STRING(bethadba.foparmto.calc13_pag_media), 'NULO'),
