@@ -302,6 +302,6 @@ SELECT IsNull( String( bethadba.foempregados.codi_emp), 'NULO'),
 
     FROM bethadba.foempregados
     
-   WHERE bethadba.foempregados.codi_emp IN ('#codi_emp_list#')
+   WHERE bethadba.foempregados.codi_emp IN (#codi_emp_list#)
 
 ORDER BY bethadba.foempregados.transf_codi_emp, bethadba.foempregados.transf_i_empregados, bethadba.foempregados.codi_emp, bethadba.foempregados.i_empregados
