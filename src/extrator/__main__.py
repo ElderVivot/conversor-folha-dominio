@@ -42,7 +42,8 @@ class MainExtrator:
 
         codiEmpListStr = ''
         for codiEmp in COMPANIES_MIGRATE:
-            codiEmpListStr = codiEmpListStr + ',' if codiEmpListStr != '' else '' + str(codiEmp)
+            comma = ',' if codiEmpListStr != '' else ''
+            codiEmpListStr = codiEmpListStr + comma + str(codiEmp)
 
         LoopSqls(logger, folderSqlsGeneral, {"codi_emp_list": codiEmpListStr}).main()
 
