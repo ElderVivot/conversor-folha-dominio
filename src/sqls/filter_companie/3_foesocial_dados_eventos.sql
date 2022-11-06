@@ -60,11 +60,11 @@ COALESCE(STRING(bethadba.FOESOCIAL_DADOS_EVENTOS.REENVIAR_EVENTO_AUTOMATICAMENTE
 FROM bethadba.FOESOCIAL_DADOS_EVENTOS
 
 WHERE bethadba.FOESOCIAL_DADOS_EVENTOS.codi_emp = '#codi_emp#'
-  AND bethadba.FOESOCIAL_DADOS_EVENTOS.i_evento_esocial in (1000)
+  AND bethadba.FOESOCIAL_DADOS_EVENTOS.i_evento_esocial in (1000,1005)
   AND bethadba.FOESOCIAL_DADOS_EVENTOS.i_dados_eventos = ( SELECT MIN(FOESOCIAL_DADOS_EVENTOS2.i_dados_eventos)
                                                              FROM bethadba.FOESOCIAL_DADOS_EVENTOS AS FOESOCIAL_DADOS_EVENTOS2
                                                             WHERE FOESOCIAL_DADOS_EVENTOS2.codi_emp = bethadba.FOESOCIAL_DADOS_EVENTOS.codi_emp
-                                                              AND FOESOCIAL_DADOS_EVENTOS2.i_evento_esocial = 1000 )
+                                                              AND FOESOCIAL_DADOS_EVENTOS2.i_evento_esocial IN (1000,1005) )
 
 
 UNION ALL
@@ -137,6 +137,6 @@ WHERE bethadba.FOESOCIAL_DADOS_EVENTOS.codi_emp = '#codi_emp#'
   AND bethadba.FOESOCIAL_DADOS_EVENTOS.i_dados_eventos <> ( SELECT MIN(FOESOCIAL_DADOS_EVENTOS2.i_dados_eventos)
                                                              FROM bethadba.FOESOCIAL_DADOS_EVENTOS AS FOESOCIAL_DADOS_EVENTOS2
                                                             WHERE FOESOCIAL_DADOS_EVENTOS2.codi_emp = bethadba.FOESOCIAL_DADOS_EVENTOS.codi_emp
-                                                              AND FOESOCIAL_DADOS_EVENTOS2.i_evento_esocial = 1000 )
+                                                              AND FOESOCIAL_DADOS_EVENTOS2.i_evento_esocial IN (1000,1005) )
 
 ORDER BY 1,2

@@ -304,6 +304,6 @@ SELECT IsNull( String( bethadba.foempregados.codi_emp), 'NULO'),
     
    WHERE bethadba.foempregados.codi_emp IN (#codi_emp_list#)
      AND bethadba.foempregados.transf_codi_emp IS NOT NULL
-     AND bethadba.foempregados.transf_codi_emp > bethadba.foempregados.codi_emp
+     AND bethadba.foempregados.transf_codi_emp < bethadba.foempregados.codi_emp
 
-ORDER BY bethadba.foempregados.transf_codi_emp desc, bethadba.foempregados.transf_i_empregados, bethadba.foempregados.codi_emp, bethadba.foempregados.i_empregados
+ORDER BY bethadba.foempregados.codi_emp, bethadba.foempregados.i_empregados

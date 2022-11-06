@@ -7,3 +7,8 @@ COALESCE(STRING(bethadba.FOHORARIOS_ALTERACAO_ENVIOS_ESOCIAL.I_DADOS_EVENTOS), '
 FROM bethadba.FOHORARIOS_ALTERACAO_ENVIOS_ESOCIAL
 
 WHERE bethadba.FOHORARIOS_ALTERACAO_ENVIOS_ESOCIAL.CODI_EMP = '#codi_emp#'
+  AND bethadba.FOHORARIOS_ALTERACAO_ENVIOS_ESOCIAL.vigencia = ( SELECT MIN(vig.vigencia)
+                                                                FROM bethadba.FOHORARIOS_ALTERACAO_ENVIOS_ESOCIAL AS vig
+                                                               WHERE vig.codi_emp = bethadba.FOHORARIOS_ALTERACAO_ENVIOS_ESOCIAL.codi_emp )
+
+ORDER BY bethadba.FOHORARIOS_ALTERACAO_ENVIOS_ESOCIAL.CODI_EMP, bethadba.FOHORARIOS_ALTERACAO_ENVIOS_ESOCIAL.I_HORARIO

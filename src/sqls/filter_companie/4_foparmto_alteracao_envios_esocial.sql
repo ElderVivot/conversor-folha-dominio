@@ -6,3 +6,8 @@ COALESCE(STRING(bethadba.FOPARMTO_ALTERACAO_ENVIOS_ESOCIAL.I_DADOS_EVENTOS), 'NU
 FROM bethadba.FOPARMTO_ALTERACAO_ENVIOS_ESOCIAL
 
 WHERE bethadba.FOPARMTO_ALTERACAO_ENVIOS_ESOCIAL.codi_emp = '#codi_emp#'
+  AND bethadba.FOPARMTO_ALTERACAO_ENVIOS_ESOCIAL.vigencia = ( SELECT MIN(vig.vigencia)
+                                                                FROM bethadba.FOPARMTO_ALTERACAO_ENVIOS_ESOCIAL AS vig
+                                                               WHERE vig.codi_emp = bethadba.FOPARMTO_ALTERACAO_ENVIOS_ESOCIAL.codi_emp )
+
+ORDER BY bethadba.FOPARMTO_ALTERACAO_ENVIOS_ESOCIAL.CODI_EMP, bethadba.FOPARMTO_ALTERACAO_ENVIOS_ESOCIAL.VIGENCIA

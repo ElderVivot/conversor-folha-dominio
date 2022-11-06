@@ -7,3 +7,8 @@ COALESCE(STRING(bethadba.FOCARGOS_ALTERACAO_ENVIOS_ESOCIAL.I_DADOS_EVENTOS), 'NU
 FROM bethadba.FOCARGOS_ALTERACAO_ENVIOS_ESOCIAL
 
 WHERE bethadba.FOCARGOS_ALTERACAO_ENVIOS_ESOCIAL.codi_emp = '#codi_emp#'
+  AND bethadba.FOCARGOS_ALTERACAO_ENVIOS_ESOCIAL.vigencia = ( SELECT MIN(vig.vigencia)
+                                                                FROM bethadba.FOCARGOS_ALTERACAO_ENVIOS_ESOCIAL AS vig
+                                                               WHERE vig.codi_emp = bethadba.FOCARGOS_ALTERACAO_ENVIOS_ESOCIAL.codi_emp )
+
+ORDER BY bethadba.FOCARGOS_ALTERACAO_ENVIOS_ESOCIAL.CODI_EMP, bethadba.FOCARGOS_ALTERACAO_ENVIOS_ESOCIAL.I_CARGOS
