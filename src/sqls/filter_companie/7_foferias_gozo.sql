@@ -35,5 +35,6 @@ SELECT IsNull( String( bethadba.FOFERIAS_GOZO.codi_emp ), 'NULO'),
     FROM bethadba.FOFERIAS_GOZO
     
    WHERE bethadba.FOFERIAS_GOZO.codi_emp = '#codi_emp#'
+     AND bethadba.FOFERIAS_GOZO.I_FERIAS_COLETIVAS IS NULL /* when is ferias coletivas ocorrur error that i dont find solution */
 
 ORDER BY 1,2,bethadba.FOFERIAS_GOZO.GOZO_INICIO
