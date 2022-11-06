@@ -40,7 +40,11 @@ class MainExtrator:
         folderSqlsFilterCompanie = os.path.join(folderSrc, 'sqls', 'filter_companie')
         folderSqlsGeneral = os.path.join(folderSrc, 'sqls', 'general')
 
-        LoopSqls(logger, folderSqlsGeneral, {}).main()
+        codiEmpListStr = ''
+        for codiEmp in COMPANIES_MIGRATE:
+            codiEmpListStr = codiEmpListStr + ',' if codiEmpListStr != '' else '' + str(codiEmp)
+
+        LoopSqls(logger, folderSqlsGeneral, {"codi_emp_list": codiEmpListStr}).main()
 
         for codiEmp in COMPANIES_MIGRATE:
             logger.info(f'Exportando empresa {codiEmp}')
