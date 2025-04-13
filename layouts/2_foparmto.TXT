@@ -1,0 +1,530 @@
+4	FOPARMTO	1	codi_emp	Codigo empresa   (codi_emp)	integer	1	7		I		0
+4	FOPARMTO	2	valor_arredonda	** SEM USO ** Valor para arredondamento   (valor_arredonda)	numeric	1	8		I		2
+4	FOPARMTO	3	tem_folha_semanal	Trabalha com folha semanal   (tem_folha_semanal)	char	1	1		I		0
+4	FOPARMTO	4	tem_folha_quinzenal	Trabalha com folha quizenal   (tem_folha_quinzenal)	char	1	1		I		0
+4	FOPARMTO	5	data_proces	Competencia atual   (data_proces)	date	1	10	DD/MM/YYYY	I		0
+4	FOPARMTO	6	tipo_proces	tipo folha atual   (tipo_proces)	integer	1	7		I		0
+4	FOPARMTO	7	codi_emp_eve	Usa eventos da empresa   (codi_emp_eve)	integer	1	7		I		0
+4	FOPARMTO	8	adiant_tiposal	Base de cálculo   (adiant_tiposal)	tinyint	1	3		I		0
+4	FOPARMTO	9	adiant_percentual	Percentual de adiantamento   (adiant_percentual)	numeric	1	13		I		2
+4	FOPARMTO	10	calc13_pag_media	Pagar médias horas/valor   (calc13_pag_media)	char	1	1		I		0
+4	FOPARMTO	11	calc13_pag_adic	Pagar adicionais   (calc13_pag_adic)	char	1	1		I		0
+4	FOPARMTO	12	calc13_nao_calc_dir	Não calcula para diretores   (calc13_nao_calc_dir)	char	1	1		I		0
+4	FOPARMTO	13	calc13_percentual	Percentual   (calc13_percentual)	numeric	1	6		I		2
+4	FOPARMTO	14	calc13_maisde1adiant	Permite mais de um adiantamento   (calc13_maisde1adiant)	char	1	1		I		0
+4	FOPARMTO	15	tipo_data_afas	Tipo para afastamento (sem uso)   (tipo_data_afas)	char	1	1		I		0
+4	FOPARMTO	16	fer_desc_faltas	Descontar faltas automaticamente   (fer_desc_faltas)	char	1	1		I		0
+4	FOPARMTO	17	fer_paga_adic	Pagar adicionais   (fer_paga_adic)	char	1	1		I		0
+4	FOPARMTO	18	fer_paga_med	Pagar Medias   (fer_paga_med)	char	1	1		I		0
+4	FOPARMTO	19	fer_33_sob_total	33% sobre total (sem uso)   (fer_33_sob_total)	char	1	1		I		0
+4	FOPARMTO	20	fer_decimo_1p	Adiantar 1a. parcela do 13o.   (fer_decimo_1p)	char	1	1		I		0
+4	FOPARMTO	21	separador	Separa lançamentos por   (separador)	tinyint	1	3		I		0
+4	FOPARMTO	22	mes_conversao	Competencia conversao folha 34   (mes_conversao)	date	1	10	DD/MM/YYYY	I		0
+4	FOPARMTO	23	ajusta_med_13	Ajustar cálculo do 13º salário em dezembro favorável ao empregado: (N=Não/S=Sim)   (ajusta_med_13)	char	1	1		I		0
+4	FOPARMTO	24	mes_encerrado	Data do fechamento   (mes_encerrado)	date	1	10	DD/MM/YYYY	I		0
+4	FOPARMTO	25	perm_alt_calc	Permite alteracao no calculo (sem uso)   (perm_alt_calc)	char	1	1		I		0
+4	FOPARMTO	26	mov_fer_mes	movimento de ferias na folha mensal   (mov_fer_mes)	char	1	1		I		0
+4	FOPARMTO	27	calc_rest_interferencia	Permite interferencia no calculo (sem uso)   (calc_rest_interferencia)	char	1	1		I		0
+4	FOPARMTO	28	cta_gera	Gera lancamentos contabeis   (cta_gera)	tinyint	1	3		I		0
+4	FOPARMTO	29	cta_codi_emp	Gera os lancamentos na empresa   (cta_codi_emp)	integer	1	7		I		0
+4	FOPARMTO	30	cta_sep_rescisao	rescisao   (cta_sep_rescisao)	tinyint	1	3		I		0
+4	FOPARMTO	31	cta_sep_ferias	Ferias   (cta_sep_ferias)	tinyint	1	3		I		0
+4	FOPARMTO	32	cta_data_lanc	Data integracao contabil (sem uso)   (cta_data_lanc)	tinyint	1	3		I		0
+4	FOPARMTO	33	cta_provisao	Forma de integracao contabil (sem uso)   (cta_provisao)	tinyint	1	3		I		0
+4	FOPARMTO	34	cta_tipo_exp	cta_tipo_exp   (cta_tipo_exp)	tinyint	1	3		I		0
+4	FOPARMTO	35	gps_conta_debito	Conta debito GPS Eletronica   (gps_conta_debito)	tinyint	1	3		I		0
+4	FOPARMTO	36	pis_contribui	** SEM USO **   (pis_contribui)	tinyint	1	3		I		0
+4	FOPARMTO	37	pis_percentual	** SEM USO **   (pis_percentual)	numeric	1	13		I		4
+4	FOPARMTO	38	ordenar_eventos	Ordena eventos   (ordenar_eventos)	tinyint	1	3		I		0
+4	FOPARMTO	39	cta_data_lanc_resc	Data do lancamento para rescisao   (cta_data_lanc_resc)	tinyint	1	3		I		0
+4	FOPARMTO	40	cta_data_lanc_fer	Data do lancamento para ferias   (cta_data_lanc_fer)	tinyint	1	3		I		0
+4	FOPARMTO	41	calcinss_movto_comp	Controle de compensacao INSS a partir de   (calcinss_movto_comp)	date	1	10	DD/MM/YYYY	I		0
+4	FOPARMTO	42	adiant_afast	Empregados afastados   (adiant_afast)	tinyint	1	3		I		0
+4	FOPARMTO	43	contrato_tf	Contrato Ticket Farma   (contrato_tf)	char	1	10		I		0
+4	FOPARMTO	44	fer_col_medlic	medias e adicionais na licenca remunerada   (fer_col_medlic)	tinyint	1	3		I		0
+4	FOPARMTO	45	separar_dsr	Discriminar DSR   (separar_dsr)	tinyint	1	3		I		0
+4	FOPARMTO	46	calc13_estagiario	Pagar para estagiário   (calc13_estagiario)	tinyint	1	3		I		0
+4	FOPARMTO	47	fer_estagiario	 Pagar para estagiario   (fer_estagiario)	tinyint	1	3		I		0
+4	FOPARMTO	48	fer_domestico	** SEM USO **   (fer_domestico)	tinyint	1	3		I		0
+4	FOPARMTO	49	calc13_faltas	Descontar faltas automaticamente   (calc13_faltas)	tinyint	1	3		I		0
+4	FOPARMTO	50	calc13_avos_adm	Pagar adiant. até dezembro para empregados admitidos no ano   (calc13_avos_adm)	tinyint	1	3		I		0
+4	FOPARMTO	51	adiant_contr	Calcular para contribuintes   (adiant_contr)	tinyint	1	3		I		0
+4	FOPARMTO	52	origem_reg	Origem do registro 0 - Sistema, 1 - Imp. Tabelas, 2 - Imp. Layout, 3- Imp. Tabelas Concorrentes   (origem_reg)	tinyint	1	3		I		0
+4	FOPARMTO	53	usa_rateio	Usa rateio por servico (1=Sim, 0=Nao)   (usa_rateio)	tinyint	1	3		I		0
+4	FOPARMTO	54	cta_data_lanc_mes	Data do lançamento para folha mensal   (cta_data_lanc_mes)	tinyint	1	3		I		0
+4	FOPARMTO	55	cta_data_lanc_comp	Data do lançamento para folha complementar   (cta_data_lanc_comp)	tinyint	1	3		I		0
+4	FOPARMTO	56	cta_data_lanc_adiant	Data do lançamento para adiantamento   (cta_data_lanc_adiant)	tinyint	1	3		I		0
+4	FOPARMTO	57	cta_data_lanc_13ad	Data do lançamento para 13o. Adiantamento   (cta_data_lanc_13ad)	tinyint	1	3		I		0
+4	FOPARMTO	58	cta_data_lanc_13int	Data do lançamento para 13o. Integral   (cta_data_lanc_13int)	tinyint	1	3		I		0
+4	FOPARMTO	59	adiant_afast_condic	Condição para pagto de adiantamento quando afastado   (adiant_afast_condic)	tinyint	1	3		I		0
+4	FOPARMTO	60	adiant_afast_condic_dias	Numero de dias trabalhados no mes para direito ao adiantamento   (adiant_afast_condic_dias)	integer	1	7		I		0
+4	FOPARMTO	61	cta_ccus_rateio	Contabilidade por centro de custo   (cta_ccus_rateio)	tinyint	1	3		I		0
+4	FOPARMTO	62	cta_ccus_rateio_tipo	Tipo do rateio.   (cta_ccus_rateio_tipo)	tinyint	1	3		I		0
+4	FOPARMTO	63	usa_rateio_inicio	Inicio do rateio do calculo por servicos   (usa_rateio_inicio)	date	1	10	DD/MM/YYYY	I		0
+4	FOPARMTO	64	simples_072007	Opção simples nacional   (simples_072007)	tinyint	1	3		I		0
+4	FOPARMTO	65	simples_072007_limite_receita	Receita bruta até 36.000,00   (simples_072007_limite_receita)	tinyint	1	3		I		0
+4	FOPARMTO	66	tem_folha_professor	Trabalha com folha de professores   (tem_folha_professor)	char	1	1		I		0
+4	FOPARMTO	67	dsr_categoria	Categorias DSR (Soma binaria)   (dsr_categoria)	tinyint	1	3		I		0
+4	FOPARMTO	68	TIPO_LANCTO_HORAS	TIPO DE LANCAMENTO DE HORAS   (TIPO_LANCTO_HORAS)	char	1	1		I		0
+4	FOPARMTO	69	DATA_PAGTO_MES	Data de pagamento da folha mensal do empregado. 1-Último dia útil do mês de competência, 2-Quinto dia útil do mês seguinte e 3-Primeiro dia útil do mês seguinte   (DATA_PAGTO_MES)	tinyint	1	3		I		0
+4	FOPARMTO	70	CTA_EXP_L18	GERA LANCAMENTOS PARA A CONTABILIDADE DE ACORDO COM O LAYOUT 18.   (CTA_EXP_L18)	integer	1	7		I		0
+4	FOPARMTO	71	FER_DILATAR_LIMITE_GOZO	CONSIDERAR OS DIAS AFASTADOS NO PERÍODO CONCESSIVO PARA DILATAR O LIMITE DE GOZO   (FER_DILATAR_LIMITE_GOZO)	smallint	1	7		I		0
+4	FOPARMTO	72	TIPO_CALCULO_PROP	TIPO DO CALCULO PROPORCIONAL (1=MES COMERCIAL,2=MES CIVIL)   (TIPO_CALCULO_PROP)	tinyint	1	3		I		0
+4	FOPARMTO	73	TIPO_CALCULO_PROP_CATEGORIA	CATEGORIAS PARA O TIPO DO CALCULO PROPORCIONAL    (TIPO_CALCULO_PROP_CATEGORIA)	tinyint	1	3		I		0
+4	FOPARMTO	74	FER_PROP_RESC_JUSTA_CAUSA	CALCULAR FÉRIAS PROPORCIONAL PARA RESCISÃO COM JUSTA CAUSA   (FER_PROP_RESC_JUSTA_CAUSA)	tinyint	1	3		I		0
+4	FOPARMTO	75	INF_LANCTO_FALTAS	INFORMAR DATAS NOS LANÇAMENTOS DE HORAS   (INF_LANCTO_FALTAS)	smallint	1	7		I		0
+4	FOPARMTO	76	NAO_SOMA_SAL_FAM_EST_MES	Nao considera o salario familia no calculo do estouro do mes.   (NAO_SOMA_SAL_FAM_EST_MES)	tinyint	1	3		I		0
+4	FOPARMTO	77	NAO_CALC_SAL_FAM_FER	Nao calcula salario familia nas ferias.   (NAO_CALC_SAL_FAM_FER)	tinyint	1	3		I		0
+4	FOPARMTO	78	AVO_MEDIA_13_ADMISSAO	Considerar avo de média 13º no mês da admissão com menos de 15 dias trabalhados: 0=Não/1=Sim   (AVO_MEDIA_13_ADMISSAO)	smallint	1	7		I		0
+4	FOPARMTO	79	CALC_CONTR_SIND_FER	Calcula contribuição sindical nas férias: 0=Não/1=Sim   (CALC_CONTR_SIND_FER)	smallint	1	7		I		0
+4	FOPARMTO	80	CALCULAR_ADIANTAMENTO_13_SALARIO_MES_ANTERIOR	Calcular adiantamento 13º com base no salário do mês anterior ao cálculo (0=Não/1=Sim)   (CALCULAR_ADIANTAMENTO_13_SALARIO_MES_ANTERIOR)	smallint	1	7		I		0
+4	FOPARMTO	81	EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_03	Extende limite de gozo de férias paar os afastamentos 03 e 10   (EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_03)	smallint	1	7		I		0
+4	FOPARMTO	82	EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_06	Extende limite de gozo de férias paar os afastamentos 06 e 12   (EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_06)	smallint	1	7		I		0
+4	FOPARMTO	83	EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_19	Extende limite de gozo de férias paar os afastamentos 19   (EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_19)	smallint	1	7		I		0
+4	FOPARMTO	84	EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_05	Extende limite de gozo de férias paar os afastamentos 05   (EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_05)	smallint	1	7		I		0
+4	FOPARMTO	85	EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_20	Extende limite de gozo de férias paar os afastamentos 20,21 e 22   (EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_20)	smallint	1	7		I		0
+4	FOPARMTO	86	EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_11	Extende limite de gozo de férias paar os afastamentos 11   (EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_11)	smallint	1	7		I		0
+4	FOPARMTO	87	EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_26	Extende limite de gozo de férias paar os afastamentos 26   (EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_26)	smallint	1	7		I		0
+4	FOPARMTO	88	EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_27	Extende limite de gozo de férias paar os afastamentos 27,28 e 29   (EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_27)	smallint	1	7		I		0
+4	FOPARMTO	89	EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_13	Extende limite de gozo de férias paar os afastamentos 13   (EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_13)	smallint	1	7		I		0
+4	FOPARMTO	90	EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_07	Extende limite de gozo de férias paar os afastamentos 07   (EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_07)	smallint	1	7		I		0
+4	FOPARMTO	91	EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_04	Extende limite de gozo de férias paar os afastamentos 04   (EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_04)	smallint	1	7		I		0
+4	FOPARMTO	92	EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_14	Extende limite de gozo de férias paar os afastamentos 14,15 e 16   (EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_14)	smallint	1	7		I		0
+4	FOPARMTO	93	EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_24	Extende limite de gozo de férias paar os afastamentos 24   (EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_24)	smallint	1	7		I		0
+4	FOPARMTO	94	ATIVIDADE_EMPRESA_LEI_12546	**SEM USO**   (ATIVIDADE_EMPRESA_LEI_12546)	smallint	1	7		I		0
+4	FOPARMTO	95	ADIANTAMENTO_FORMA_CALCULO_ADMISSAO	Forma de cálculo do adiantamento (admissão): (1=Não calcular/2=Proporcional/3=Integral)   (ADIANTAMENTO_FORMA_CALCULO_ADMISSAO)	smallint	1	7		I		0
+4	FOPARMTO	96	ADIANTAMENTO_FORMA_CALCULO_FERIAS	Forma de cálculo do adiantamento (férias): (1=Não calcular/2=Proporcional/3=Integral)   (ADIANTAMENTO_FORMA_CALCULO_FERIAS)	smallint	1	7		I		0
+4	FOPARMTO	97	ADIANTAMENTO_FORMA_CALCULO_MATERNIDADE	Forma de cálculo do adiantamento (maternidade): (1=Não calcular/2=Proporcional/3=Integral)   (ADIANTAMENTO_FORMA_CALCULO_MATERNIDADE)	smallint	1	7		I		0
+4	FOPARMTO	98	ADIANTAMENTO_FORMA_CALCULO_OUTROS	Forma de cálculo do adiantamento (outros afastamentos): (1=Não calcular/2=Proporcional/3=Integral)   (ADIANTAMENTO_FORMA_CALCULO_OUTROS)	smallint	1	7		I		0
+4	FOPARMTO	99	ADIANTAMENTO_CONDICAO_ADMISSAO	Condição para calcular (admissão): (1=Sempre/2=Se estiver trabalhando na data do pagamento/3=Se estiver trabalhado o mínimo de dias especificado)   (ADIANTAMENTO_CONDICAO_ADMISSAO)	smallint	1	7		I		0
+4	FOPARMTO	100	ADIANTAMENTO_CONDICAO_FERIAS	Condição para calcular (férias): (1=Sempre/2=Se estiver trabalhando na data do pagamento/3=Se estiver trabalhado o mínimo de dias especificado)   (ADIANTAMENTO_CONDICAO_FERIAS)	smallint	1	7		I		0
+4	FOPARMTO	101	ADIANTAMENTO_CONDICAO_MATERNIDADE	Condição para calcular (maternidade): (1=Sempre/2=Se estiver trabalhando na data do pagamento/3=Se estiver trabalhado o mínimo de dias especificado)   (ADIANTAMENTO_CONDICAO_MATERNIDADE)	smallint	1	7		I		0
+4	FOPARMTO	102	ADIANTAMENTO_CONDICAO_OUTROS	Condição para calcular (outros afastamentos): (1=Sempre/2=Se estiver trabalhando na data do pagamento/3=Se estiver trabalhado o mínimo de dias especificado)   (ADIANTAMENTO_CONDICAO_OUTROS)	smallint	1	7		I		0
+4	FOPARMTO	103	ADIANTAMENTO_DIAS_ADMISSAO	Quantidade mínima de dias trabalhados (admissão)   (ADIANTAMENTO_DIAS_ADMISSAO)	integer	1	7		I		0
+4	FOPARMTO	104	ADIANTAMENTO_DIAS_FERIAS	Quantidade mínima de dias trabalhados (férias)   (ADIANTAMENTO_DIAS_FERIAS)	integer	1	7		I		0
+4	FOPARMTO	105	ADIANTAMENTO_DIAS_MATERNIDADE	Quantidade mínima de dias trabalhados (maternidade)   (ADIANTAMENTO_DIAS_MATERNIDADE)	integer	1	7		I		0
+4	FOPARMTO	106	ADIANTAMENTO_DIAS_OUTROS	Quantidade mínima de dias trabalhados (outros afastamentos)   (ADIANTAMENTO_DIAS_OUTROS)	integer	1	7		I		0
+4	FOPARMTO	107	GERA_VARIAVEIS_HONORARIOS	Gerar variáveis do honorários com o valor dos encargos: (0=Não/1=Sim)   (GERA_VARIAVEIS_HONORARIOS)	smallint	1	7		I		0
+4	FOPARMTO	108	EMPRESA_ESCRITORIO_HONORARIOS	Empresa escritório Honorários   (EMPRESA_ESCRITORIO_HONORARIOS)	integer	1	7		I		0
+4	FOPARMTO	109	CALCULAR_DIFERENCA_CONTRIBUICAO_SINDICAL	Calcular diferença de contribuição sindical devido alteração salarial: (0=Não/1=Sim)   (CALCULAR_DIFERENCA_CONTRIBUICAO_SINDICAL)	smallint	1	7		I		0
+4	FOPARMTO	110	CALCULAR_13_SALARIO_RESCISAO_JUSTA_CAUSA	Calcular 13º salário para rescisão com justa causa: (0=Não/1=Sim)   (CALCULAR_13_SALARIO_RESCISAO_JUSTA_CAUSA)	smallint	1	7		I		0
+4	FOPARMTO	111	LIMITAR_TOTAL_PARCELAS	Limitar o total das parcelas de 13º salário: (0=Não/1=Sim)   (LIMITAR_TOTAL_PARCELAS)	smallint	1	7		I		0
+4	FOPARMTO	112	LIMITAR_TOTAL_PARCELAS_PERCENTUAL	Percentual de limite do total das parcelas de 13º salário   (LIMITAR_TOTAL_PARCELAS_PERCENTUAL)	numeric	1	5		I		2
+4	FOPARMTO	113	AJUSTAR_CALCULO_13_DEZEMBRO_FAVORAVEL_EMPREGADOR	Ajustar cálculo do 13º salário em dezembro favorável ao empregador: (0=Não/1=Sim)   (AJUSTAR_CALCULO_13_DEZEMBRO_FAVORAVEL_EMPREGADOR)	smallint	1	7		I		0
+4	FOPARMTO	114	PAGAR_ADIANTAMENTO_13_MES_ANTERIOR_ADMITIDO_ANO	Pagar adiantamento até o mês anterior para empregados admitidos no ano: (0=Não/1=Sim)   (PAGAR_ADIANTAMENTO_13_MES_ANTERIOR_ADMITIDO_ANO)	smallint	1	7		I		0
+4	FOPARMTO	115	SERVICOS_EXCLUSIVOS_TI_TIC	**SEM USO**   (SERVICOS_EXCLUSIVOS_TI_TIC)	smallint	1	7		I		0
+4	FOPARMTO	116	INICIO_CALCULO_LEI_12506_2011	Início do cálculo proporcional para o aviso prévio - Lei 12.506/2011: (1=A partir do primeiro ano trabalhado completo/2=A partir do segundo ano trabalhado completo)   (INICIO_CALCULO_LEI_12506_2011)	smallint	1	7		I		0
+4	FOPARMTO	117	MOTIVO_DEMISSAO_LEI_12506_2011	Motivos de demissão para o aviso prévio - Lei 12.506/2011: (0=Todos/2=Demitido sem justa causa/244= 2-Demitido sem justa causa e 44-Rescisão por acordo entre as partes/45=Rescisão contrato intermitente)   (MOTIVO_DEMISSAO_LEI_12506_2011)	smallint	1	7		I		0
+4	FOPARMTO	118	TIPO_EMPREGADO_CALCULA_ARREDONDAMENTO	***SEM USO***   (TIPO_EMPREGADO_CALCULA_ARREDONDAMENTO)	smallint	1	7		I		0
+4	FOPARMTO	119	CALCULA_ARREDONDAMENTO_MENSAL	Calcula arredondamento: (0=Não/1=Sim)   (CALCULA_ARREDONDAMENTO_MENSAL)	smallint	1	7		I		0
+4	FOPARMTO	120	VALOR_ARREDONDAMENTO_MENSAL	Valor de arredondamento   (VALOR_ARREDONDAMENTO_MENSAL)	numeric	1	5		I		2
+4	FOPARMTO	121	FORMA_DESCONTO_ARREDONDAMENTO_MENSAL	Forma de Desconto: (0=Não descontar/1=Na próxima folha mensal calculada)   (FORMA_DESCONTO_ARREDONDAMENTO_MENSAL)	smallint	1	7		I		0
+4	FOPARMTO	122	CALCULA_ARREDONDAMENTO_COMPLEMENTAR	Calcula arredondamento: (0=Não/1=Sim)   (CALCULA_ARREDONDAMENTO_COMPLEMENTAR)	smallint	1	7		I		0
+4	FOPARMTO	123	VALOR_ARREDONDAMENTO_COMPLEMENTAR	Valor de arredondamento   (VALOR_ARREDONDAMENTO_COMPLEMENTAR)	numeric	1	5		I		2
+4	FOPARMTO	124	FORMA_DESCONTO_ARREDONDAMENTO_COMPLEMENTAR	Forma de Desconto: (0=Não descontar/1=Na folha mensal seguinte a competência do cálculo/2=Na próxima competência de folha mensal calculada)   (FORMA_DESCONTO_ARREDONDAMENTO_COMPLEMENTAR)	smallint	1	7		I		0
+4	FOPARMTO	125	CALCULA_ARREDONDAMENTO_ADIANTAMENTO	Calcula arredondamento: (0=Não/1=Sim)   (CALCULA_ARREDONDAMENTO_ADIANTAMENTO)	smallint	1	7		I		0
+4	FOPARMTO	126	VALOR_ARREDONDAMENTO_ADIANTAMENTO	Valor de arredondamento   (VALOR_ARREDONDAMENTO_ADIANTAMENTO)	numeric	1	5		I		2
+4	FOPARMTO	127	FORMA_DESCONTO_ARREDONDAMENTO_ADIANTAMENTO	Forma de Desconto: (0=Não descontar/1=Na folha mensal da competência de cálculo/2=Na próxima folha de adiantamento calculada)   (FORMA_DESCONTO_ARREDONDAMENTO_ADIANTAMENTO)	smallint	1	7		I		0
+4	FOPARMTO	128	CALCULA_ARREDONDAMENTO_FERIAS	Calcula arredondamento: (0=Não/1=Sim)   (CALCULA_ARREDONDAMENTO_FERIAS)	smallint	1	7		I		0
+4	FOPARMTO	129	VALOR_ARREDONDAMENTO_FERIAS	Valor de arredondamento   (VALOR_ARREDONDAMENTO_FERIAS)	numeric	1	5		I		2
+4	FOPARMTO	130	FORMA_DESCONTO_ARREDONDAMENTO_FERIAS	Forma de Desconto: (0=Não descontar/1=Na folha mensal da competência de cálculo integral/2=Na folha mensal da competência de cálculo proporcional/3=Na próxima férias calculada)   (FORMA_DESCONTO_ARREDONDAMENTO_FERIAS)	smallint	1	7		I		0
+4	FOPARMTO	131	CALCULA_ARREDONDAMENTO_RESCISAO	Calcula arredondamento: (0=Não/1=Sim)   (CALCULA_ARREDONDAMENTO_RESCISAO)	smallint	1	7		I		0
+4	FOPARMTO	132	VALOR_ARREDONDAMENTO_RESCISAO	Valor de arredondamento   (VALOR_ARREDONDAMENTO_RESCISAO)	numeric	1	5		I		2
+4	FOPARMTO	133	FORMA_DESCONTO_ARREDONDAMENTO_RESCISAO	Forma de Desconto: (0=Não descontar/1=Em rescisão complementar)   (FORMA_DESCONTO_ARREDONDAMENTO_RESCISAO)	smallint	1	7		I		0
+4	FOPARMTO	134	CALCULA_ARREDONDAMENTO_RESCISAO_COMPLEMENTAR	Calcula arredondamento: (0=Não/1=Sim)   (CALCULA_ARREDONDAMENTO_RESCISAO_COMPLEMENTAR)	smallint	1	7		I		0
+4	FOPARMTO	135	VALOR_ARREDONDAMENTO_RESCISAO_COMPLEMENTAR	Valor de arredondamento   (VALOR_ARREDONDAMENTO_RESCISAO_COMPLEMENTAR)	numeric	1	5		I		2
+4	FOPARMTO	136	CALCULA_ARREDONDAMENTO_13_ADIANTAMENTO	Calcula arredondamento: (0=Não/1=Sim)   (CALCULA_ARREDONDAMENTO_13_ADIANTAMENTO)	smallint	1	7		I		0
+4	FOPARMTO	137	VALOR_ARREDONDAMENTO_13_ADIANTAMENTO	Valor de arredondamento   (VALOR_ARREDONDAMENTO_13_ADIANTAMENTO)	numeric	1	5		I		2
+4	FOPARMTO	138	FORMA_DESCONTO_ARREDONDAMENTO_13_ADIANTAMENTO	Forma de Desconto: (0=Não descontar/1=Na folha mensal da competência do cálculo/2=Na folha de 13º salário integral)   (FORMA_DESCONTO_ARREDONDAMENTO_13_ADIANTAMENTO)	smallint	1	7		I		0
+4	FOPARMTO	139	CALCULA_ARREDONDAMENTO_13_INTEGRAL	Calcula arredondamento: (0=Não/1=Sim)   (CALCULA_ARREDONDAMENTO_13_INTEGRAL)	smallint	1	7		I		0
+4	FOPARMTO	140	VALOR_ARREDONDAMENTO_13_INTEGRAL	Valor de arredondamento   (VALOR_ARREDONDAMENTO_13_INTEGRAL)	numeric	1	5		I		2
+4	FOPARMTO	141	FORMA_DESCONTO_ARREDONDAMENTO_13_INTEGRAL	Forma de Desconto: (0=Não descontar/1=Na folha mensal da competência do cálculo/2=Na próxima folha de 13º salário adiantado calculada/3=Na próxima folha de 13º salário integral calculada)   (FORMA_DESCONTO_ARREDONDAMENTO_13_INTEGRAL)	smallint	1	7		I		0
+4	FOPARMTO	142	CALCULA_ARREDONDAMENTO_SEMANAL	Calcula arredondamento: (0=Não/1=Sim)   (CALCULA_ARREDONDAMENTO_SEMANAL)	smallint	1	7		I		0
+4	FOPARMTO	143	VALOR_ARREDONDAMENTO_SEMANAL	Valor de arredondamento   (VALOR_ARREDONDAMENTO_SEMANAL)	numeric	1	5		I		2
+4	FOPARMTO	144	FORMA_DESCONTO_ARREDONDAMENTO_SEMANAL	Forma de Desconto: (0=Não descontar/1=Na próxima semana calculada/2=No cálculo da última semana)   (FORMA_DESCONTO_ARREDONDAMENTO_SEMANAL)	smallint	1	7		I		0
+4	FOPARMTO	145	CONSIDERAR_SABADO_DIA_UTIL_RESCISAO	Utilizar o sábado como dia útil para o pagamento de rescisão: (0=Não/1=Sim)   (CONSIDERAR_SABADO_DIA_UTIL_RESCISAO)	smallint	1	7		I		0
+4	FOPARMTO	146	CONSIDERAR_ANTECIPACAO_FERIAS_PROPORCIONAL_RESCISAO	Considerar a antecipação do período de férias proporcional na rescisão.(0-Não/1-Sim)   (CONSIDERAR_ANTECIPACAO_FERIAS_PROPORCIONAL_RESCISAO)	smallint	1	7		I		0
+4	FOPARMTO	147	CONSIDERAR_PROJECAO_AVISO_PREVIO_TEMPO_TRABALHADO	Considerar projeção do aviso prévio indenizado como dias trabalhados: (0=Não/1=Sim)   (CONSIDERAR_PROJECAO_AVISO_PREVIO_TEMPO_TRABALHADO)	smallint	1	7		I		0
+4	FOPARMTO	148	CALCULAR_ADICIONAL_FERIAS_ESTAGIARIOS	Calcular 1/3 de férias para estagiários. (0=Não/1=Sim)   (CALCULAR_ADICIONAL_FERIAS_ESTAGIARIOS)	smallint	1	7		I		0
+4	FOPARMTO	149	CONSIDERAR_LICENCA_SEM_VENCIMENTO_DILATAR_PERIODO_AQUISITIVO	Considerar os dias afastados por licença sem vencimento para dilatar o período aquisitivo. (0=Não/1=Sim)   (CONSIDERAR_LICENCA_SEM_VENCIMENTO_DILATAR_PERIODO_AQUISITIVO)	smallint	1	7		I		0
+4	FOPARMTO	150	CONSIDERAR_AFASTAMENTOS_DIAS_DIREITO_FERIAS	Considerar os afastamentos para o cálculo dos dias de direito. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTOS_DIAS_DIREITO_FERIAS)	smallint	1	7		I		0
+4	FOPARMTO	151	ALIQUOTA_IMPOSTO_RECEITA_ATIVIDADE_NAO_RELACIONADA_LEI_12546	**SEM USO**   (ALIQUOTA_IMPOSTO_RECEITA_ATIVIDADE_NAO_RELACIONADA_LEI_12546)	smallint	1	7		I		0
+4	FOPARMTO	152	CALCULAR_SALARIO_PROPORCIONAL_DATA_ALTERACAO	Calcular salário no mês da alteração salarial de forma proporcional a data da alteração: (0=Não, 1=Sim)   (CALCULAR_SALARIO_PROPORCIONAL_DATA_ALTERACAO)	smallint	1	7		I		0
+4	FOPARMTO	153	CONSIDERAR_PERIODO_AFASTAMENTO_EM_MESES	Considerar período afastamento em meses. (0=Não/1=Sim)   (CONSIDERAR_PERIODO_AFASTAMENTO_EM_MESES)	smallint	1	7		I		0
+4	FOPARMTO	154	CONSIDERAR_AFASTAMENTO_ACIDENTE_TRABALHO_EM_MESES	Considerar afastamento por acidente de trabalho em meses. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_ACIDENTE_TRABALHO_EM_MESES)	smallint	1	7		I		0
+4	FOPARMTO	155	CONSIDERAR_AFASTAMENTO_DOENCA_EM_MESES	Considerar afastamento por doença em meses. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_DOENCA_EM_MESES)	smallint	1	7		I		0
+4	FOPARMTO	156	FABRICANTE_EXCLUSIVO_PRODUTOS_RELACIONADOS	**SEM USO**   (FABRICANTE_EXCLUSIVO_PRODUTOS_RELACIONADOS)	smallint	1	7		I		0
+4	FOPARMTO	157	EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_35	Extende limite de gozo de férias para o afastamento 35   (EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_35)	smallint	1	7		I		0
+4	FOPARMTO	158	EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_36	EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_36   (EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_36)	smallint	1	7		I		0
+4	FOPARMTO	159	CLASSIFICACAO_TRIBUTARIA	Classificação tributária.   (CLASSIFICACAO_TRIBUTARIA)	smallint	1	7		I		0
+4	FOPARMTO	160	COOPERATIVA	Cooperativa. (0=Não/1=Sim, cooperativa de trabalho/2=Sim, cooperativa de produção/3=Sim, outras cooperativas)   (COOPERATIVA)	smallint	1	7		I		0
+4	FOPARMTO	161	CONSTRUTORA	Construtora. (0=Não/1=Sim)   (CONSTRUTORA)	smallint	1	7		I		0
+4	FOPARMTO	162	SIGLA_MINISTERIO_CONCEDEU_ENTIDADE_BENEFICENTE	Sigla do ministério que concedeu a classificação de Entidade Beneficente. (1=CNAS/2=MEC/3=MS/4=MDS/5=Lei)   (SIGLA_MINISTERIO_CONCEDEU_ENTIDADE_BENEFICENTE)	smallint	1	7		I		0
+4	FOPARMTO	163	NUMERO_CERTIFICADO_LEI_ENTIDADE_BENEFICENTE	Número do certificado/lei que concedeu a classificação de Entidade Beneficente.   (NUMERO_CERTIFICADO_LEI_ENTIDADE_BENEFICENTE)	varchar	1	40		I		0
+4	FOPARMTO	164	DATA_EMISSAO_ENTIDADE_BENEFICENTE	Data de emissão da classificação de Entidade Beneficente.   (DATA_EMISSAO_ENTIDADE_BENEFICENTE)	date	1	10	DD/MM/YYYY	I		0
+4	FOPARMTO	165	DATA_VENCIMENTO_ENTIDADE_BENEFICENTE	Data de vencimento da classificação de Entidade Beneficente.   (DATA_VENCIMENTO_ENTIDADE_BENEFICENTE)	date	1	10	DD/MM/YYYY	I		0
+4	FOPARMTO	166	NUMERO_PROTOCOLO_RENOVACAO_ENTIDADE_BENEFICENTE	Número do protocolo de renovação da classificação de Entidade Beneficente.   (NUMERO_PROTOCOLO_RENOVACAO_ENTIDADE_BENEFICENTE)	varchar	1	40		I		0
+4	FOPARMTO	167	DATA_PROTOCOLO_RENOVACAO_ENTIDADE_BENEFICENTE	Data do protocolo de renovação da Entidade Beneficente.   (DATA_PROTOCOLO_RENOVACAO_ENTIDADE_BENEFICENTE)	date	1	10	DD/MM/YYYY	I		0
+4	FOPARMTO	168	DATA_DIARIO_OFICIAL_UNIAO_ENTIDADE_BENEFICENTE	Data do diário oficial da união da classificação de Entidade Beneficente.   (DATA_DIARIO_OFICIAL_UNIAO_ENTIDADE_BENEFICENTE)	date	1	10	DD/MM/YYYY	I		0
+4	FOPARMTO	169	PAGINAL_DIARIO_OFICIAL_UNIAO_ENTIDADE_BENEFICENTE	Página do diário oficial da união da classificação de Entidade Beneficente.   (PAGINAL_DIARIO_OFICIAL_UNIAO_ENTIDADE_BENEFICENTE)	varchar	1	5		I		0
+4	FOPARMTO	170	POSSUI_SITUACAO_ESPECIAL	Possui Situação especial. (0=Não/1=Sim)   (POSSUI_SITUACAO_ESPECIAL)	smallint	1	7		I		0
+4	FOPARMTO	171	POSSUI_SITUACAO_ESPECIAL_SITUACAO	SituaÃ§Ã£o especial. (1=ExtinÃ§Ã£o/2=FusÃ£o/3=CisÃ£o/4=IncorporaÃ§Ã£o/5=Encerramente de espÃ³lio/6=SaÃ­da do paÃ­s em carÃ¡ter permanente)   (POSSUI_SITUACAO_ESPECIAL_SITUACAO)	smallint	1	7		I		0
+4	FOPARMTO	172	PAGAR_MEDIAS_13_ADIANTAMENTO	Pagar médias no 13º adiantamento. (0=Não/1=Sim)   (PAGAR_MEDIAS_13_ADIANTAMENTO)	smallint	1	7		I		0
+4	FOPARMTO	173	PAGAR_ADICIONAIS_13_ADIANTAMENTO	Pagar adicionais no 13º adiantamento. (0=Não/1=Sim)   (PAGAR_ADICIONAIS_13_ADIANTAMENTO)	smallint	1	7		I		0
+4	FOPARMTO	174	DESCONTAR_FALTAS_DSR_COMPETENCIA_DATA_FALTA	Descontar as faltas de DSR na competência da data da falta. (0=Não/1=Sim)   (DESCONTAR_FALTAS_DSR_COMPETENCIA_DATA_FALTA)	smallint	1	7		I		0
+4	FOPARMTO	175	DESCONTAR_DSR_SEMANA_FALTA	Descontar o DSR na mesma semana da falta. (0=Não/1=Sim)   (DESCONTAR_DSR_SEMANA_FALTA)	smallint	1	7		I		0
+4	FOPARMTO	176	ADQUIRE_PRODUCAO_RURAL	Adquire produção rural. (0=Não/1=Sim)   (ADQUIRE_PRODUCAO_RURAL)	smallint	1	7		I		0
+4	FOPARMTO	177	LANCAMENTO_NOTAS_FISCAIS_AQUISICAO_PRODUCAO_RURAL	Módulo de lançamento das notas fiscais de adquisição de produção rural. (1=Folha/2=Escrita Fiscal)   (LANCAMENTO_NOTAS_FISCAIS_AQUISICAO_PRODUCAO_RURAL)	smallint	1	7		I		0
+4	FOPARMTO	178	DATA_INICIO_LANCAMENTO_NOTAS_FISCAIS_AQUISICAO_PRODUCAO_RURAL	Data de início do lançamento das notas fiscais de aquisição de produção rural.   (DATA_INICIO_LANCAMENTO_NOTAS_FISCAIS_AQUISICAO_PRODUCAO_RURAL)	date	1	10	DD/MM/YYYY	I		0
+4	FOPARMTO	179	COMERCIALIZA_PRODUCAO_RURAL	Comercializa produção rural. (0=Não/1=Sim)   (COMERCIALIZA_PRODUCAO_RURAL)	smallint	1	7		I		0
+4	FOPARMTO	180	LANCAMENTO_NOTAS_FISCAIS_COMERCIALIZACAO_PRODUCAO_RURAL	Módulo de lançamento das notas fiscais de comercialização de produção rural. (1=Folha/2=Escrita Fiscal)   (LANCAMENTO_NOTAS_FISCAIS_COMERCIALIZACAO_PRODUCAO_RURAL)	smallint	1	7		I		0
+4	FOPARMTO	181	DATA_INICIO_LANCTO_NOTAS_FISCAIS_COMERCIALIZACAO_PRODUCAO_RURAL	Data de início do lançamento das notas fiscais de comercialização de produção rural.   (DATA_INICIO_LANCTO_NOTAS_FISCAIS_COMERCIALIZACAO_PRODUCAO_RURAL)	date	1	10	DD/MM/YYYY	I		0
+4	FOPARMTO	182	CALCULAR_ARREDONDAMENTO_EMPREGADOS	Calcular arredondamento para empregados. (0=Não/1=Sim)   (CALCULAR_ARREDONDAMENTO_EMPREGADOS)	smallint	1	7		I		0
+4	FOPARMTO	183	CALCULAR_ARREDONDAMENTO_ESTAGIARIOS	Calcular arredondamento para estagiários. (0=Não/1=Sim)   (CALCULAR_ARREDONDAMENTO_ESTAGIARIOS)	smallint	1	7		I		0
+4	FOPARMTO	184	CALCULAR_ARREDONDAMENTO_CONTRIBUINTES	Calcular arredondamento para contribuintes. (0=Não/1=Sim)   (CALCULAR_ARREDONDAMENTO_CONTRIBUINTES)	smallint	1	7		I		0
+4	FOPARMTO	185	CALCULAR_FOLHA_ADIANTAMENTO_ESTAGIARIOS	Calcular folha de adiantamento para estagiários. (0=Não/1=Sim)   (CALCULAR_FOLHA_ADIANTAMENTO_ESTAGIARIOS)	smallint	1	7		I		0
+4	FOPARMTO	186	CONSIDERAR_DIAS_AVISO_INDENIZADO_FERIAS_DOBRO	Considerar os dias de aviso prévio indenizado para o cálculo das férias em dobro. (0=Não/1=Sim)   (CONSIDERAR_DIAS_AVISO_INDENIZADO_FERIAS_DOBRO)	smallint	1	7		I		0
+4	FOPARMTO	187	TOMADOR_SERVICOS	Tomador de serviços. (0=Não/1=Sim)   (TOMADOR_SERVICOS)	smallint	1	7		I		0
+4	FOPARMTO	188	LANCAMENTO_NOTAS_FISCAIS_TOMADOR_SERVICOS	Módulo de lançamento das notas fiscais de tomador de serviços. (1=Folha/2=Escrita Fiscal)   (LANCAMENTO_NOTAS_FISCAIS_TOMADOR_SERVICOS)	smallint	1	7		I		0
+4	FOPARMTO	189	DATA_INICIO_LANCAMENTO_NOTAS_FISCAIS_TOMADOR_SERVICOS	Data de início do lançamento das notas fiscais de tomador de serviços.   (DATA_INICIO_LANCAMENTO_NOTAS_FISCAIS_TOMADOR_SERVICOS)	date	1	10	DD/MM/YYYY	I		0
+4	FOPARMTO	190	PRESTADOR_SERVICOS	Prestador de serviços. (0=Não/1=Sim)   (PRESTADOR_SERVICOS)	smallint	1	7		I		0
+4	FOPARMTO	191	LANCAMENTO_NOTAS_FISCAIS_PRESTADOR_SERVICOS	Módulo de lançamento das notas fiscais de prestador de serviços. (1=Folha/2=Escrita Fiscal)   (LANCAMENTO_NOTAS_FISCAIS_PRESTADOR_SERVICOS)	smallint	1	7		I		0
+4	FOPARMTO	192	DATA_INICIO_LANCAMENTO_NOTAS_FISCAIS_PRESTADOR_SERVICOS	Data de início do lançamento das notas fiscais de prestador de serviços.   (DATA_INICIO_LANCAMENTO_NOTAS_FISCAIS_PRESTADOR_SERVICOS)	date	1	10	DD/MM/YYYY	I		0
+4	FOPARMTO	193	RECURSOS_CLUBE_FUTEBOL	Recursos de clube de futebol. (0=Não/1=Sim)   (RECURSOS_CLUBE_FUTEBOL)	smallint	1	7		I		0
+4	FOPARMTO	194	TIPO_RECURSO_CLUBE_FUTEBOL	Tipos de recurso de clube de futebol.   (TIPO_RECURSO_CLUBE_FUTEBOL)	smallint	1	7		I		0
+4	FOPARMTO	195	POSSUI_SCP	Possui Sociedade em Conta de Participação - SCP. (0=Não/1=Sim)   (POSSUI_SCP)	smallint	1	7		I		0
+4	FOPARMTO	196	CALCULAR_DSR_DIURNO	Calcular DSR diurno. (0=Não/1=Sim)   (CALCULAR_DSR_DIURNO)	smallint	1	7		I		0
+4	FOPARMTO	197	CALCULAR_DSR_NOTURNO	Calcular DSR noturno. (0=Não/1=Sim)   (CALCULAR_DSR_NOTURNO)	smallint	1	7		I		0
+4	FOPARMTO	198	PERMITIR_SALARIO_CONTRATUAL_ABAIXO_DO_PISO_SALARIAL	Permitir salário contratual abaixo do piso salarial. (0=Não/1=Sim)   (PERMITIR_SALARIO_CONTRATUAL_ABAIXO_DO_PISO_SALARIAL)	smallint	1	7		I		0
+4	FOPARMTO	199	CALC_13_SAL_PROPORC_RESCISAO_ANTEC_EMPREGADOR_FALTA_DISC_APREND	Calcular 13º salário proporcional para a rescisão com motivo antecipado pelo empregador por falta disciplinar grave do aprendiz.   (CALC_13_SAL_PROPORC_RESCISAO_ANTEC_EMPREGADOR_FALTA_DISC_APREND)	smallint	1	7		I		0
+4	FOPARMTO	200	CALCULAR_TERCO_FERIAS_LICENCA_REMUNERADA	Calcular 1/3 de férias na licença remunerada.   (CALCULAR_TERCO_FERIAS_LICENCA_REMUNERADA)	smallint	1	7		I		0
+4	FOPARMTO	201	CONS_COMISSAO_COMP_ANTERIOR_CALCULO_ADIANTAMENTO_COMISSIONADO	Considerar para empregado comissionado o valor pago de comissão na competência anterior ao cálculo da folha de adiantamento. (0=Não/1=Sim)   (CONS_COMISSAO_COMP_ANTERIOR_CALCULO_ADIANTAMENTO_COMISSIONADO)	smallint	1	7		I		0
+4	FOPARMTO	202	CALCULAR_MEDIA_ADICIONAL_MULTA_ATRASO_PAGAMENTO_ART_477	Calcular média e adicional na multa atraso pagamento Art. 477, §8º/CLT. (0=Não/1=Sim)   (CALCULAR_MEDIA_ADICIONAL_MULTA_ATRASO_PAGAMENTO_ART_477)	smallint	1	7		I		0
+4	FOPARMTO	203	FORMA_DATA_PAGAMENTO_FOLHA_MENSAL_CONTRIBUINTE	1-Último dia útil do mês de competência, 2-Quinto dia útil do mês seguinte e 3-Primeiro dia útil do mês seguinte   (FORMA_DATA_PAGAMENTO_FOLHA_MENSAL_CONTRIBUINTE)	smallint	1	7		I		0
+4	FOPARMTO	204	ANTECIPA_DATA_PAGTO_RESCISAO_CONTRATO_ANTECIPADO_EMPREGADOR	Antecipar data de pagamento da rescisão de contrato antecipado pelo empregado. (0=Não/1=Sim)   (ANTECIPA_DATA_PAGTO_RESCISAO_CONTRATO_ANTECIPADO_EMPREGADOR)	smallint	1	7		I		0
+4	FOPARMTO	205	CONSIDERAR_DIAS_AFASTADOS_DILATAR_CONTRATO_EXPERIENCIA	Considerar os dias afastados durante o contrato de experiência para dilatar o limite do término do contrato. (0=Não/1=Sim)   (CONSIDERAR_DIAS_AFASTADOS_DILATAR_CONTRATO_EXPERIENCIA)	smallint	1	7		I		0
+4	FOPARMTO	206	CONSIDERAR_AFASTAMENTO_02_DILATAR_CONTRATO_EXPERIENCIA	Considerar os dias afastados pelo afastamento 02 para dilatar o contrato de experiência. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_02_DILATAR_CONTRATO_EXPERIENCIA)	smallint	1	7		I		0
+4	FOPARMTO	207	CONSIDERAR_AFASTAMENTO_03_10_17_DILATAR_CONTRATO_EXPERIENCIA	**SEM USO**   (CONSIDERAR_AFASTAMENTO_03_10_17_DILATAR_CONTRATO_EXPERIENCIA)	smallint	1	7		I		0
+4	FOPARMTO	208	CONSIDERAR_AFASTAMENTO_18_DILATAR_CONTRATO_EXPERIENCIA	Considerar os dias afastados pelo afastamento 18 para dilatar o contrato de experiência. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_18_DILATAR_CONTRATO_EXPERIENCIA)	smallint	1	7		I		0
+4	FOPARMTO	209	CONSIDERAR_AFASTAMENTO_04_DILATAR_CONTRATO_EXPERIENCIA	Considerar os dias afastados pelo afastamento 04 para dilatar o contrato de experiência. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_04_DILATAR_CONTRATO_EXPERIENCIA)	smallint	1	7		I		0
+4	FOPARMTO	210	CONSIDERAR_AFASTAMENTO_19_DILATAR_CONTRATO_EXPERIENCIA	Considerar os dias afastados pelo afastamento 19 para dilatar o contrato de experiência. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_19_DILATAR_CONTRATO_EXPERIENCIA)	smallint	1	7		I		0
+4	FOPARMTO	211	CONSIDERAR_AFASTAMENTO_05_DILATAR_CONTRATO_EXPERIENCIA	Considerar os dias afastados pelo afastamento 05 para dilatar o contrato de experiência. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_05_DILATAR_CONTRATO_EXPERIENCIA)	smallint	1	7		I		0
+4	FOPARMTO	212	CONSIDERAR_AFASTAMENTO_20_21_22_DILATAR_CONTRATO_EXPERIENCIA	Considerar os dias afastados pelos afastamentos 20, 21 e 22 para dilatar o contrato de experiência. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_20_21_22_DILATAR_CONTRATO_EXPERIENCIA)	smallint	1	7		I		0
+4	FOPARMTO	213	CONSIDERAR_AFASTAMENTO_11_DILATAR_CONTRATO_EXPERIENCIA	Considerar os dias afastados pelo afastamento 11 para dilatar o contrato de experiência. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_11_DILATAR_CONTRATO_EXPERIENCIA)	smallint	1	7		I		0
+4	FOPARMTO	214	CONSIDERAR_AFASTAMENTO_26_DILATAR_CONTRATO_EXPERIENCIA	Considerar os dias afastados pelo afastamento 26 para dilatar o contrato de experiência. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_26_DILATAR_CONTRATO_EXPERIENCIA)	smallint	1	7		I		0
+4	FOPARMTO	215	CONSIDERAR_AFASTAMENTO_27_28_29_DILATAR_CONTRATO_EXPERIENCIA	Considerar os dias afastados pelos afastamentos 27, 28 e 29 para dilatar o contrato de experiência. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_27_28_29_DILATAR_CONTRATO_EXPERIENCIA)	smallint	1	7		I		0
+4	FOPARMTO	216	CONSIDERAR_AFASTAMENTO_32_DILATAR_CONTRATO_EXPERIENCIA	Considerar os dias afastados pelo afastamento 32 para dilatar o contrato de experiência. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_32_DILATAR_CONTRATO_EXPERIENCIA)	smallint	1	7		I		0
+4	FOPARMTO	217	CONSIDERAR_AFASTAMENTO_07_DILATAR_CONTRATO_EXPERIENCIA	Considerar os dias afastados pelo afastamento 07 para dilatar o contrato de experiência. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_07_DILATAR_CONTRATO_EXPERIENCIA)	smallint	1	7		I		0
+4	FOPARMTO	218	CONSIDERAR_AFASTAMENTO_13_DILATAR_CONTRATO_EXPERIENCIA	Considerar os dias afastados pelo afastamento 13 para dilatar o contrato de experiência. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_13_DILATAR_CONTRATO_EXPERIENCIA)	smallint	1	7		I		0
+4	FOPARMTO	219	CONSIDERAR_AFASTAMENTO_14_15_16_DILATAR_CONTRATO_EXPERIENCIA	Considerar os dias afastados pelos afastamentos 14, 15, 16 para dilatar o contrato de experiência. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_14_15_16_DILATAR_CONTRATO_EXPERIENCIA)	smallint	1	7		I		0
+4	FOPARMTO	220	CONSIDERAR_AFASTAMENTO_24_DILATAR_CONTRATO_EXPERIENCIA	Considerar os dias afastados pelo afastamento 24 para dilatar o contrato de experiência. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_24_DILATAR_CONTRATO_EXPERIENCIA)	smallint	1	7		I		0
+4	FOPARMTO	221	CONSIDERAR_AFASTAMENTO_35_DILATAR_CONTRATO_EXPERIENCIA	Considerar os dias afastados pelo afastamento 35 para dilatar o contrato de experiência. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_35_DILATAR_CONTRATO_EXPERIENCIA)	smallint	1	7		I		0
+4	FOPARMTO	222	CONSIDERAR_AFASTAMENTO_36_DILATAR_CONTRATO_EXPERIENCIA	Considerar os dias afastados pelo afastamento 36 para dilatar o contrato de experiência. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_36_DILATAR_CONTRATO_EXPERIENCIA)	smallint	1	7		I		0
+4	FOPARMTO	223	CONSIDERAR_AFASTAMENTO_30_DILATAR_CONTRATO_EXPERIENCIA	Considerar os dias afastados pelo afastamento 30 para dilatar o contrato de experiência. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_30_DILATAR_CONTRATO_EXPERIENCIA)	smallint	1	7		I		0
+4	FOPARMTO	224	CALCULAR_TERCO_FERIAS_SOBRE_VALOR_SALARIO_CONTRATUAL	Calcular 1/3 de férias sobre o valor do salário contratual. (0=Não/1=Sim)   (CALCULAR_TERCO_FERIAS_SOBRE_VALOR_SALARIO_CONTRATUAL)	smallint	1	7		I		0
+4	FOPARMTO	225	CALCULAR_PROPORCIONALIDADE_RESCISAO_CONFORME_DIAS_MES	Cálculo proporcionalidade na rescisão conforme dias mês. (0=Não/1=Sim)   (CALCULAR_PROPORCIONALIDADE_RESCISAO_CONFORME_DIAS_MES)	smallint	1	7		I		0
+4	FOPARMTO	226	DESCONTAR_FALTAS_AVOS_FERIAS_INDENIZADOS	Descontar faltas sobre os avos de férias indenizados. (0=Não/1=Sim)   (DESCONTAR_FALTAS_AVOS_FERIAS_INDENIZADOS)	smallint	1	7		I		0
+4	FOPARMTO	227	EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_39	Extende o limite de gozo de férias para o afastamento 39. (0=Não/1=Sim)   (EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_39)	smallint	1	7		I		0
+4	FOPARMTO	228	CONSIDERAR_HORAS_MES_EMPREGADO_PARA_CALCULO_HORAS_FALTAS	Considerar para cálculo de horas faltas o total de horas mês do empregado. (0=Não/1=Sim)   (CONSIDERAR_HORAS_MES_EMPREGADO_PARA_CALCULO_HORAS_FALTAS)	smallint	1	7		I		0
+4	FOPARMTO	229	CALC_INSS_EMPRESA_13_SALARIO_RESCISAO_PERC_REDUCAO_ULT_12_MESES	Calcular o INSS Empresa correspondente ao 13º salário pago na rescisão conforme o percentual de redução obtido pelo resultado das receitas dos últimos 12 meses. (0=Não/1=Sim)   (CALC_INSS_EMPRESA_13_SALARIO_RESCISAO_PERC_REDUCAO_ULT_12_MESES)	smallint	1	7		I		0
+4	FOPARMTO	230	CONSIDERAR_AFASTAMENTO_CALCULO_DIAS_DIREITO_13_SALARIO	Considerar os afastamentos para o cálculo dos dias de direito de 13º salário. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_CALCULO_DIAS_DIREITO_13_SALARIO)	smallint	1	7		I		0
+4	FOPARMTO	231	CONSIDERAR_AFASTAMENTO_03_CALCULO_DIAS_DIREITO_13_SALARIO	Considerar o afastamento 03 para o cálculo dos dias de direito de 13º salário. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_03_CALCULO_DIAS_DIREITO_13_SALARIO)	smallint	1	7		I		0
+4	FOPARMTO	232	CONSIDERAR_AFASTAMENTO_06_CALCULO_DIAS_DIREITO_13_SALARIO	Considerar o afastamento 06 para o cálculo dos dias de direito de 13º salário. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_06_CALCULO_DIAS_DIREITO_13_SALARIO)	smallint	1	7		I		0
+4	FOPARMTO	233	CONSIDERAR_AFASTAMENTO_07_CALCULO_DIAS_DIREITO_13_SALARIO	Considerar o afastamento 07 para o cálculo dos dias de direito de 13º salário. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_07_CALCULO_DIAS_DIREITO_13_SALARIO)	smallint	1	7		I		0
+4	FOPARMTO	234	CONSIDERAR_AFASTAMENTO_20_21_22_CALCULO_DIAS_DIREITO_13_SALARIO	Considerar os afastamentos 20, 21 e 22 para o cálculo dos dias de direito de 13º salário. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_20_21_22_CALCULO_DIAS_DIREITO_13_SALARIO)	smallint	1	7		I		0
+4	FOPARMTO	235	CONSIDERAR_AFASTAMENTO_13_CALCULO_DIAS_DIREITO_13_SALARIO	Considerar o afastamento 13 para o cálculo dos dias de direito de 13º salário. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_13_CALCULO_DIAS_DIREITO_13_SALARIO)	smallint	1	7		I		0
+4	FOPARMTO	236	CONSIDERAR_AFASTAMENTO_04_CALCULO_DIAS_DIREITO_13_SALARIO	Considerar o afastamento 04 para o cálculo dos dias de direito de 13º salário. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_04_CALCULO_DIAS_DIREITO_13_SALARIO)	smallint	1	7		I		0
+4	FOPARMTO	237	CONSIDERAR_AFASTAMENTO_14_15_16_CALCULO_DIAS_DIREITO_13_SALARIO	Considerar os afastamentos 14, 15 e 16 para o cálculo dos dias de direito de 13º salário. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_14_15_16_CALCULO_DIAS_DIREITO_13_SALARIO)	smallint	1	7		I		0
+4	FOPARMTO	238	CONSIDERAR_AFASTAMENTO_35_CALCULO_DIAS_DIREITO_13_SALARIO	Considerar o afastamento 35 para o cálculo dos dias de direito de 13º salário. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_35_CALCULO_DIAS_DIREITO_13_SALARIO)	smallint	1	7		I		0
+4	FOPARMTO	239	CONSIDERAR_AFASTAMENTO_24_CALCULO_DIAS_DIREITO_13_SALARIO	Considerar o afastamento 24 para o cálculo dos dias de direito de 13º salário. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_24_CALCULO_DIAS_DIREITO_13_SALARIO)	smallint	1	7		I		0
+4	FOPARMTO	240	CONSIDERAR_MES_AFASTADO_PERIODO_MEDIA_13_SALARIO	Considerar o mês do afastamento no cálculo de médias e adicionais de 13º salário, mesmo que não tenha direito ao avo do mês. (0=Não/1=Sim)   (CONSIDERAR_MES_AFASTADO_PERIODO_MEDIA_13_SALARIO)	smallint	1	7		I		0
+4	FOPARMTO	241	CONSIDERAR_MES_AFASTADO_AFASTAMENTO_07_PERIODO_MEDIA_13_SALARIO	Considerar o mês do afastamento 07 no cálculo de médias e adicionais de 13º salário, mesmo que não tenha direito ao avo do mês. (0=Não/1=Sim)   (CONSIDERAR_MES_AFASTADO_AFASTAMENTO_07_PERIODO_MEDIA_13_SALARIO)	smallint	1	7		I		0
+4	FOPARMTO	242	CONSIDERAR_MES_AFASTADO_AFASTAMENTO_13_PERIODO_MEDIA_13_SALARIO	Considerar o mês do afastamento 13 no cálculo de médias e adicionais de 13º salário, mesmo que não tenha direito ao avo do mês. (0=Não/1=Sim)   (CONSIDERAR_MES_AFASTADO_AFASTAMENTO_13_PERIODO_MEDIA_13_SALARIO)	smallint	1	7		I		0
+4	FOPARMTO	243	CONSIDERAR_MES_AFAST_AFASTAMENTOS_14_15_16_PER_MEDIA_13_SALARIO	Considerar o mês dos afastamentos 14, 15 e 16 no cálculo de médias e adicionais de 13º salário, mesmo que não tenha direito ao avo do mês. (0=Não/1=Sim)   (CONSIDERAR_MES_AFAST_AFASTAMENTOS_14_15_16_PER_MEDIA_13_SALARIO)	smallint	1	7		I		0
+4	FOPARMTO	244	CONSIDERAR_MES_AFASTADO_AFASTAMENTO_24_PERIODO_MEDIA_13_SALARIO	Considerar o mês do afastamento 24 no cálculo de médias e adicionais de 13º salário, mesmo que não tenha direito ao avo do mês. (0=Não/1=Sim)   (CONSIDERAR_MES_AFASTADO_AFASTAMENTO_24_PERIODO_MEDIA_13_SALARIO)	smallint	1	7		I		0
+4	FOPARMTO	245	CONSIDERAR_MES_AFASTADO_AFASTAMENTO_35_PERIODO_MEDIA_13_SALARIO	Considerar o mês do afastamento 35 no cálculo de médias e adicionais de 13º salário, mesmo que não tenha direito ao avo do mês. (0=Não/1=Sim)   (CONSIDERAR_MES_AFASTADO_AFASTAMENTO_35_PERIODO_MEDIA_13_SALARIO)	smallint	1	7		I		0
+4	FOPARMTO	246	CONSIDERAR_MES_AFASTADO_AFASTAMENTO_36_PERIODO_MEDIA_13_SALARIO	Considerar o mês do afastamento 36 no cálculo de médias e adicionais de 13º salário, mesmo que não tenha direito ao avo do mês. (0=Não/1=Sim)   (CONSIDERAR_MES_AFASTADO_AFASTAMENTO_36_PERIODO_MEDIA_13_SALARIO)	smallint	1	7		I		0
+4	FOPARMTO	247	EFETUAR_LANCAMENTO_RUBRICAS_POR_SERVICO	Efetuar lançamento de rubricas por serviço. (0=Não/1=Sim)   (EFETUAR_LANCAMENTO_RUBRICAS_POR_SERVICO)	smallint	1	7		I		0
+4	FOPARMTO	248	CALCULA_CARNE_LEAO	Calcula Carnê-Leão. (0=Não/1=Sim)   (CALCULA_CARNE_LEAO)	smallint	1	7		I		0
+4	FOPARMTO	249	CALCULAR_ADIANTAMENTO_13_SALARIO_FOLHA_MENSAL	Calcular adiantamento de 13º salário na folha mensal. (0=Não/1=Sim)   (CALCULAR_ADIANTAMENTO_13_SALARIO_FOLHA_MENSAL)	smallint	1	7		I		0
+4	FOPARMTO	250	UNIDADE_CALCULO_MENSALISTAS	Unidade do cálculo para mensalistas. (1=Horas/2=Dias)   (UNIDADE_CALCULO_MENSALISTAS)	smallint	1	7		I		0
+4	FOPARMTO	251	UNIDADE_CALCULO_SEMANALISTAS	Unidade do cálculo para semanalistas. (1=Horas/2=Dias)   (UNIDADE_CALCULO_SEMANALISTAS)	smallint	1	7		I		0
+4	FOPARMTO	252	UNIDADE_CALCULO_TAREFEIROS	Unidade do cálculo para tarefeiros. (1=Horas/2=Dias)   (UNIDADE_CALCULO_TAREFEIROS)	smallint	1	7		I		0
+4	FOPARMTO	253	UNIDADE_CALCULO_DIARISTAS	Unidade do cálculo para diaristas. (1=Horas/2=Dias)   (UNIDADE_CALCULO_DIARISTAS)	smallint	1	7		I		0
+4	FOPARMTO	254	UNIDADE_CALCULO_COMISSIONADOS	Unidade do cálculo para comissionados. (1=Horas/2=Dias)   (UNIDADE_CALCULO_COMISSIONADOS)	smallint	1	7		I		0
+4	FOPARMTO	255	PAGAR_LIC_REMUNERADA_DIAS_GOZO_EXCEDE_DIAS_DIREITO_PERDA_FALTAS	Pagar dias de gozo excedentes aos dias de direito como licença remunerada quando há perda de dias por faltas. (0=Não/1=Sim)   (PAGAR_LIC_REMUNERADA_DIAS_GOZO_EXCEDE_DIAS_DIREITO_PERDA_FALTAS)	smallint	1	7		I		0
+4	FOPARMTO	256	CALCULA_ARREDONDAMENTO_PARTICIPACAO_LUCROS	Calcula arredondamento. (0=Não/1=Sim)   (CALCULA_ARREDONDAMENTO_PARTICIPACAO_LUCROS)	smallint	1	7		I		0
+4	FOPARMTO	257	VALOR_ARREDONDAMENTO_PARTICIPACAO_LUCROS	Valor de arredondamento.   (VALOR_ARREDONDAMENTO_PARTICIPACAO_LUCROS)	numeric	1	5		I		2
+4	FOPARMTO	258	FORMA_DESCONTO_ARREDONDAMENTO_PARTICIPACAO_LUCROS	Forma de desconto. (0=Não descontar/1=Na folha mensal da competência de cálculo/2=Na próxima folha de participação de lucros calculada)   (FORMA_DESCONTO_ARREDONDAMENTO_PARTICIPACAO_LUCROS)	smallint	1	7		I		0
+4	FOPARMTO	259	CTA_DATA_LANC_PARTICIPACAO_LUCROS	Data do lançamento para folha de participação de lucros. (1=Final do mês/2=Data de pagamento)   (CTA_DATA_LANC_PARTICIPACAO_LUCROS)	smallint	1	7		I		0
+4	FOPARMTO	260	CALC_LIC_REMUN_APRENDIZ_MENOR_18_ANOS_FORA_PER_FERIAS_ESCOLARES	Calcular licença remunerada para empregado menor de 18 anos quando as férias coletivas não coincidirem com as férias escolares. (0=Não/1=Sim)   (CALC_LIC_REMUN_APRENDIZ_MENOR_18_ANOS_FORA_PER_FERIAS_ESCOLARES)	smallint	1	7		I		0
+4	FOPARMTO	261	CONSIDERAR_JANEIRO_PERIODO_FERIAS_ESCOLARES	Considerar janeiro como período de férias escolares. (0=Não/1=Sim)   (CONSIDERAR_JANEIRO_PERIODO_FERIAS_ESCOLARES)	smallint	1	7		I		0
+4	FOPARMTO	262	CONSIDERAR_FEVEREIRO_PERIODO_FERIAS_ESCOLARES	Considerar fevereiro como período de férias escolares. (0=Não/1=Sim)   (CONSIDERAR_FEVEREIRO_PERIODO_FERIAS_ESCOLARES)	smallint	1	7		I		0
+4	FOPARMTO	263	CONSIDERAR_MARCO_PERIODO_FERIAS_ESCOLARES	Considerar março como período de férias escolares. (0=Não/1=Sim)   (CONSIDERAR_MARCO_PERIODO_FERIAS_ESCOLARES)	smallint	1	7		I		0
+4	FOPARMTO	264	CONSIDERAR_ABRIL_PERIODO_FERIAS_ESCOLARES	Considerar abril como período de férias escolares. (0=Não/1=Sim)   (CONSIDERAR_ABRIL_PERIODO_FERIAS_ESCOLARES)	smallint	1	7		I		0
+4	FOPARMTO	265	CONSIDERAR_MAIO_PERIODO_FERIAS_ESCOLARES	Considerar maio como período de férias escolares. (0=Não/1=Sim)   (CONSIDERAR_MAIO_PERIODO_FERIAS_ESCOLARES)	smallint	1	7		I		0
+4	FOPARMTO	266	CONSIDERAR_JUNHO_PERIODO_FERIAS_ESCOLARES	Considerar junho como período de férias escolares. (0=Não/1=Sim)   (CONSIDERAR_JUNHO_PERIODO_FERIAS_ESCOLARES)	smallint	1	7		I		0
+4	FOPARMTO	267	CONSIDERAR_JULHO_PERIODO_FERIAS_ESCOLARES	Considerar julho como período de férias escolares. (0=Não/1=Sim)   (CONSIDERAR_JULHO_PERIODO_FERIAS_ESCOLARES)	smallint	1	7		I		0
+4	FOPARMTO	268	CONSIDERAR_AGOSTO_PERIODO_FERIAS_ESCOLARES	Considerar agosto como período de férias escolares. (0=Não/1=Sim)   (CONSIDERAR_AGOSTO_PERIODO_FERIAS_ESCOLARES)	smallint	1	7		I		0
+4	FOPARMTO	269	CONSIDERAR_SETEMBRO_PERIODO_FERIAS_ESCOLARES	Considerar setembro como período de férias escolares. (0=Não/1=Sim)   (CONSIDERAR_SETEMBRO_PERIODO_FERIAS_ESCOLARES)	smallint	1	7		I		0
+4	FOPARMTO	270	CONSIDERAR_OUTUBRO_PERIODO_FERIAS_ESCOLARES	Considerar outubro como período de férias escolares. (0=Não/1=Sim)   (CONSIDERAR_OUTUBRO_PERIODO_FERIAS_ESCOLARES)	smallint	1	7		I		0
+4	FOPARMTO	271	CONSIDERAR_NOVEMBRO_PERIODO_FERIAS_ESCOLARES	Considerar novembro como período de férias escolares. (0=Não/1=Sim)   (CONSIDERAR_NOVEMBRO_PERIODO_FERIAS_ESCOLARES)	smallint	1	7		I		0
+4	FOPARMTO	272	CONSIDERAR_DEZEMBRO_PERIODO_FERIAS_ESCOLARES	Considerar dezembro como período de férias escolares. (0=Não/1=Sim)   (CONSIDERAR_DEZEMBRO_PERIODO_FERIAS_ESCOLARES)	smallint	1	7		I		0
+4	FOPARMTO	273	SOMAR_ENCARGOS_FOLHA_COMPLEMENTAR_NA_FOLHA_MENSAL	Somar encargos da folha complementar na folha mensal quando forem inferiores ao mínimo de recolhimento. (0=Não/1=Sim)   (SOMAR_ENCARGOS_FOLHA_COMPLEMENTAR_NA_FOLHA_MENSAL)	smallint	1	7		I		0
+4	FOPARMTO	274	CALCULAR_DIARIAS	Calcular diárias. (0=Não/1=Sim)   (CALCULAR_DIARIAS)	smallint	1	7		I		0
+4	FOPARMTO	275	TIPO_CONSIDERACAO_REMUNERACAO_DIARIAS	Considerar como remuneração para diárias. (1=Salário contratual/2=Salário e adicionais)   (TIPO_CONSIDERACAO_REMUNERACAO_DIARIAS)	smallint	1	7		I		0
+4	FOPARMTO	276	CONSIDERAR_MEDIA_PRIMEIRO_AFAST_PARA_MESMA_DOENCA_ACIDENTE	Considerar para um novo afastamento mesma doença/acidente, as médias utilizadas para o primeiro afastamento. (0=Não/1=Sim)   (CONSIDERAR_MEDIA_PRIMEIRO_AFAST_PARA_MESMA_DOENCA_ACIDENTE)	smallint	1	7		I		0
+4	FOPARMTO	277	EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_41	Extende limite de gozo de férias para o afastamento 41.   (EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_41)	smallint	1	7		I		0
+4	FOPARMTO	278	CONSIDERAR_GARANTIA_MINIMA_ADIANTAMENTO_COMISSIONADO	Considerar para empregado comissionado o valor da garantia mínima do cálculo do adiantamento. (0=Não/1=Sim)   (CONSIDERAR_GARANTIA_MINIMA_ADIANTAMENTO_COMISSIONADO)	smallint	1	7		I		0
+4	FOPARMTO	279	CALCULAR_MEDIA_13_COMISSAO_TROCA_CATEG_COMISSIONADO_MENSALISTA	Não calcular médias de 13º salário sobre comissões do período que o empregado era comissionado quando alterada a categoria para mensalista. (0=Não/1=Sim)   (CALCULAR_MEDIA_13_COMISSAO_TROCA_CATEG_COMISSIONADO_MENSALISTA)	smallint	1	7		I		0
+4	FOPARMTO	280	CALC_MEDIA_FERIAS_COMISSAO_TROCA_CATEG_COMISSIONADO_MENSALISTA	Não calcular médias de férias sobre comissões do período que o empregado era comissionado quando alterada a categoria para mensalista. (0=Não/1=Sim)   (CALC_MEDIA_FERIAS_COMISSAO_TROCA_CATEG_COMISSIONADO_MENSALISTA)	smallint	1	7		I		0
+4	FOPARMTO	281	GERAR_LICENCA_REMUNERADA_CALCULO_FERIAS	Gerar o valor da licença remunerada no cálculo das férias. (0=Não/1=Sim)   (GERAR_LICENCA_REMUNERADA_CALCULO_FERIAS)	smallint	1	7		I		0
+4	FOPARMTO	282	CALCULAR_PIS_COMPETENCIA_PAGAMENTO_FERIAS	** SEM USO **   (CALCULAR_PIS_COMPETENCIA_PAGAMENTO_FERIAS)	smallint	1	7		I		0
+4	FOPARMTO	283	TIPO_RATEIO	Tipo de rateio. (1=Conforme o total de dias em cada serviço/2=Conforme período em cada serviço)   (TIPO_RATEIO)	smallint	1	7		I		0
+4	FOPARMTO	284	CALCULAR_SALARIO_FAMILIA_DURANTE_AFAST_AUSENCIA_JUSTIFICADA	Calcular salário família durante o afastamento por ausência justificada. (0=Não/1=Sim)   (CALCULAR_SALARIO_FAMILIA_DURANTE_AFAST_AUSENCIA_JUSTIFICADA)	smallint	1	7		I		0
+4	FOPARMTO	285	EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_34	Extende o limite de gozo de férias para o afastamento 34. (0=Não/1=Sim)   (EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_34)	smallint	1	7		I		0
+4	FOPARMTO	286	CALCULAR_DIFERENCA_RUBRICAS_SALARIO_PERIODO_AFASTAMENTO_DOENCA	Calcular a diferença de rubricas com base de cálculo salário quando houver alteração salarial retroativa a período em que o empregado esteve afastado por doença. (0=Não/1=Sim)   (CALCULAR_DIFERENCA_RUBRICAS_SALARIO_PERIODO_AFASTAMENTO_DOENCA)	smallint	1	7		I		0
+4	FOPARMTO	287	CALCULAR_INSS_EMPRESA_13_RESCISAO_SEM_PROPORCIONALIDADE	**SEM USO**   (CALCULAR_INSS_EMPRESA_13_RESCISAO_SEM_PROPORCIONALIDADE)	smallint	1	7		I		0
+4	FOPARMTO	288	CALCULAR_FERIAS_SALARIO_MEDIO_QUANDO_HOUVER_REDUCAO_SALARIAL	Calcular as férias com valor do salário médio do período aquisitivo quando houver redução de salário. (0=Não/1=Sim)   (CALCULAR_FERIAS_SALARIO_MEDIO_QUANDO_HOUVER_REDUCAO_SALARIAL)	smallint	1	7		I		0
+4	FOPARMTO	289	DESCONTAR_VAL_13_ADIANTAMENTO_QUANDO_EXISTIR_ALTERACAO_SALARIAL	Descontar do cÃ¡lculo de 13Âº adiantamento o valor de 13Âº jÃ¡ adiantado em competÃªncias anteriores se possuir alteraÃ§Ã£o salarial. (0=NÃ£o/1=Sim)   (DESCONTAR_VAL_13_ADIANTAMENTO_QUANDO_EXISTIR_ALTERACAO_SALARIAL)	smallint	1	7		I		0
+4	FOPARMTO	290	CALCULAR_DIFERENCA_SALARIO_FAMILIA	Calcular diferenÃ§a de salÃ¡rio famÃ­lia. (0=NÃ£o/1=Sim)   (CALCULAR_DIFERENCA_SALARIO_FAMILIA)	smallint	1	7		I		0
+4	FOPARMTO	291	PERMITE_IMPORTAR_NOTA_FISCAL_CPF_AQUISICAO_PRODUCAO_RURAL_PJ	Permite importar notas fiscais com CPF na AquisiÃ§Ã£o de ProduÃ§Ã£o Rural PJ. (0=NÃ£o/1=Sim)   (PERMITE_IMPORTAR_NOTA_FISCAL_CPF_AQUISICAO_PRODUCAO_RURAL_PJ)	smallint	1	7		I		0
+4	FOPARMTO	292	PERMITE_IMP_NOTA_FISCAL_CPF_COMERCIALIZACAO_PRODUCAO_RURAL_PJ	Permite importar notas fiscais com CPF na ComercializaÃ§Ã£o de ProduÃ§Ã£o Rural PJ. (0=NÃ£o/1=Sim)   (PERMITE_IMP_NOTA_FISCAL_CPF_COMERCIALIZACAO_PRODUCAO_RURAL_PJ)	smallint	1	7		I		0
+4	FOPARMTO	293	PERMITIR_CALCULAR_VARIOS_ADIANTAMENTOS_COMPETENCIA	Permitir calcular vÃ¡rias folhas de adiantamento na mesma competÃªncia. (0=NÃ£o/1=Sim)   (PERMITIR_CALCULAR_VARIOS_ADIANTAMENTOS_COMPETENCIA)	smallint	1	7		I		0
+4	FOPARMTO	294	LIMITAR_PERCENTUAL_ADIANTAMENTO_MENSAL_COMPETENCIA	Limitar o percentual de adiantamento pago na competÃªncia. (0=NÃ£o/1=Sim)   (LIMITAR_PERCENTUAL_ADIANTAMENTO_MENSAL_COMPETENCIA)	smallint	1	7		I		0
+4	FOPARMTO	295	LIMITE_PERCENTUAL_ADIANTAMENTO_MENSAL	Limite de percentual pago nas folhas de adiantamento na competÃªncia.   (LIMITE_PERCENTUAL_ADIANTAMENTO_MENSAL)	numeric	1	8		I		2
+4	FOPARMTO	296	CONSIDERAR_DIAS_FERIAS_CALCULAR_CONTRIBUICAO_SINDICAL	Calcular a contribuiÃ§Ã£o sindical nas fÃ©rias, de acordo com a quantidade de dias de fÃ©rias na competÃªncia de desconto. (0=NÃ£o/1=Sim)   (CONSIDERAR_DIAS_FERIAS_CALCULAR_CONTRIBUICAO_SINDICAL)	smallint	1	7		I		0
+4	FOPARMTO	297	QUANTIDADE_MINIMA_DIAS_FERIAS_CALCULAR_CONTRIBUICAO_SINDICAL	Quantidade mÃ­nima de dias de fÃ©rias na competÃªncia para calcular o desconto da contribuiÃ§Ã£o sindical.   (QUANTIDADE_MINIMA_DIAS_FERIAS_CALCULAR_CONTRIBUICAO_SINDICAL)	smallint	1	7		I		0
+4	FOPARMTO	298	DESCONTAR_DSR_FERIADO	Descontar o DSR quando recair em feriado. (1=NÃ£o/0=Sim)   (DESCONTAR_DSR_FERIADO)	smallint	1	7		I		0
+4	FOPARMTO	299	OPTANTE_REGISTRO_ELETRONICO_EMPREGADOS	Optante pelo registro eletrÃ´nico de empregados. (0=NÃ£o/1=Sim)   (OPTANTE_REGISTRO_ELETRONICO_EMPREGADOS)	smallint	1	7		I		0
+4	FOPARMTO	300	POSSUI_ACORDO_INTERNACIONAL_ISENCAO_MULTA	Possui acordo internacional para isenÃ§Ã£o de multa. (0=NÃ£o/1=Sim)   (POSSUI_ACORDO_INTERNACIONAL_ISENCAO_MULTA)	smallint	1	7		I		0
+4	FOPARMTO	301	CONSIDERAR_AVISO_PREVIO_INDENIZADO_CALCULO_SALARIO_FAMILIA	Considerar o valor de aviso prÃ©vio indenizado para o cÃ¡lculo do salÃ¡rio famÃ­lia. (0=NÃ£o/1=Sim)   (CONSIDERAR_AVISO_PREVIO_INDENIZADO_CALCULO_SALARIO_FAMILIA)	smallint	1	7		I		0
+4	FOPARMTO	302	PAGAR_PRIMEIROS_90_DIAS_AFASTAMENTO_SERVICO_MILITAR	Pagar os primeiros 90 dias de afastamento por serviço militar. (0=Não/1=Sim)   (PAGAR_PRIMEIROS_90_DIAS_AFASTAMENTO_SERVICO_MILITAR)	smallint	1	7		I		0
+4	FOPARMTO	303	GERAR_DATA_TRANSFERENCIA_SAIDA_CAGED	Gerar a data da rescisão pelos motivos 6 e 27 como data de transferência de saída para o CAGED. (0=Não/1=Sim)   (GERAR_DATA_TRANSFERENCIA_SAIDA_CAGED)	smallint	1	7		I		0
+4	FOPARMTO	304	DESCONTAR_FALTA_DSR_CONFORME_FOLGA_JORNADA	Descontar as faltas de DSR conforme o dia de folga da jornada do empregado. (0=Não/1=Sim)   (DESCONTAR_FALTA_DSR_CONFORME_FOLGA_JORNADA)	smallint	1	7		I		0
+4	FOPARMTO	305	CALCULAR_IRRF_RPA_MICROEMPREENDEDOR_INDIVIDUAL	Calcular IRRF no RPA para microempreendedor individual. (0=Não/1=Sim)   (CALCULAR_IRRF_RPA_MICROEMPREENDEDOR_INDIVIDUAL)	smallint	1	7		I		0
+4	FOPARMTO	306	CALCULAR_PERIODO_COMPLETO_FERIAS_DOBRO_APOS_LIMITE_GOZO	Calcular o período completo de férias em dobro quando ultrapassar a data do limite para gozo. (0=Não/1=Sim)   (CALCULAR_PERIODO_COMPLETO_FERIAS_DOBRO_APOS_LIMITE_GOZO)	smallint	1	7		I		0
+4	FOPARMTO	307	EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_50	Extende limite de gozo de férias para o afastamento 50. (0=Não/1=Sim)   (EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_50)	smallint	1	7		I		0
+4	FOPARMTO	308	CONSIDERAR_AFASTAMENTO_DOENCA_PROFISSIONAL_EM_MESES	Considerar afastamento por doença profissional em meses. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_DOENCA_PROFISSIONAL_EM_MESES)	smallint	1	7		I		0
+4	FOPARMTO	309	CONSIDERAR_AFASTAMENTOS_50_CALCULO_DIAS_DIREITO_13_SALARIO	Considerar afastamento por doença profissional em meses. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTOS_50_CALCULO_DIAS_DIREITO_13_SALARIO)	smallint	1	7		I		0
+4	FOPARMTO	310	CALC_CONTRIBUICAO_SIND_REMUNERACAO_MES_ANTERIOR_COMISSIONADO	Calcular contribuição sindical com base na remuneração do mês anterior para comissionado. (0=Não/1=Sim)   (CALC_CONTRIBUICAO_SIND_REMUNERACAO_MES_ANTERIOR_COMISSIONADO)	smallint	1	7		I		0
+4	FOPARMTO	311	PERMITE_LANCAR_AFAST_DOENCA_ACIDENTE_TRAB_15_DIAS_QUALQ_DATA	Permitir utilizar os motivos de afastamento 3, 6, 17 e 18 em qualquer data. (0=Não/1=Sim)   (PERMITE_LANCAR_AFAST_DOENCA_ACIDENTE_TRAB_15_DIAS_QUALQ_DATA)	smallint	1	7		I		0
+4	FOPARMTO	312	DEMONSTRAR_MENSAGEM_AVISO_FERIAS_MENORES_18_MAIORES_50_ANOS	Demonstrar mensagem de aviso ao calcular férias com abono pecuniário para menores de 18 e maiores de 50 anos. (0=Não/1=Sim)   (DEMONSTRAR_MENSAGEM_AVISO_FERIAS_MENORES_18_MAIORES_50_ANOS)	smallint	1	7		I		0
+4	FOPARMTO	313	EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_18_45	Extende limite de gozo de férias para os afastamentos 18 e 45. (0=Não/1=Sim)   (EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_18_45)	smallint	1	7		I		0
+4	FOPARMTO	314	PERMITIR_INFORMAR_DATA_LANCAMENTO_FALTA_PARCIAL	Permitir informar datas nos lançamentos de faltas parciais. (0=Não/1=Sim)   (PERMITIR_INFORMAR_DATA_LANCAMENTO_FALTA_PARCIAL)	smallint	1	7		I		0
+4	FOPARMTO	315	CALCULAR_RATEIO_ENCARGOS_PROPORCIONAL_VALOR_SERVICO	Realizar o rateio dos encargos proporcionalmente ao valor de cada serviço. (0=Não/1=Sim)   (CALCULAR_RATEIO_ENCARGOS_PROPORCIONAL_VALOR_SERVICO)	smallint	1	7		I		0
+4	FOPARMTO	316	CALC_INSS_EMPRESA_13_SALARIO_RESCISAO_CONFORME_ULTIMO_SERVICO	**SEM USO**   (CALC_INSS_EMPRESA_13_SALARIO_RESCISAO_CONFORME_ULTIMO_SERVICO)	smallint	1	7		I		0
+4	FOPARMTO	317	DESCONTAR_FALTAS_NOTURNAS_FERIAS	Descontar faltas noturnas. (0=Não/1=Sim)   (DESCONTAR_FALTAS_NOTURNAS_FERIAS)	smallint	1	7		I		0
+4	FOPARMTO	318	CONSIDERAR_VALOR_DSR_APRENDIZ_DIMINUIR_HORAS_TRABALHADAS	Considerar o valor de DSR aprendiz para diminuir das horas trabalhadas. (0=Não/1=Sim)   (CONSIDERAR_VALOR_DSR_APRENDIZ_DIMINUIR_HORAS_TRABALHADAS)	smallint	1	7		I		0
+4	FOPARMTO	319	GERAR_VALORES_AVISO_PREVIO_INDENIZADO_SEFIP	Gerar os valores de aviso prévio indenizado na SEFIP da competência da rescisão. (0=Não/1=Sim)   (GERAR_VALORES_AVISO_PREVIO_INDENIZADO_SEFIP)	smallint	1	7		I		0
+4	FOPARMTO	320	CONSIDERAR_MES_AFASTAMENTO_DIVISOR_CALCULO_MEDIAS	Considerar o mês do afastamento como divisor no cálculo de médias mesmo que não tenha direito ao avo no mês. (0=Não/1=Sim)   (CONSIDERAR_MES_AFASTAMENTO_DIVISOR_CALCULO_MEDIAS)	smallint	1	7		I		0
+4	FOPARMTO	321	CONSIDERAR_MES_AFAST_DIVISOR_CALCULO_MEDIAS_LISTA_AFASTAMENTOS	Lista de afastamentos para considerar como divisor no cálculo de médias mesmo quando não há direito ao avo.   (CONSIDERAR_MES_AFAST_DIVISOR_CALCULO_MEDIAS_LISTA_AFASTAMENTOS)	integer	1	7		I		0
+4	FOPARMTO	322	CALC_MULTA_PEDIDO_DEMISSAO_PER_ESTABILIDADE_ACIDENTE_TRABALHO	Calcular multa estabilidade para colaboradores que pediram demissão em período de estabilidade por acidente de trabalho. (0=Não/1=Sim)   (CALC_MULTA_PEDIDO_DEMISSAO_PER_ESTABILIDADE_ACIDENTE_TRABALHO)	smallint	1	7		I		0
+4	FOPARMTO	323	INTEGRAR_IRRF_FERIAS_DATA_PAGAMENTO_FERIAS	Integrar IRRF Férias na data do pagamento das férias. (0=Não/1=Sim)   (INTEGRAR_IRRF_FERIAS_DATA_PAGAMENTO_FERIAS)	smallint	1	7		I		0
+4	FOPARMTO	324	GERAR_LANCAMENTO_CONTABIL_AJUSTE_SEFIP_PAGAMENTO_ENCARGOS	Gerar o valor do ajuste SEFIP no momento do pagamento dos encargos de INSS, FGTS e GRRF. (0=Não/1=Sim)   (GERAR_LANCAMENTO_CONTABIL_AJUSTE_SEFIP_PAGAMENTO_ENCARGOS)	smallint	1	7		I		0
+4	FOPARMTO	325	CALCULAR_PROPORCIONALIDADE_30_DIAS_RESCISAO	Calcular proporcionalidade na rescisão sempre 30 dias. (0=Não/1=Sim)   (CALCULAR_PROPORCIONALIDADE_30_DIAS_RESCISAO)	smallint	1	7		I		0
+4	FOPARMTO	326	LIMITAR_DILATACAO_LIMITE_GOZO_FERIAS_12_MESES_POST_RET_AFAST	Limitar a dilatação do limite de gozo para 12 meses posteriores ao retorno do afastamento. (0=Não/1=Sim)   (LIMITAR_DILATACAO_LIMITE_GOZO_FERIAS_12_MESES_POST_RET_AFAST)	smallint	1	7		I		0
+4	FOPARMTO	327	CALCULAR_FERIAS_PERIODO_GOZO_INFERIOR_10_DIAS	Calcular férias com dias de gozo inferior a 10 dias. (0=Não/1=Sim)   (CALCULAR_FERIAS_PERIODO_GOZO_INFERIOR_10_DIAS)	smallint	1	7		I		0
+4	FOPARMTO	328	CALC_ENCARGOS_INSS_INTEG_MESES_INICIO_RET_LIC_MAT_CONTRIBUINTES	Calcular os encargos de INSS integralmente nos meses de início e retorno da licença maternidade. (0=Não/1=Sim)   (CALC_ENCARGOS_INSS_INTEG_MESES_INICIO_RET_LIC_MAT_CONTRIBUINTES)	smallint	1	7		I		0
+4	FOPARMTO	329	UTILIZAR_QUANTIDADE_DIAS_UTEIS_DIVISOR_HORAS_MES_DSR_HORISTA	Utilizar para o cálculo de DSR horista a quantidade de dias úteis do mês como divisor do total de horas mês. (0=Não/1=Sim)   (UTILIZAR_QUANTIDADE_DIAS_UTEIS_DIVISOR_HORAS_MES_DSR_HORISTA)	smallint	1	7		I		0
+4	FOPARMTO	330	CALC_PERC_INSS_EMP_13_SAL_PROPORC_AVO_DES_SERV_NAO_ENQUADRA_DES	**SEM USO**   (CALC_PERC_INSS_EMP_13_SAL_PROPORC_AVO_DES_SERV_NAO_ENQUADRA_DES)	smallint	1	7		I		0
+4	FOPARMTO	331	DESCONTAR_FALTAS_SUSPENSAO	Descontar faltas por suspensão. (0=Não/1=Sim)   (DESCONTAR_FALTAS_SUSPENSAO)	smallint	1	7		I		0
+4	FOPARMTO	332	CONSIDERAR_BASE_MULTIPLOS_VINCULOS_CALCULO_INSS_FERIAS	Calcular o INSS das férias utilizando os valores de Outras Bases de INSS. (0=Não/1=Sim)   (CONSIDERAR_BASE_MULTIPLOS_VINCULOS_CALCULO_INSS_FERIAS)	smallint	1	7		I		0
+4	FOPARMTO	333	INF_DATA_SOLIC_ABONO_PECUN_AVISO_FER_15_DIA_ANTE_VENC_PER_AQUIS	Informar data da solicitação do abono pecuniário 15 dias antes do fim do período aquisitivo. (0=Não/1=Sim)   (INF_DATA_SOLIC_ABONO_PECUN_AVISO_FER_15_DIA_ANTE_VENC_PER_AQUIS)	smallint	1	7		I		0
+4	FOPARMTO	334	CONSIDERA_SOMENTE_QUANT_DIAS_TRAB_CONTAGEM_AVO_13_SAL_RET_AFAST	Considerar para o avo de 13º salário na competência de retorno do afastamento somente a quantidade de dias trabalhados no mês. (0=Não/1=Sim)   (CONSIDERA_SOMENTE_QUANT_DIAS_TRAB_CONTAGEM_AVO_13_SAL_RET_AFAST)	smallint	1	7		I		0
+4	FOPARMTO	335	CALCULAR_ENCARGOS_MULTA_ESTABILIDADE	Calcular encargos sobre multa estabilidade. (0=Não/1=Sim)   (CALCULAR_ENCARGOS_MULTA_ESTABILIDADE)	smallint	1	7		I		0
+4	FOPARMTO	336	CONSIDERAR_PERIODO_SINDICATO_PAGAMENTO_ALTERACAO_RETROATIVA_CCT	Considerar o período vinculado a cada sindicato para o cálculo de alteração salarial conforme Convenção Coletiva de Trabalho. (0=Não/1=Sim)   (CONSIDERAR_PERIODO_SINDICATO_PAGAMENTO_ALTERACAO_RETROATIVA_CCT)	smallint	1	7		I		0
+4	FOPARMTO	337	CALCULAR_ENCARGOS_HORAS_REPOUSO_INDENIZADO_RESCISAO	Calcular encargos sobre as horas de repouso indenizado na rescisão. (0=Não/1=Sim)   (CALCULAR_ENCARGOS_HORAS_REPOUSO_INDENIZADO_RESCISAO)	smallint	1	7		I		0
+4	FOPARMTO	338	CONSIDERAR_5_MESES_ESTABILIDADE_LICENCA_MATERNIDADE	Considerar 5 meses de estabilidade para empregados afastados por licença remunerada. (0=Não/1=Sim)   (CONSIDERAR_5_MESES_ESTABILIDADE_LICENCA_MATERNIDADE)	smallint	1	7		I		0
+4	FOPARMTO	339	CONSIDERAR_DIAS_MES_CONTAGEM_AVOS_FERIAS	Considerar os dias para contagem dos avos de férias conforme os dias do mês. (0=Não/1=Sim)   (CONSIDERAR_DIAS_MES_CONTAGEM_AVOS_FERIAS)	smallint	1	7		I		0
+4	FOPARMTO	340	CALCULO_PROPORCIONAL_FERIAS_SEMPRE_30_DIAS	Cálculo proporcionalidade nas férias sempre 30 dias. (0=Não/1=Sim)   (CALCULO_PROPORCIONAL_FERIAS_SEMPRE_30_DIAS)	smallint	1	7		I		0
+4	FOPARMTO	341	CALCULAR_INSS_EMP_13_SAL_PROPORC_MESES_DES_EMP_NAO_ENQUADRA_DES	Calcular INSS Empresa sobre 13º salário proporcionalmente aos meses com desoneracação e sem desoneração quando a empresa não for mais enquadrado na desonaração. (0=Não/1=Sim)   (CALCULAR_INSS_EMP_13_SAL_PROPORC_MESES_DES_EMP_NAO_ENQUADRA_DES)	smallint	1	7		I		0
+4	FOPARMTO	342	CONSIDERAR_DIAS_MES_CALCULO_COMPETENCIA_INICIO_ESTAGIO	Considerar os dias do mês para cálculo da competência de início do estágio. (0=Não/1=Sim)   (CONSIDERAR_DIAS_MES_CALCULO_COMPETENCIA_INICIO_ESTAGIO)	smallint	1	7		I		0
+4	FOPARMTO	343	CALCULAR_SAL_FAMILIA_EPR_DOMESTICO_DURANTE_PERIODO_LICENCA_MAT	Calcular salário família para empregados domésticos durante o período de licença maternidade. (0=Não/1=Sim)   (CALCULAR_SAL_FAMILIA_EPR_DOMESTICO_DURANTE_PERIODO_LICENCA_MAT)	smallint	1	7		I		0
+4	FOPARMTO	344	CALCULAR_ADIANTAMENTO_COMPETENCIA_FERIAS	Calcular adiantamento na competência de férias. (0=Não/1=Sim)   (CALCULAR_ADIANTAMENTO_COMPETENCIA_FERIAS)	smallint	1	7		I		0
+4	FOPARMTO	345	CALCULAR_ADIANTAMENTO_PROPORC_DIAS_TRABALHADOS_COMP_FERIAS	Calcular adiantamento proporcional aos dias trabalhados na competência de férias. (0=Não/1=Sim)   (CALCULAR_ADIANTAMENTO_PROPORC_DIAS_TRABALHADOS_COMP_FERIAS)	smallint	1	7		I		0
+4	FOPARMTO	346	CALC_ADIANTAMENTO_PROPORC_COMP_FERIAS_SOMENTE_TRAB_DATA_PAGTO	Calcular adiantamento proporcional na competência de férias somente se estiver trabalhando na data do pagamento. (0=Não/1=Sim)   (CALC_ADIANTAMENTO_PROPORC_COMP_FERIAS_SOMENTE_TRAB_DATA_PAGTO)	smallint	1	7		I		0
+4	FOPARMTO	347	CALC_ADIANTAMENTO_PROPORC_COMP_FERIAS_MINIMO_DIAS_TRABALHADOS	Calcular adiantamento proporcional na competência de férias dependendo da quantidade de dias trabalhados. (0=Não/1=Sim)   (CALC_ADIANTAMENTO_PROPORC_COMP_FERIAS_MINIMO_DIAS_TRABALHADOS)	smallint	1	7		I		0
+4	FOPARMTO	348	CALC_ADIANTAMENTO_PROPO_COMP_FERIAS_MINIMO_DIAS_TRABALHADOS_QTD	Quantidade mínima de dias trabalhados na competência de férias para pagamento do adiantamento.   (CALC_ADIANTAMENTO_PROPO_COMP_FERIAS_MINIMO_DIAS_TRABALHADOS_QTD)	smallint	1	7		I		0
+4	FOPARMTO	349	CALCULAR_ADIANTAMENTO_COMPETENCIA_LICENCA_MATERNIDADE	Calcular adiantamento na competência de licença maternidade. (0=Não/1=Sim)   (CALCULAR_ADIANTAMENTO_COMPETENCIA_LICENCA_MATERNIDADE)	smallint	1	7		I		0
+4	FOPARMTO	350	CALC_ADIANTAMENTO_PROPORC_DIAS_TRABALHADOS_COMP_LICENCA_MAT	Calcular adiantamento proporcional aos dias trabalhados na competência de licença maternidade. (0=Não/1=Sim)   (CALC_ADIANTAMENTO_PROPORC_DIAS_TRABALHADOS_COMP_LICENCA_MAT)	smallint	1	7		I		0
+4	FOPARMTO	351	CALC_ADIANTAMENTO_PROPORC_COMP_LIC_MAT_SOMENTE_TRAB_DATA_PAGTO	Calcular adiantamento proporcional na competência de licença maternidade somente se estiver trabalhando na data do pagamento. (0=Não/1=Sim)   (CALC_ADIANTAMENTO_PROPORC_COMP_LIC_MAT_SOMENTE_TRAB_DATA_PAGTO)	smallint	1	7		I		0
+4	FOPARMTO	352	CALC_ADIANTAMENTO_PROPORC_COMP_LIC_MAT_MINIMO_DIAS_TRABALHADOS	Calcular adiantamento proporcional na competência de licença maternidade dependendo da quantidade de dias trabalhados. (0=Não/1=Sim)   (CALC_ADIANTAMENTO_PROPORC_COMP_LIC_MAT_MINIMO_DIAS_TRABALHADOS)	smallint	1	7		I		0
+4	FOPARMTO	353	CALC_ADIANTAMENTO_PROPORC_COMP_LIC_MAT_MIN_DIAS_TRABALHADOS_QTD	Quantidade mínima de dias trabalhados na competência de licença maternidade para pagamento do adiantamento.   (CALC_ADIANTAMENTO_PROPORC_COMP_LIC_MAT_MIN_DIAS_TRABALHADOS_QTD)	smallint	1	7		I		0
+4	FOPARMTO	354	CALCULAR_ADIANTAMENTO_COMPETENCIA_OUTROS_AFASTAMENTOS	Calcular adiantamento na competência de outros afastamentos. (0=Não/1=Sim)   (CALCULAR_ADIANTAMENTO_COMPETENCIA_OUTROS_AFASTAMENTOS)	smallint	1	7		I		0
+4	FOPARMTO	355	CALC_ADIANTAMENTO_PROPORC_DIAS_TRABALHADOS_COMP_OUTROS_AFAST	Calcular adiantamento proporcional aos dias trabalhados na competência de outros afastamentos. (0=Não/1=Sim)   (CALC_ADIANTAMENTO_PROPORC_DIAS_TRABALHADOS_COMP_OUTROS_AFAST)	smallint	1	7		I		0
+4	FOPARMTO	356	CALC_ADIANTAME_PROPORC_COMP_OUTRO_AFAST_SOMENTE_TRAB_DATA_PAGTO	Calcular adiantamento proporcional na competência de outros afastamentos somente se estiver trabalhando na data do pagamento. (0=Não/1=Sim)   (CALC_ADIANTAME_PROPORC_COMP_OUTRO_AFAST_SOMENTE_TRAB_DATA_PAGTO)	smallint	1	7		I		0
+4	FOPARMTO	357	CALC_ADIANTAMENTO_PROPORC_COMP_OUTRO_AFAST_MIN_DIAS_TRABALHADOS	Calcular adiantamento proporcional na competência de outros afastamentos dependendo da quantidade de dias trabalhados. (0=Não/1=Sim)   (CALC_ADIANTAMENTO_PROPORC_COMP_OUTRO_AFAST_MIN_DIAS_TRABALHADOS)	smallint	1	7		I		0
+4	FOPARMTO	358	CALC_ADIANTAMENTO_PROP_COMP_OUTRO_AFAST_MIN_DIAS_TRABALHADO_QTD	Quantidade mínima de dias trabalhados na competência de outros afastamentos para pagamento do adiantamento.   (CALC_ADIANTAMENTO_PROP_COMP_OUTRO_AFAST_MIN_DIAS_TRABALHADO_QTD)	smallint	1	7		I		0
+4	FOPARMTO	359	CALCULAR_ADIANTAMENTO_COMPETENCIA_ADMISSAO	Calcular adiantamento na competência de admissão. (0=Não/1=Sim)   (CALCULAR_ADIANTAMENTO_COMPETENCIA_ADMISSAO)	smallint	1	7		I		0
+4	FOPARMTO	360	CALC_ADIANTAMENTO_PROPORC_DIAS_TRABALHADOS_COMP_ADMISSAO	Calcular adiantamento proporcional aos dias trabalhados na competência de admissão. (0=Não/1=Sim)   (CALC_ADIANTAMENTO_PROPORC_DIAS_TRABALHADOS_COMP_ADMISSAO)	smallint	1	7		I		0
+4	FOPARMTO	361	CALC_ADIANTAMENTO_PROPORC_COMP_ADMISSAO_SOMENTE_TRAB_DATA_PAGTO	Calcular adiantamento proporcional na competência de admissão somente se estiver trabalhando na data do pagamento. (0=Não/1=Sim)   (CALC_ADIANTAMENTO_PROPORC_COMP_ADMISSAO_SOMENTE_TRAB_DATA_PAGTO)	smallint	1	7		I		0
+4	FOPARMTO	362	CALC_ADIANTAMENTO_PROPORC_COMP_ADMISSAO_MINIMO_DIAS_TRABALHADOS	Calcular adiantamento proporcional na competência de admissão dependendo da quantidade de dias trabalhados. (0=Não/1=Sim)   (CALC_ADIANTAMENTO_PROPORC_COMP_ADMISSAO_MINIMO_DIAS_TRABALHADOS)	smallint	1	7		I		0
+4	FOPARMTO	363	CALC_ADIANTAMENTO_PROPORC_COMP_ADMISSAO_MINIMO_DIAS_TRAB_QTDE	Quantidade mínima de dias trabalhados na competência de admissão para pagamento do adiantamento.   (CALC_ADIANTAMENTO_PROPORC_COMP_ADMISSAO_MINIMO_DIAS_TRAB_QTDE)	smallint	1	7		I		0
+4	FOPARMTO	364	CONSIDERAR_AFASTAMENTO_54_55_56_DILATAR_CONTRATO_EXPERIENCIA	Considerar os dias afastados pelos afastamentos 54, 55 e 56 para dilatar o período de contrato de experiência. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_54_55_56_DILATAR_CONTRATO_EXPERIENCIA)	smallint	1	7		I		0
+4	FOPARMTO	365	CONSIDERAR_AFASTAMENTO_54_55_56_CALCULO_DIAS_DIREITO_13_SALARIO	Considerar os dias afastados pelos afastamentos 54, 55 e 56 para o cálculo dos dias de direito de 13º salário. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_54_55_56_CALCULO_DIAS_DIREITO_13_SALARIO)	smallint	1	7		I		0
+4	FOPARMTO	366	CALC_INSS_EMP_13_PROPORC_PER_SIMPLES_NACIONAL_ANO_CALENDARIO	Calcular contribuição previdenciária patronal sobre o 13º proporcional ao período em que a empresa era Simples Nacional no ano calendário. (0=Não/1=Sim)   (CALC_INSS_EMP_13_PROPORC_PER_SIMPLES_NACIONAL_ANO_CALENDARIO)	smallint	1	7		I		0
+4	FOPARMTO	367	ALTERAR_FORMA_PAGTO_LIC_MAT_EMP_MEI_TROCA_CLASS_TRIB_PER_AFAST	Alterar a forma de pagamento da licença maternidade para empresa MEI que realiza troca de classificação tributária/regime durante o período do afastamento. (0=Não/1=Sim)   (ALTERAR_FORMA_PAGTO_LIC_MAT_EMP_MEI_TROCA_CLASS_TRIB_PER_AFAST)	smallint	1	7		I		0
+4	FOPARMTO	368	CONSIDERAR_SOMENTE_DIAS_UTEIS_AFASTAMENTO_LICENCA_PATERNIDADE	Considerar somente os dias úteis para o afastamento de licença paternidade. (0=Não/1=Sim)   (CONSIDERAR_SOMENTE_DIAS_UTEIS_AFASTAMENTO_LICENCA_PATERNIDADE)	smallint	1	7		I		0
+4	FOPARMTO	369	MASCARA_CONTABIL	Máscara contábil.   (MASCARA_CONTABIL)	varchar	1	35		I		0
+4	FOPARMTO	370	CALC_ENCARGO_INSS_INTEGRAL_COMP_INICIO_FIM_AFAST_CONTRIBUINTES	Calcular encargos de INSS integralmente nos meses de início e retorno do afastamento para contribuintes. (0=Não/1=Sim)   (CALC_ENCARGO_INSS_INTEGRAL_COMP_INICIO_FIM_AFAST_CONTRIBUINTES)	smallint	1	7		I		0
+4	FOPARMTO	371	LISTA_AFAST_CALC_ENCARGO_INSS_INTEG_COMP_INI_FIM_AFAST_CONTRIB	LISTA_AFAST_CALC_ENCARGO_INSS_INTEG_COMP_INI_FIM_AFAST_CONTRIB   (LISTA_AFAST_CALC_ENCARGO_INSS_INTEG_COMP_INI_FIM_AFAST_CONTRIB)	smallint	1	7		I		0
+4	FOPARMTO	372	PRODUTOR_RURAL	Produtor rural. (0=Não/1=Sim)   (PRODUTOR_RURAL)	smallint	1	7		I		0
+4	FOPARMTO	373	CALC_CONTRIB_SINDICAL_REMUNERACAO_MES_ANTERIOR_AULISTA_VARIAVEL	Calcular contribuição sindical com base na remuneração do mês anterior para professor aulista variável. (0=Não/1=Sim)   (CALC_CONTRIB_SINDICAL_REMUNERACAO_MES_ANTERIOR_AULISTA_VARIAVEL)	smallint	1	7		I		0
+4	FOPARMTO	374	CONSIDERAR_DIAS_AFASTADOS_INFERIORES_15_DIAS_COMP_OUTROS_AFAST	Considerar os dias afastados como trabalhados quando inferior a 15 dias. (0=Não/1=Sim)   (CONSIDERAR_DIAS_AFASTADOS_INFERIORES_15_DIAS_COMP_OUTROS_AFAST)	smallint	1	7		I		0
+4	FOPARMTO	375	CONSIDERAR_DSR_DURANTE_PER_AFAST_DOENCA_DIREITOS_INTEGRAIS	Considerar os DSRs durante o período afastado por doença com direitos integrais. (0=Não/1=Sim)   (CONSIDERAR_DSR_DURANTE_PER_AFAST_DOENCA_DIREITOS_INTEGRAIS)	smallint	1	7		I		0
+4	FOPARMTO	376	PERMITIR_INFORMAR_TIPO_CENTRO_CUSTOS	Permitir informar o tipo dos Centros de Custos. (0=Não/1=Sim)   (PERMITIR_INFORMAR_TIPO_CENTRO_CUSTOS)	smallint	1	7		I		0
+4	FOPARMTO	377	CALCULAR_UM_SEXTO_SOBRE_BASE_DSR_HORISTA_VARIAVEL	Calcular 1/6 sobre a base para DSR do horista variável. (0=Não/1=Sim)   (CALCULAR_UM_SEXTO_SOBRE_BASE_DSR_HORISTA_VARIAVEL)	smallint	1	7		I		0
+4	FOPARMTO	378	CALCULAR_DIFERENCA_CONTRIBUICAO_SINDICAL_ANTECIPACAO_SALARIAL	Calcular diferença de contribuição sindical devido antecipação salarial. (0=Não/1=Sim)   (CALCULAR_DIFERENCA_CONTRIBUICAO_SINDICAL_ANTECIPACAO_SALARIAL)	smallint	1	7		I		0
+4	FOPARMTO	379	UTILIZAR_FALTAS_PARCIAIS_DESCONTO_DIAS_FERIAS	Utilizar faltas parciais para o desconto de dias de férias. (0=Não/1=Sim)   (UTILIZAR_FALTAS_PARCIAIS_DESCONTO_DIAS_FERIAS)	smallint	1	7		I		0
+4	FOPARMTO	380	CONSIDERAR_AFASTAMENTO_41_CALCULO_DIAS_DIREITO_13_SALARIO	Considerar o afastamento 41 para o cálculo dos dias de direito de 13º salário. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_41_CALCULO_DIAS_DIREITO_13_SALARIO)	smallint	1	7		I		0
+4	FOPARMTO	381	CONSIDERAR_AFASTAMENTO_41_DILATAR_CONTRATO_EXPERIENCIA	Considerar os dias afastados pelo afastamento 41 para dilatar o contrato de experiência. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_41_DILATAR_CONTRATO_EXPERIENCIA)	smallint	1	7		I		0
+4	FOPARMTO	382	CONS_MEDIAS_FERIAS_EPR_COMISSIONADO_CALCULO_CONTRIB_SINDICAL	Calcular a contribuição sindical sobre as médias de férias do empregado comissionado. (0=Não/1=Sim)   (CONS_MEDIAS_FERIAS_EPR_COMISSIONADO_CALCULO_CONTRIB_SINDICAL)	smallint	1	7		I		0
+4	FOPARMTO	383	CALCULAR_FOLHA_ADIANTAMENTO_APRENDIZ	Calcular a folha de adiantamento para aprendiz. (0=Não/1=Sim)   (CALCULAR_FOLHA_ADIANTAMENTO_APRENDIZ)	smallint	1	7		I		0
+4	FOPARMTO	384	CONS_DIAS_AFASTADOS_LICENCA_MAT_PERIODO_TRAB_CALC_ADIANTAMENTO	Considerar os dias afastados por maternidade como trabalhados no cálculo proporcional. (0=Não/1=Sim)   (CONS_DIAS_AFASTADOS_LICENCA_MAT_PERIODO_TRAB_CALC_ADIANTAMENTO)	smallint	1	7		I		0
+4	FOPARMTO	385	CTA_DATA_LANCTO_RPA	Data do lançamento na contabilidade. (1=Data do pagamento do RPA/2=Data do pagamento da folha mensal/3=Final do mês)   (CTA_DATA_LANCTO_RPA)	smallint	1	7		I		0
+4	FOPARMTO	386	SENHA_CONSULTA_FAP	Senha para consulta do FAP.   (SENHA_CONSULTA_FAP)	varchar	1	30		I		0
+4	FOPARMTO	387	CALC_ADIANTAMENTO_PROPORC_CONS_LICENCA_REMUNERADA_DIAS_TRAB	Considerar os dias de licença remunerada como dias trabalhados no cálculo proporcional do adiantamento. (0=Não/1=Sim)   (CALC_ADIANTAMENTO_PROPORC_CONS_LICENCA_REMUNERADA_DIAS_TRAB)	smallint	1	7		I		0
+4	FOPARMTO	388	DISCRIMINAR_HORAS_COMPENSACAO_SABADO_JORNADA_DIARIA	Discriminar as horas referentes a compensação do sábado na jornada diária. (0=Não/1=Sim)   (DISCRIMINAR_HORAS_COMPENSACAO_SABADO_JORNADA_DIARIA)	smallint	1	7		I		0
+4	FOPARMTO	389	CONSIDERAR_AFASTAMENTO_10_17_44_DILATAR_CONTRATO_EXPERIENCIA	Considerar os dias afastados pelos afastamentos 10, 17 e 44 para dilatar o contrato de experiência. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_10_17_44_DILATAR_CONTRATO_EXPERIENCIA)	smallint	1	7		I		0
+4	FOPARMTO	390	CONSIDERAR_AFASTAMENTO_3_10_42_DILATAR_CONTRATO_EXPERIENCIA	Considerar os dias afastados pelos afastamentos 03, 10 e 42 para dilatar o contrato de experiência. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_3_10_42_DILATAR_CONTRATO_EXPERIENCIA)	smallint	1	7		I		0
+4	FOPARMTO	391	CALCULAR_CONTRIBUICAO_SINDICAL_HORISTA_BASE_30_DIAS	Calcular a contribuição sindical para empregados com categoria horista com base em 30 dias. (0=Não/1=Sim)   (CALCULAR_CONTRIBUICAO_SINDICAL_HORISTA_BASE_30_DIAS)	smallint	1	7		I		0
+4	FOPARMTO	392	CALCULAR_IRRF_CONTRIBUINTE_AUTONOMO_CONDOMINIO_EDIFICIO	Calcular IRRF para contribuinte autônomo de condomínio edifício. (0=Não/1=Sim)   (CALCULAR_IRRF_CONTRIBUINTE_AUTONOMO_CONDOMINIO_EDIFICIO)	smallint	1	7		I		0
+4	FOPARMTO	393	CONS_DIAS_AFAST_PERIODO_AQUISITIVO_DILATAR_PERIODO_CONCESSIVO	Considerar os dias afastados no período aquisitivo para dilatar o período concessivo. (0=Não/1=Sim)   (CONS_DIAS_AFAST_PERIODO_AQUISITIVO_DILATAR_PERIODO_CONCESSIVO)	smallint	1	7		I		0
+4	FOPARMTO	394	PAGAR_FERIAS_INDENI_RESCISAO_PER_AQUISITIVO_INCOMPLETO_QUITADO	Pagar férias indenizadas na rescisão quando o período aquisitivo incompleto já foi gozado. (0=Não/1=Sim)   (PAGAR_FERIAS_INDENI_RESCISAO_PER_AQUISITIVO_INCOMPLETO_QUITADO)	smallint	1	7		I		0
+4	FOPARMTO	395	GERA_DATA_PAGTO_RESCISAO_MOT_43_DEC_DIA_UTIL_APOS_DATA_DEMISSAO	Gerar a data de pagamento da rescisão pelo motivo 43 no décimo dia útil contado a partir da data de demissão. (0=Não/1=Sim)   (GERA_DATA_PAGTO_RESCISAO_MOT_43_DEC_DIA_UTIL_APOS_DATA_DEMISSAO)	smallint	1	7		I		0
+4	FOPARMTO	396	PRORROGAR_DATA_PAGAMENTO_RESCISAO_SABADO_DOMINGO_FERIADO	Prorrogar a data de pagamento da rescisão para o próximo dia útil quando essa recair em sábado, domingo ou feriado. (0=Não/1=Sim)   (PRORROGAR_DATA_PAGAMENTO_RESCISAO_SABADO_DOMINGO_FERIADO)	smallint	1	7		I		0
+4	FOPARMTO	397	CALC_INSS_EMP_13_SAL_PROPORC_DATA_TRANSF_EMP_ENQUADRA_DESONERAC	Calcular o INSS Empresa correspondente a 13º salário proporcional a data de transferência quando a empresa for enquadrada na desoneração. (0=Não/1=Sim)   (CALC_INSS_EMP_13_SAL_PROPORC_DATA_TRANSF_EMP_ENQUADRA_DESONERAC)	smallint	1	7		I		0
+4	FOPARMTO	398	ENTIDADE_SEM_FINS_LUCRATIVOS	Entidade sem fins lucrativos. (0=Não/1=Sim)   (ENTIDADE_SEM_FINS_LUCRATIVOS)	smallint	1	7		I		0
+4	FOPARMTO	399	EMPRESA_TRABALHO_TEMPORARIO	Empresa de trabalho temporário. (0=Não/1=Sim)   (EMPRESA_TRABALHO_TEMPORARIO)	smallint	1	7		I		0
+4	FOPARMTO	400	NUMERO_REGISTRO_MINISTERIO_TRABALHO	Número de registro no Ministério do Trabalho.   (NUMERO_REGISTRO_MINISTERIO_TRABALHO)	varchar	1	30		I		0
+4	FOPARMTO	401	CONTRATACAO_PESSOA_COM_DEFICIENCIA	Contratação de pessoa com deficiência. (1=Dispensado de acordo com a lei/2=Dispensado, mesmo que parcialmente/3=Com a exigibilidade suspensa/4=Obrigado)   (CONTRATACAO_PESSOA_COM_DEFICIENCIA)	smallint	1	7		I		0
+4	FOPARMTO	402	I_PROCESSO_PESSOA_DEFICIENCIA	Código do processo judicial para contratação de pessoa com deficiência.   (I_PROCESSO_PESSOA_DEFICIENCIA)	integer	1	7		I		0
+4	FOPARMTO	403	LIMITAR_QUANTIDADE_ESTAGIARIOS_SUPERVISOR	Limitar a quantidade de estagiários vinculados ao mesmo supervisor. (0=Não/1=Sim)   (LIMITAR_QUANTIDADE_ESTAGIARIOS_SUPERVISOR)	smallint	1	7		I		0
+4	FOPARMTO	404	QUANTIDADE_ESTAGIARIOS_SUPERVISOR	Quantidade máxima de estagiários vinculados ao mesmo supervisor.   (QUANTIDADE_ESTAGIARIOS_SUPERVISOR)	smallint	1	7		I		0
+4	FOPARMTO	405	CONSIDERAR_DIAS_AFASTADOS_DILATAR_PERIODO_AQUISITIVO_APRENDIZ	Considerar os dias afastados para dilatar o período aquisitivo do aprendiz. (0=Não/1=Sim)   (CONSIDERAR_DIAS_AFASTADOS_DILATAR_PERIODO_AQUISITIVO_APRENDIZ)	smallint	1	7		I		0
+4	FOPARMTO	406	AFASTAMENTOS_DILATAR_PERIODO_AQUISITIVO_APRENDIZ	Soma binária dos afastamentos considerados para dilatar o período aquisitivo do aprendiz.   (AFASTAMENTOS_DILATAR_PERIODO_AQUISITIVO_APRENDIZ)	smallint	1	7		I		0
+4	FOPARMTO	407	ALIQUOTA_INSS_AUTONOMO_COOPERADO_CONF_ATO_DECLARAT_RFB_N1_2017	Alíquota INSS Autonomo Cooperado conforme Ato Declaratório RFB nº 1 de 2017. (0=Não/1=Sim)   (ALIQUOTA_INSS_AUTONOMO_COOPERADO_CONF_ATO_DECLARAT_RFB_N1_2017)	smallint	1	7		I		0
+4	FOPARMTO	408	CONS_AVISO_PREVIO_INDENI_AVOS_INDENI_13_FERIAS_LEI_12506_2011	Considerar os dias de aviso prévio acrescidos pela Lei 12.506/2011 para projeção do aviso prévio na contagem de avos indenizados de 13º e Férias.   (CONS_AVISO_PREVIO_INDENI_AVOS_INDENI_13_FERIAS_LEI_12506_2011)	smallint	1	7		I		0
+4	FOPARMTO	409	CALCULAR_FOLHA_PLR_EMPREGADO_DEMITIDO	Calcular a folha de Participação de Lucros quando o colaborador estiver demitido. (0=Não/1=Sim)   (CALCULAR_FOLHA_PLR_EMPREGADO_DEMITIDO)	smallint	1	7		I		0
+4	FOPARMTO	410	UTILIZAR_CPF_RESPONSAVEL_LEGAL_EMPRESA_CARNE_LEAO_EMPRESA_CEI	Utilizar o CPF do responsável legal da empresa para o Carnê-Leão quando o tipo de inscrição for CEI. (0=Não/1=Sim)   (UTILIZAR_CPF_RESPONSAVEL_LEGAL_EMPRESA_CARNE_LEAO_EMPRESA_CEI)	smallint	1	7		I		0
+4	FOPARMTO	411	CALCULAR_UM_SEXTO_SOBRE_BASE_DSR_DIARISTA_VARIAVEL	Calcular 1/6 sobre a base para DSR do diarista variável. (0=Não/1=Sim)   (CALCULAR_UM_SEXTO_SOBRE_BASE_DSR_DIARISTA_VARIAVEL)	smallint	1	7		I		0
+4	FOPARMTO	412	DILATAR_LIM_GOZO_FERIAS_AFAST_DATA_RET_PER_AQUISITIVO_INI_AFAST	Dilatar o limite de gozo do afastamento quando a data de retorno do afastamento recair no mesmo período aquisitivo/concessivo do início do afastamento. (0=Não/1=Sim)   (DILATAR_LIM_GOZO_FERIAS_AFAST_DATA_RET_PER_AQUISITIVO_INI_AFAST)	smallint	1	7		I		0
+4	FOPARMTO	413	CALCULAR_MULTA_ESTABILIDADE_ART_479_480_PROPORCIONAL_DIAS_MES	Calcular multa estabilidade Art. 479 e 480 proporcionalmente aos dias de cada mês. (0=Não/1=Sim)   (CALCULAR_MULTA_ESTABILIDADE_ART_479_480_PROPORCIONAL_DIAS_MES)	smallint	1	7		I		0
+4	FOPARMTO	414	CALC_ANTECIPACAO_FOLHA_ADIANTAMENTO_EPR_ADIANTAMENTO_LANCADO	Calcular antecipação salarial na folha de adiantamento para quem tem adiantamento lançado. (0=Não/1=Sim)   (CALC_ANTECIPACAO_FOLHA_ADIANTAMENTO_EPR_ADIANTAMENTO_LANCADO)	smallint	1	7		I		0
+4	FOPARMTO	415	SOMAR_ENCARGO_INSS_CCT_MENSAL_VAL_RECOLHER_INF_MIN_RECOLHIMENTO	Somar os encargos de INSS CCT na folha mensal do mês do aumento quando valor a recolher for inferior ao mínimo para recolhimento. (0=Não/1=Sim)   (SOMAR_ENCARGO_INSS_CCT_MENSAL_VAL_RECOLHER_INF_MIN_RECOLHIMENTO)	smallint	1	7		I		0
+4	FOPARMTO	416	ENVIAR_DADOS_ESOCIAL	Enviar dados para o eSocial. (0=Não/1=Sim)   (ENVIAR_DADOS_ESOCIAL)	smallint	1	7		I		0
+4	FOPARMTO	417	WEB_SERVICE_ESOCIAL	Web service de envio para o eSocial. (1=Produção restrita/2=Oficial)   (WEB_SERVICE_ESOCIAL)	smallint	1	7		I		0
+4	FOPARMTO	418	TIPO_AMBIENTE_ESOCIAL	Tipo de ambiente de envio para o eSocial. (1=Produção/2=Pré-produção - dados reais/3=Pré-produção - dados fictícios/6=Homologação/7=Validação/8=Testes/9=Desenvolvimento)   (TIPO_AMBIENTE_ESOCIAL)	smallint	1	7		I		0
+4	FOPARMTO	419	ORIGEM_CERTIFICADO_DIGITAL	Origem do Certificado. (1=Empresa/2=Contador)   (ORIGEM_CERTIFICADO_DIGITAL)	smallint	1	7		I		0
+4	FOPARMTO	420	TIPO_CENTRALIZACAO_ESOCIAL	Tipo de centralização para o eSocial. (1=Centralizada/2=Centralizadora)   (TIPO_CENTRALIZACAO_ESOCIAL)	smallint	1	7		I		0
+4	FOPARMTO	421	EMPRESA_CENTRALIZADORA_ESOCIAL	Código da empresa centralizadora para o eSocial.   (EMPRESA_CENTRALIZADORA_ESOCIAL)	integer	1	7		I		0
+4	FOPARMTO	422	POSSUI_EMPRESA_CENTRALIZADORA_ESOCIAL_OUTRO_BANCO_DADOS	Possui a empresa centralizadora do eSocial em outro banco de dados. (0=Não/1=Sim)   (POSSUI_EMPRESA_CENTRALIZADORA_ESOCIAL_OUTRO_BANCO_DADOS)	smallint	1	7		I		0
+4	FOPARMTO	423	COMPETENCIA_INICIO_ESOCIAL	Competência inicial para gerar o eSocial   (COMPETENCIA_INICIO_ESOCIAL)	date	1	10	DD/MM/YYYY	I		0
+4	FOPARMTO	424	I_DADOS_EVENTOS_ESOCIAL	**SEM USO**   (I_DADOS_EVENTOS_ESOCIAL)	integer	1	7		I		0
+4	FOPARMTO	425	I_LOTE_ESOCIAL	**SEM USO**   (I_LOTE_ESOCIAL)	integer	1	7		I		0
+4	FOPARMTO	426	STATUS_ESOCIAL	**SEM USO**   (STATUS_ESOCIAL)	smallint	1	7		I		0
+4	FOPARMTO	427	ENVIAR_ESOCIAL	Enviar para o eSocial. (0=Não/1=Sim)   (ENVIAR_ESOCIAL)	smallint	1	7		I		0
+4	FOPARMTO	428	INCLUSAO_VALIDADA_ESOCIAL	**SEM USO**   (INCLUSAO_VALIDADA_ESOCIAL)	smallint	1	7		I		0
+4	FOPARMTO	429	GERAR_RETIFICACAO_ESOCIAL	Gerar retificação para o eSocial. (0=Não/1=Sim)   (GERAR_RETIFICACAO_ESOCIAL)	smallint	1	7		I		0
+4	FOPARMTO	430	UTILIZA_REGRA_11_2017_PERIODO_AQUISITIVO_EMPREGADO_REGIME_TEMPO_PARCIAL	Utiliza a regra de 11/2017 para periodos aquisitivos do empregados com regime tempo parcial. (0=Não/1=Sim)   (UTILIZA_REGRA_11_2017_PERIODO_AQUISITIVO_EMPREGADO_REGIME_TEMPO_PARCIAL)	smallint	1	7		I		0
+4	FOPARMTO	431	CADASTRAMENTO_INICIAL_ENVIADO_ESOCIAL	Cadastramento inicial enviado ao eSocial. (0=Não/1=Sim)   (CADASTRAMENTO_INICIAL_ENVIADO_ESOCIAL)	smallint	1	7		I		0
+4	FOPARMTO	432	TIPO_INSCRICAO_TRANSMISSOR_ESOCIAL	Tipo de inscrição do transmissor do esocial.   (TIPO_INSCRICAO_TRANSMISSOR_ESOCIAL)	integer	1	7		I		0
+4	FOPARMTO	433	INSCRICAO_TRANSMISSOR_ESOCIAL	Inscrição do transmissor do esocial.   (INSCRICAO_TRANSMISSOR_ESOCIAL)	varchar	1	14		I		0
+4	FOPARMTO	434	CALCULAR_INSS_EMPRESA_CONTRIBUINTES_CATEGORIA_SEFIP_17_18_24_25	Calcular INSS Empresa para as categorias SEFIP 17, 18, 24 e 25. (0=Não/1=Sim)   (CALCULAR_INSS_EMPRESA_CONTRIBUINTES_CATEGORIA_SEFIP_17_18_24_25)	smallint	1	7		I		0
+4	FOPARMTO	435	CONS_SOMENTE_GARANTIA_MIN_ADIANTAMENTO_COMISSIONADO_COM_SALARIO	Considerar para empregado comissionado com salário apenas o valor pago de garantia mínima. (0=Não/1=Sim)   (CONS_SOMENTE_GARANTIA_MIN_ADIANTAMENTO_COMISSIONADO_COM_SALARIO)	smallint	1	7		I		0
+4	FOPARMTO	436	CALCULAR_INDENIZACAO_ADICIONAL_RESCISAO_TRABALHADOR_TEMPORARIO	Calcular indenização adicional na rescisão do trabalhador temporário. (0=Não/1=Sim)   (CALCULAR_INDENIZACAO_ADICIONAL_RESCISAO_TRABALHADOR_TEMPORARIO)	smallint	1	7		I		0
+4	FOPARMTO	437	CADASTRAMENTO_INICIAL_EVENTOS_NAO_PERIODICOS_ENVIADO_ESOCIAL	Cadastramento inicial dos eventos não periódicos enviado para o eSocial. (0=Não/1=Sim)   (CADASTRAMENTO_INICIAL_EVENTOS_NAO_PERIODICOS_ENVIADO_ESOCIAL)	smallint	1	7		I		0
+4	FOPARMTO	438	CADASTRAMENTO_INICIAL_RUBRICAS_ENVIADO_ESOCIAL	Cadastramento inicial das rubricas enviado para o eSocial. (0=Não/1=Sim)   (CADASTRAMENTO_INICIAL_RUBRICAS_ENVIADO_ESOCIAL)	smallint	1	7		I		0
+4	FOPARMTO	439	CALCULAR_UM_SEXTO_SOBRE_DSR_CELETISTA_INTERMITENTE	Calcular para DSR o valor de 1/6 sobre a base quando empregado com vínculo celetista intermitente. (0=Não/1=Sim)   (CALCULAR_UM_SEXTO_SOBRE_DSR_CELETISTA_INTERMITENTE)	smallint	1	7		I		0
+4	FOPARMTO	440	COMPETENCIA_INICIO_ESOCIAL_NAO_PERIODICOS	Competência de início de envio dos eventos não períodicos para o eSocial.   (COMPETENCIA_INICIO_ESOCIAL_NAO_PERIODICOS)	date	1	10	DD/MM/YYYY	I		0
+4	FOPARMTO	441	COMPETENCIA_INICIO_ESOCIAL_PERIODICOS	Competência de início de envio dos eventos períodicos para o eSocial.   (COMPETENCIA_INICIO_ESOCIAL_PERIODICOS)	date	1	10	DD/MM/YYYY	I		0
+4	FOPARMTO	442	EFETUAR_CALCULO_PREVIDENCIARIO_CONFORME_DCFTWEB	Efetuar cálculo previdenciário conforme DCTFWeb. (0=Não/1=Sim)   (EFETUAR_CALCULO_PREVIDENCIARIO_CONFORME_DCFTWEB)	smallint	1	7		I		0
+4	FOPARMTO	443	COMPETENCIA_INICIO_CALCULO_PREVIDENCIARIO_CONFORME_DCFTWEB	Competência início do cálculo previdenciário conforme DCTFWeb.   (COMPETENCIA_INICIO_CALCULO_PREVIDENCIARIO_CONFORME_DCFTWEB)	date	1	10	DD/MM/YYYY	I		0
+4	FOPARMTO	444	I_CONTADOR_TRANSMISSAO_ESOCIAL	Código do contador que irá transmitir os dados pro eSocial.   (I_CONTADOR_TRANSMISSAO_ESOCIAL)	integer	1	7		I		0
+4	FOPARMTO	445	PROCESSAR_EXCLUSAO_ESOCIAL	Marcação do evento para gerar o evento de exclusão no eSocial. (0=Não/1=Sim)   (PROCESSAR_EXCLUSAO_ESOCIAL)	smallint	1	7		I		0
+4	FOPARMTO	446	FASEAMENTO_ENVIO_EVENTOS_ESOCIAL	Tipo de faseamento de envio ao eSocial, 1=1º grupo - Faturamento no ano de 2016 acima de R$ 78.000.000,00/2=2º grupo - Faturamento no ano de 2016 até R$ 78.000.000,00 não optante pelo Simples Nacional/3=3º grupo - Simples Nacional; Empregador PF; Produtor   (FASEAMENTO_ENVIO_EVENTOS_ESOCIAL)	integer	1	7		I		0
+4	FOPARMTO	447	ENVIOU_ESOCIAL_OUTRO_BANCO	Empresa enviou eSocial em outro banco de dados. (0=Não/1=Sim)   (ENVIOU_ESOCIAL_OUTRO_BANCO)	smallint	1	7		I		0
+4	FOPARMTO	448	COMPETENCIA_INICIO_UTILIZACAO_ESOCIAL_BANCO_DOMINIO	Competência início da utilização do eSocial no banco da Domínio.   (COMPETENCIA_INICIO_UTILIZACAO_ESOCIAL_BANCO_DOMINIO)	date	1	10	DD/MM/YYYY	I		0
+4	FOPARMTO	449	CONCLUIU_CONVERSAO_DADOS_ESOCIAL	Concluiu a conversão dos dados do eSocial. (0=Não/1=Sim)   (CONCLUIU_CONVERSAO_DADOS_ESOCIAL)	smallint	1	7		I		0
+4	FOPARMTO	450	CALCULAR_FUNRURAL_SOBRE_FOLHA_PAGAMENTO	Calcular FUNRURAL sobre a de folha pagamento. (0=Não/1=Sim)   (CALCULAR_FUNRURAL_SOBRE_FOLHA_PAGAMENTO)	smallint	1	7		I		0
+4	FOPARMTO	451	COMPETENCIA_INICIO_ESOCIAL_SST_GRUPO_1	**SEM USO**   (COMPETENCIA_INICIO_ESOCIAL_SST_GRUPO_1)	date	1	10	DD/MM/YYYY	I		0
+4	FOPARMTO	452	COMPETENCIA_INICIO_ESOCIAL_SST_GRUPO_2	**SEM USO**   (COMPETENCIA_INICIO_ESOCIAL_SST_GRUPO_2)	date	1	10	DD/MM/YYYY	I		0
+4	FOPARMTO	453	DETERMINAR_COMPETENCIA_FIM_ESOCIAL_SST	Determinar a competência fim do envio dos eventos de SST para o eSocial. (0=Não/1=Sim)   (DETERMINAR_COMPETENCIA_FIM_ESOCIAL_SST)	smallint	1	7		I		0
+4	FOPARMTO	454	COMPETENCIA_FIM_ESOCIAL_SST	Competência fim do envio dos eventos de SST para o eSocial.   (COMPETENCIA_FIM_ESOCIAL_SST)	date	1	10	DD/MM/YYYY	I		0
+4	FOPARMTO	455	CADASTRAMENTO_INICIAL_EVENTOS_SST_ENVIADO_ESOCIAL	Cadastramento inicial dos eventos SST foi enviado ao eSocial.   (CADASTRAMENTO_INICIAL_EVENTOS_SST_ENVIADO_ESOCIAL)	integer	1	7		I		0
+4	FOPARMTO	456	UTILIZA_MODULO_WEB_SIMPLIFICADO_ME_EPP_ESOCIAL	Utiliza módulo Web Simplificado ME e EPP. (0=Não/1=Sim)   (UTILIZA_MODULO_WEB_SIMPLIFICADO_ME_EPP_ESOCIAL)	smallint	1	7		I		0
+4	FOPARMTO	457	COMPETENCIA_INICIO_ESOCIAL_SST	Competência de início do envio dos eventos de SST para o eSocial.   (COMPETENCIA_INICIO_ESOCIAL_SST)	date	1	10	DD/MM/YYYY	I		0
+4	FOPARMTO	458	CALC_INSS_MULTIPLOS_VINCULOS_CONFORME_ESOCIAL_ANTERIOR_02_2020	Calcular INSS para colaboradores com mÃºltiplos vÃ­nculos conforme eSocial em competÃªncias anteriores Ã  02/2020   (CALC_INSS_MULTIPLOS_VINCULOS_CONFORME_ESOCIAL_ANTERIOR_02_2020)	smallint	1	7		I		0
+4	FOPARMTO	459	CALCULAR_HORA_NOTURNA_DE_ACORDO_COM_HORARIO_DO_EMPREGADO	Calcular hora noturna de acordo com o horário do empregado. (0=Não/1=Sim)   (CALCULAR_HORA_NOTURNA_DE_ACORDO_COM_HORARIO_DO_EMPREGADO)	integer	1	7		I		0
+4	FOPARMTO	460	DATA_INICIO_CALCULAR_HORA_NOTURNA_DE_ACORDO_COM_HORARIO_DO_EPR	Data início para calcular hora noturna de acordo com o horário do empregado.   (DATA_INICIO_CALCULAR_HORA_NOTURNA_DE_ACORDO_COM_HORARIO_DO_EPR)	date	1	10	DD/MM/YYYY	I		0
+4	FOPARMTO	461	CAL_HORA_DIURNA_COM_ADICIONAL_NOTURNO_HORARIO_INTEGRAL_NOTURNO	Calcular Hora Diurna com adicional noturno quando o empregado possui horário integralmente noturno e esse se estende ao horário diurno, conforme Súmula n° 60 TST.   (CAL_HORA_DIURNA_COM_ADICIONAL_NOTURNO_HORARIO_INTEGRAL_NOTURNO)	integer	1	7		I		0
+4	FOPARMTO	462	INICIO_HORA_NOTURNA	Início da hora noturna.   (INICIO_HORA_NOTURNA)	time	1	8	HH:MM:SS	I		0
+4	FOPARMTO	463	FIM_HORA_NOTURNA	Fim da hora noturna.   (FIM_HORA_NOTURNA)	time	1	8	HH:MM:SS	I		0
+4	FOPARMTO	464	CONSIDERAR_REDUCAO_ALIQUOTAS_TERCEIROS_SISTEMA_S_CRIADAS_MP_932	Considerar a redução das alíquotas de terceiros do sistema S criada na MP 932. (0=Não/1=Sim)   (CONSIDERAR_REDUCAO_ALIQUOTAS_TERCEIROS_SISTEMA_S_CRIADAS_MP_932)	smallint	1	7		I		0
+4	FOPARMTO	465	PERMITIR_PROPORCIONALIZAR_CARGA_H_CONFORME_ALT_CAD_EMPREGADO	Permitir proporcionalizar a carga horária conforme alterações do cadastro do empregado. (0=Não/1=Sim)   (PERMITIR_PROPORCIONALIZAR_CARGA_H_CONFORME_ALT_CAD_EMPREGADO)	smallint	1	7		I		0
+4	FOPARMTO	466	COMP_INICIO_PROPORCIONALIZAR_CARGA_H_CONFORME_ALT_CAD_EMPREGADO	Competência início para proporcionalizar a carga horária conforme alterações do cadastro do empregado.   (COMP_INICIO_PROPORCIONALIZAR_CARGA_H_CONFORME_ALT_CAD_EMPREGADO)	date	1	10	DD/MM/YYYY	I		0
+4	FOPARMTO	467	EFETUAR_CALCULO_HORAS_NORMAIS_AFAST_COM_BASE_SAL_CADA_DIA_COMP	Efetuar o cálculo das horas normais e dos afastamentos com base no salário de cada dia da competência. (0=Não/1=Sim)   (EFETUAR_CALCULO_HORAS_NORMAIS_AFAST_COM_BASE_SAL_CADA_DIA_COMP)	smallint	1	7		I		0
+4	FOPARMTO	468	CALC_AVISO_RESC_POR_ACORDO_ENTRE_PARTES_COM_DIAS_PELA_METADE	Calcular o aviso prÃ©vio na rescisÃ£o por acordo entre as partes considerando os dias pela metade. (0=NÃ£o/1=Sim)   (CALC_AVISO_RESC_POR_ACORDO_ENTRE_PARTES_COM_DIAS_PELA_METADE)	smallint	1	7		I		0
+4	FOPARMTO	469	CONSIDERAR_AFASTAMENTO_59_DILATAR_CONTRATO_EXPERIENCIA	Considerar os dias afastados pelo afastamento 59 para dilatar o período de contrato de experiência. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_59_DILATAR_CONTRATO_EXPERIENCIA)	smallint	1	7		I		0
+4	FOPARMTO	470	CONSIDERAR_AFASTAMENTO_60_DILATAR_CONTRATO_EXPERIENCIA	Considerar os dias afastados pelo afastamento 60 para dilatar o período de contrato de experiência. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_60_DILATAR_CONTRATO_EXPERIENCIA)	smallint	1	7		I		0
+4	FOPARMTO	471	EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_59	Extende limite de gozo de férias para o afastamento 59. (0=Não/1=Sim)   (EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_59)	smallint	1	7		I		0
+4	FOPARMTO	472	EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_60	Extende limite de gozo de férias para o afastamento 60. (0=Não/1=Sim)   (EXTENDE_LIMITE_GOZO_FERIAS_AFASTAMENTO_60)	smallint	1	7		I		0
+4	FOPARMTO	473	CONSIDERAR_AFASTAMENTO_59_CALCULO_DIAS_DIREITO_13_SALARIO	Considerar afastamento 59 para o cálculo dos dias de direito do 13º salário. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_59_CALCULO_DIAS_DIREITO_13_SALARIO)	smallint	1	7		I		0
+4	FOPARMTO	474	CONSIDERAR_AFASTAMENTO_60_CALCULO_DIAS_DIREITO_13_SALARIO	Considerar afastamento 60 para o cálculo dos dias de direito do 13º salário. (0=Não/1=Sim)   (CONSIDERAR_AFASTAMENTO_60_CALCULO_DIAS_DIREITO_13_SALARIO)	smallint	1	7		I		0
+4	FOPARMTO	475	CONSIDERAR_MES_AFASTADO_AFASTAMENTO_59_PERIODO_MEDIA_13_SALARIO	Considerar o mês dos afastamento 59 no cálculo de médias e adicionais de 13º salário, mesmo que não tenha direito ao avo do mês. (0=Não/1=Sim)   (CONSIDERAR_MES_AFASTADO_AFASTAMENTO_59_PERIODO_MEDIA_13_SALARIO)	smallint	1	7		I		0
+4	FOPARMTO	476	CONSIDERAR_MES_AFASTADO_AFASTAMENTO_60_PERIODO_MEDIA_13_SALARIO	Considerar o mês dos afastamento 60 no cálculo de médias e adicionais de 13º salário, mesmo que não tenha direito ao avo do mês. (0=Não/1=Sim)   (CONSIDERAR_MES_AFASTADO_AFASTAMENTO_60_PERIODO_MEDIA_13_SALARIO)	smallint	1	7		I		0
+4	FOPARMTO	477	CONSIDERAR_ADICIONAIS_CALCULO_GARANTIA_PROVISORIA_MP_936	Considerar os adicionais para o cálculo da Indenização de Garantia Provisória - MP 936/2020. (0=Não/1=Sim)   (CONSIDERAR_ADICIONAIS_CALCULO_GARANTIA_PROVISORIA_MP_936)	smallint	1	7		I		0
+4	FOPARMTO	478	CONSIDERAR_ADICIONAIS_CALCULO_AJUDA_COMPENSATORIA_30_MP_936	Considerar os adicionais para o cálculo da ajuda compensatória 30% - MP 936/2020. (0=Não/1=Sim)   (CONSIDERAR_ADICIONAIS_CALCULO_AJUDA_COMPENSATORIA_30_MP_936)	smallint	1	7		I		0
+4	FOPARMTO	479	CALC_SAL_FAMILIA_EMPREGADOS_ANTES_REDUCAO_SALARIAL_SEM_DIREITO	Calcular salário família para empregados que antes do processo de redução salarial não possuiam o direito. (0=Não/1=Sim)   (CALC_SAL_FAMILIA_EMPREGADOS_ANTES_REDUCAO_SALARIAL_SEM_DIREITO)	smallint	1	7		I		0
+4	FOPARMTO	480	CALCULAR_INDENIZACAO_GARANTIA_PROVISORIA_RESCISAO_MOTIVOS_10_23	Calcular indenização de garantia provisoria na rescisão pelos motivos 10 e 23. (0=Não/1=Sim)   (CALCULAR_INDENIZACAO_GARANTIA_PROVISORIA_RESCISAO_MOTIVOS_10_23)	smallint	1	7		I		0
+4	FOPARMTO	481	POSTERGAR_DIAS_RESTANTES_ESTAB_GARANTIA_MPE_COVID_19	Postergar os dias restantes de estabilidade por garantia provisória quando houver Medida de Proteção do Emprego - Covid-19 cadastrada no período. (0=Não/1=Sim)   (POSTERGAR_DIAS_RESTANTES_ESTAB_GARANTIA_MPE_COVID_19)	smallint	1	7		I		0
+4	FOPARMTO	482	CONSIDERAR_COMPENSACAO_VALORES_PREVIDENCIARIOS	Compensar valores previdenciários(0=Não/1=Sim)".   (CONSIDERAR_COMPENSACAO_VALORES_PREVIDENCIARIOS)	smallint	1	7		I		0
+4	FOPARMTO	483	COMPETENCIA_CONSIDERAR_COMPENSACAO_VALORES_PREVIDENCIARIOS	Competência fim compensação de valores previdenciários".   (COMPETENCIA_CONSIDERAR_COMPENSACAO_VALORES_PREVIDENCIARIOS)	date	1	10	DD/MM/YYYY	I		0
+4	FOPARMTO	484	CALC_RUBRICAS_INSALUBRIDADE_SALARIO_MINIMO_OU_PISO_MPE_COVID_19	Calcular as rubricas com classificação Insalubridade e base de cálculo Salário Mínimo, Salário Mínimo Estadual ou Piso Estadual para a redução salarial de Medida de Proteção do Emprego - Covid-19. (0=Não/1=Sim)   (CALC_RUBRICAS_INSALUBRIDADE_SALARIO_MINIMO_OU_PISO_MPE_COVID_19)	smallint	1	7		I		0
+4	FOPARMTO	485	CALCULAR_FORMA_REDUZIDA_GRATIFICACAO_COMPETENCIA_REDUCAO	Calcular de forma reduzida a gratificação lançada na competência com Redução. (0=Não/1=Sim)   (CALCULAR_FORMA_REDUZIDA_GRATIFICACAO_COMPETENCIA_REDUCAO)	smallint	1	7		I		0
+4	FOPARMTO	486	CALC_ANTECIPACAO_SAL_DE_FORMA_REDUZIDA_NA_COMP_COM_REDUCAO	Calcular a antecipação salarial de forma reduzida na competência com Redução. (0=Não/1=Sim)   (CALC_ANTECIPACAO_SAL_DE_FORMA_REDUZIDA_NA_COMP_COM_REDUCAO)	smallint	1	7		I		0
+4	FOPARMTO	487	CONSIDERAR_ANTECIPACAO_SALARIAL_PRO_CALCULO_AJUDA_COMPENSATORIA	Considerar a antecipação salarial para o cálculo da ajuda compensatória. (0=Não/1=Sim)   (CONSIDERAR_ANTECIPACAO_SALARIAL_PRO_CALCULO_AJUDA_COMPENSATORIA)	smallint	1	7		I		0
+4	FOPARMTO	488	CALC_REMUNERACAO_INTEGRALMENTE_MESES_AFASTAMENTOS_CONTRIB	Calcular remuneração integralmente nos meses de início e retorno do afastamento para contribuintes(0=Não/1=Sim)".   (CALC_REMUNERACAO_INTEGRALMENTE_MESES_AFASTAMENTOS_CONTRIB)	smallint	1	7		I		0
+4	FOPARMTO	489	LISTA_AFASTAMENTOS_CALCULAR_REMUNERACAO_INTEGRALMENTE_CONTRIB	Lista afastamentos calcular remuneração integralmente para contribuintes   (LISTA_AFASTAMENTOS_CALCULAR_REMUNERACAO_INTEGRALMENTE_CONTRIB)	smallint	1	7		I		0
+4	FOPARMTO	490	DILATAR_PERIODO_AQUISITIVO_FERIAS_AFASTAMENTO_59_60	Dilatar o período aquisitivo de ferias para o afastamento 59 e 60. (0=Não/1=Sim)   (DILATAR_PERIODO_AQUISITIVO_FERIAS_AFASTAMENTO_59_60)	smallint	1	7		I		0
+4	FOPARMTO	491	CALC_AFAST_COM_PAGTO_PELA_EMPRESA_EMPREGADOS_INTERMITENTES	Calcular os afastamentos auxílio doença, doença profissional e licença maternidade com pagamento pela empresa para empregados com contrato intermitente. (0=Não/1=Sim)   (CALC_AFAST_COM_PAGTO_PELA_EMPRESA_EMPREGADOS_INTERMITENTES)	smallint	1	7		I		0
+4	FOPARMTO	492	COMP_CALC_AFAST_COM_PAGTO_PELA_EMPRESA_EMPREGADOS_INTERMITENTES	Competência calcular os afastamentos auxílio doença, doença profissional e licença maternidade com pagamento pela empresa para empregados com contrato intermitente.   (COMP_CALC_AFAST_COM_PAGTO_PELA_EMPRESA_EMPREGADOS_INTERMITENTES)	date	1	10	DD/MM/YYYY	I		0
+4	FOPARMTO	493	CALCULAR_SALARIO_FAMILIA_INTERMITENTE_COMPETENCIA_SEM_CALCULO	Calcular salário família para empregado intermitente quando na competência não possuir cálculo. (0=Não/1=Sim)   (CALCULAR_SALARIO_FAMILIA_INTERMITENTE_COMPETENCIA_SEM_CALCULO)	smallint	1	7		I		0
+4	FOPARMTO	494	CALC_SAL_FAMILIA_EMPREGADO_INTEGRALMENTE_AFASTADO_SUSPENSAO	Calcular Salário Família quando o empregado estiver integralmente afastado por suspensão. (0=Não/1=Sim)   (CALC_SAL_FAMILIA_EMPREGADO_INTEGRALMENTE_AFASTADO_SUSPENSAO)	smallint	1	7		I		0
+4	FOPARMTO	495	CALCULAR_DIARIAS_TRIBUTAVEIS	Calcular diárias tributáveis. (0=Não/1=Sim)   (CALCULAR_DIARIAS_TRIBUTAVEIS)	smallint	1	7		I		0
+4	FOPARMTO	496	COMPETENCIA_CALCULAR_DIARIAS_TRIBUTAVEIS	Competência calcular diárias tributáveis.   (COMPETENCIA_CALCULAR_DIARIAS_TRIBUTAVEIS)	date	1	10	DD/MM/YYYY	I		0
+4	FOPARMTO	497	CONSIDERAR_DIAS_GARANTIA_PROVISORIA_CALCULO_AVO_FERIAS_13	Considerar os dias de indenização de garantia provisória para o cálculo dos avos de férias e 13º salário indenizados. (0=Não/1=Sim)   (CONSIDERAR_DIAS_GARANTIA_PROVISORIA_CALCULO_AVO_FERIAS_13)	smallint	1	7		I		0
+4	FOPARMTO	498	ENTIDADE_EDUCATIVA_PRATICA_DESPORTIVA_APRENDIZ	Entidade Educativa/Prática Desportiva (Aprendiz). (0=Não/1=Sim)   (ENTIDADE_EDUCATIVA_PRATICA_DESPORTIVA_APRENDIZ)	smallint	1	7		I		0
+4	FOPARMTO	499	GERAR_ESOCIAL_DOMESTICO	Gerar eSocial doméstico   (GERAR_ESOCIAL_DOMESTICO)	smallint	1	7		I		0
+4	FOPARMTO	500	TIPO_ACESSO_ESOCIAL_DOMESTICO	Tipo de acesso eSocial doméstico. (1=Código/2=Certificado digital da própria empresa/3=Certificado digital por procuração)   (TIPO_ACESSO_ESOCIAL_DOMESTICO)	smallint	1	7		I		0
+4	FOPARMTO	501	CODIGO_ACESSO_ESOCIAL_DOMESTICO	Código de acesso eSocial doméstico   (CODIGO_ACESSO_ESOCIAL_DOMESTICO)	varchar	1	12		I		0
+4	FOPARMTO	502	SENHA_ACESSO_ESOCIAL_DOMESTICO	Senha de acesso eSocial doméstico   (SENHA_ACESSO_ESOCIAL_DOMESTICO)	varchar	1	30		I		0
+4	FOPARMTO	503	CONSIDERAR_SALARIO_REDUZIDO_COMPETENCIA_CALCULO_13	Considerar o salÃ¡rio reduzido da competÃªncia para o cÃ¡lculo do 13Âº salÃ¡rio   (CONSIDERAR_SALARIO_REDUZIDO_COMPETENCIA_CALCULO_13)	smallint	1	7		I		0
+4	FOPARMTO	504	UTILIZAR_RESCISAO_RUBRICAS_DESCONTO_DIF_13_INCIDENCIA_ENCARGOS	Utilizar na rescisão as rubricas de desconto diferença 13° com incidência de encargos   (UTILIZAR_RESCISAO_RUBRICAS_DESCONTO_DIF_13_INCIDENCIA_ENCARGOS)	smallint	1	7		I		0
+4	FOPARMTO	505	COMPANY_ID	Onvio company global unique identifier   (COMPANY_ID)	uniqueidentifier	1	16		I		0
+4	FOPARMTO	506	DESCONSIDERAR_MES_DIVISOR_MEDIAS_REDUCAO_13	Desconsiderar o mês como divisor para o cálculo de médias de 13º, se o empregado ficou X dias ou mais com redução   (DESCONSIDERAR_MES_DIVISOR_MEDIAS_REDUCAO_13)	smallint	1	7		I		0
+4	FOPARMTO	507	DESCONSIDERAR_MES_DIVISOR_MEDIAS_REDUCAO_13_DIAS	Desconsiderar o mês como divisor para o cálculo de médias de 13º, se o empregado ficou X dias ou mais com redução   (DESCONSIDERAR_MES_DIVISOR_MEDIAS_REDUCAO_13_DIAS)	smallint	1	7		I		0
+4	FOPARMTO	508	CONSIDERAR_AFASTAMENTO_47_CALCULO_DIAS_DIREITO_13_SALARIO	CONSIDERAR AFASTAMENTO 47 PARA O CÁLCULO DOS DIAS DE DIREITO DO 13º SALÁRIO. (0=NÃO/1=SIM)   (CONSIDERAR_AFASTAMENTO_47_CALCULO_DIAS_DIREITO_13_SALARIO)	smallint	1	7		I		0
+4	FOPARMTO	509	CONSIDERAR_AFASTAMENTO_36_CALCULO_DIAS_DIREITO_13_SALARIO	CONSIDERAR AFASTAMENTO 36 PARA O CÁLCULO DOS DIAS DE DIREITO DO 13º SALÁRIO. (0=NÃO/1=SIM)   (CONSIDERAR_AFASTAMENTO_36_CALCULO_DIAS_DIREITO_13_SALARIO)	smallint	1	7		I		0
+4	FOPARMTO	510	LIMITAR_PAGAMENTO_CONTRIB_TERCEIRO_20_SALARIO_MINIMO	Limitar o pagamento da contribuição de terceiros a 20 salários mínimos. (0=Não/1=Valor à recolher/2=Base de cálculo)   (LIMITAR_PAGAMENTO_CONTRIB_TERCEIRO_20_SALARIO_MINIMO)	smallint	1	7		I		0
+4	FOPARMTO	511	COMPETENCIA_LIMITE_PAGAMENTO_CONTRIB_TERCEIRO_20_SALARIO_MINIMO	Competência para limitar o pagamento da contribuição de terceiros a 20 salarios.   (COMPETENCIA_LIMITE_PAGAMENTO_CONTRIB_TERCEIRO_20_SALARIO_MINIMO)	date	1	10	DD/MM/YYYY	I		0
+4	FOPARMTO	512	HABILITAR_IMPORTACAO_DADOS_ESOCIAL	Habilitar importação de dados do eSocial   (HABILITAR_IMPORTACAO_DADOS_ESOCIAL)	smallint	1	7		I		0
+4	FOPARMTO	513	CONSIDERAR_ULTIMO_DIA_MES_PARA_LANCAMENTO_COMO_FINAL_DO_MES_OU_PROVISOES	Considerar o último dia do mês, independente se cair em dia não útil, para data de lançamento como Final do Mês e para provisões   (CONSIDERAR_ULTIMO_DIA_MES_PARA_LANCAMENTO_COMO_FINAL_DO_MES_OU_PROVISOES)	smallint	1	7		I		0
+4	FOPARMTO	514	UTILIZA_FORMA_UNIFICADA_ESOCIAL	Utiliza forma unificada a orgãos públicos. (0=Não/1=Sim)   (UTILIZA_FORMA_UNIFICADA_ESOCIAL)	smallint	1	7		I		0
+4	FOPARMTO	515	CNPJ_ENTE_FEDERATIVO_RESPONSAVEL	CNPJ do Ente Federativo Responsável a orgãos públicos.   (CNPJ_ENTE_FEDERATIVO_RESPONSAVEL)	varchar	1	14		I		0
+4	FOPARMTO	516	NUMERO_PROCESSO_DEFICIENTE	Numero do processo para contratação de deficiente.   (NUMERO_PROCESSO_DEFICIENTE)	varchar	1	20		I		0
+4	FOPARMTO	517	CADASTRAMENTO_INICIAL_EVENTOS_TREICAP	Cadastramento inicial dos eventos TreiCap se foi enviado ao eSocial.   (CADASTRAMENTO_INICIAL_EVENTOS_TREICAP)	integer	1	7		I		0
+4	FOPARMTO	518	CADASTRAMENTO_INICIAL_EVENTOS_TREICAP_DATA	Competência dos envios TreiCap ao eSocial".   (CADASTRAMENTO_INICIAL_EVENTOS_TREICAP_DATA)	date	1	10	DD/MM/YYYY	I		0
+4	FOPARMTO	519	ENVIAR_EVENTO_S2210_PELO_MODULO_FOLHA	Enviar o evento S-2210 pelo modulo folha. (0=Não/1=Sim)   (ENVIAR_EVENTO_S2210_PELO_MODULO_FOLHA)	smallint	1	7		I		0
+4	FOPARMTO	520	ENVIAR_EVENTO_S2220_PELO_MODULO_FOLHA	Enviar o evento S-2220 pelo modulo folha. (0=Não/1=Sim)   (ENVIAR_EVENTO_S2220_PELO_MODULO_FOLHA)	smallint	1	7		I		0
+4	FOPARMTO	521	ENVIAR_EVENTO_S2240_PELO_MODULO_FOLHA	Enviar o evento S-2240 pelo modulo folha. (0=Não/1=Sim)   (ENVIAR_EVENTO_S2240_PELO_MODULO_FOLHA)	smallint	1	7		I		0
+4	FOPARMTO	522	VINCULAR_OUTRO_RESPONSAVEL_PARA_ENVIO_EVENTO_SST_ESOCIAL	Vincular outro responsável para enviar eventos SST para o eSocial. (0=Não/1=Sim)   (VINCULAR_OUTRO_RESPONSAVEL_PARA_ENVIO_EVENTO_SST_ESOCIAL)	smallint	1	7		I		0
+4	FOPARMTO	523	ORIGEM_CERTIFICADO_ENVIO_EVENTO_SST_ESOCIAL	Origem do certificado para o envio dos eventos SST para enviar eventos SST para o eSocial. (1=Empresa/2=Responsavel)   (ORIGEM_CERTIFICADO_ENVIO_EVENTO_SST_ESOCIAL)	smallint	1	7		I		0
+4	FOPARMTO	524	I_RESPONSAVEL_ENVIO_SST_ESOCIAL	Código do responsável pelo envio dos eventos SST para o eSocial   (I_RESPONSAVEL_ENVIO_SST_ESOCIAL)	integer	1	7		I		0
+4	FOPARMTO	525	ENVIAR_EVENTO_S2210_PELO_RESPONSAVEL_SST	Enviar o evento S-2210 pelo responsavel SST (0=Não/1=Sim)   (ENVIAR_EVENTO_S2210_PELO_RESPONSAVEL_SST)	smallint	1	7		I		0
+4	FOPARMTO	526	ENVIAR_EVENTO_S2220_PELO_RESPONSAVEL_SST	Enviar o evento S-2220 pelo responsavel SST (0=Não/1=Sim)   (ENVIAR_EVENTO_S2220_PELO_RESPONSAVEL_SST)	smallint	1	7		I		0
+4	FOPARMTO	527	ENVIAR_EVENTO_S2240_PELO_RESPONSAVEL_SST	Enviar o evento S-2240 pelo responsavel SST (0=Não/1=Sim)   (ENVIAR_EVENTO_S2240_PELO_RESPONSAVEL_SST)	smallint	1	7		I		0
+4	FOPARMTO	528	ALTERAR_INSCRICAO_EMPRESA	0-Nao / 1-Sim - Houve alteracao, aguardando atualizacao pelo Folha   (ALTERAR_INSCRICAO_EMPRESA)	char	1	1		I		0
+4	FOPARMTO	529	ADIANTAMENTO_PROPORCIONAL_OUTROS_AFASTAMENTOS_DIAS_TRAB	Parâmetro adiantamento proporcional outros afastamentos dias trabalhados   (ADIANTAMENTO_PROPORCIONAL_OUTROS_AFASTAMENTOS_DIAS_TRAB)	tinyint	1	3		I		0
+4	FOPARMTO	530	CALC_INSS_8_TRAB_RURAL_CONTRATO_PRAZO_DETERMINADO	Parametro calcular INSS 8% para trab. rural com contrato de prazo determinado   (CALC_INSS_8_TRAB_RURAL_CONTRATO_PRAZO_DETERMINADO)	smallint	1	7		I		0

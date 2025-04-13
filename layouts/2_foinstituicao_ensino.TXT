@@ -1,0 +1,15 @@
+4	FOINSTITUICAO_ENSINO	1	I_INSTITUICAO_ENSINO	Código da instituição de ensino.   (I_INSTITUICAO_ENSINO)	integer	1	7		I		0
+4	FOINSTITUICAO_ENSINO	2	NOME	Nome da instituição de ensino.   (NOME)	varchar	1	80		I		0
+4	FOINSTITUICAO_ENSINO	3	DATA_CADASTRO	Data de cadastro da instituição de ensino.   (DATA_CADASTRO)	date	1	10	DD/MM/YYYY	I		0
+4	FOINSTITUICAO_ENSINO	4	CNPJ	CNPJ da instituição de ensino.   (CNPJ)	varchar	1	14		I		0
+4	FOINSTITUICAO_ENSINO	5	ENDERECO	Endereço da instituição de ensino.   (ENDERECO)	varchar	1	80		I		0
+4	FOINSTITUICAO_ENSINO	6	NUMERO	Número   (NUMERO)	integer	1	7		I		0
+4	FOINSTITUICAO_ENSINO	7	COMPLEMENTO	Complemento do endereço da instituição de ensino.   (COMPLEMENTO)	varchar	1	40		I		0
+4	FOINSTITUICAO_ENSINO	8	BAIRRO	Bairro da instituição de ensino.   (BAIRRO)	varchar	1	30		I		0
+4	FOINSTITUICAO_ENSINO	9	CEP	CEP   (CEP)	varchar	1	8		I		0
+4	FOINSTITUICAO_ENSINO	10	CODIGO_MUNICIPIO	Município da instituição de ensino.   (CODIGO_MUNICIPIO)	integer	1	7		I		0
+4	FOINSTITUICAO_ENSINO	11	CODIGO_PAIS	País da instituição de ensino.   (CODIGO_PAIS)	integer	1	7		I		0
+4	FOINSTITUICAO_ENSINO	12	ORIGEM_REGISTRO	Origem do registro (0=Sistema/ 1=Imp Tabelas/ 2=Imp Layout)   (ORIGEM_REGISTRO)	smallint	1	7		I		0
+4	FOINSTITUICAO_ENSINO	13	NOME_REITOR	Nome do reitor.   (NOME_REITOR)	varchar	1	80		I		0
+4	FOINSTITUICAO_ENSINO	14	DDD_TELEFONE	DDD do telefone.   (DDD_TELEFONE)	varchar	1	3		I		0
+4	FOINSTITUICAO_ENSINO	15	TELEFONE	Telefone.   (TELEFONE)	varchar	1	11		I		0

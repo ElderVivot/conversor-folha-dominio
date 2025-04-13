@@ -1,0 +1,8 @@
+4	FOCOORDENADOR_ESTAGIO	1	I_COORDENADOR_ESTAGIO	Código do coordenador de estágio.   (I_COORDENADOR_ESTAGIO)	integer	1	7		I		0
+4	FOCOORDENADOR_ESTAGIO	2	NOME	NOME   (NOME)	varchar	1	80		I		0
+4	FOCOORDENADOR_ESTAGIO	3	DATA_CADASTRO	Data de cadastro do coordenador de estágio.   (DATA_CADASTRO)	date	1	10	DD/MM/YYYY	I		0
+4	FOCOORDENADOR_ESTAGIO	4	CPF	CPF do coordenador de estágio.   (CPF)	char	1	11		I		0
+4	FOCOORDENADOR_ESTAGIO	5	ORIGEM_REGISTRO	Origem do registro (0=Sistema/ 1=Imp Tabelas/ 2=Imp Layout)   (ORIGEM_REGISTRO)	smallint	1	7		I		0
+4	FOCOORDENADOR_ESTAGIO	6	TIPO	Tipo. (1=Coordenador/2=Supervisor)   (TIPO)	smallint	1	7		I		0
+4	FOCOORDENADOR_ESTAGIO	7	GRAU_INSTRUCAO	Grau de instrução.   (GRAU_INSTRUCAO)	smallint	1	7		I		0
+4	FOCOORDENADOR_ESTAGIO	8	EMAIL	E-mail.   (EMAIL)	varchar	1	120		I		0

@@ -1,0 +1,11 @@
+4	FOESOCIAL_LOTES	1	CODI_EMP	Código da empresa   (CODI_EMP)	integer	1	7		I		0
+4	FOESOCIAL_LOTES	2	I_LOTE	Código do lote   (I_LOTE)	integer	1	7		I		0
+4	FOESOCIAL_LOTES	3	STATUS	Status do lote.(1=Aguardando envio/2=Enviado/3=Aguardando ajuste/4=Concluído/5=Aguardando senha A3/6=Aguardando Envio Multiplos Vinculos/7=Aguardando fim thread contábil/8=Erro lote/9=Erro preenchimento)   (STATUS)	smallint	1	7		I		0
+4	FOESOCIAL_LOTES	4	I_EVENTO_ESOCIAL	Código do evento do eSocial que será enviado no lote.   (I_EVENTO_ESOCIAL)	integer	1	7		I		0
+4	FOESOCIAL_LOTES	5	VERSAO	Versão do XML.   (VERSAO)	varchar	1	12		I		0
+4	FOESOCIAL_LOTES	6	LOTE_EXCLUSAO	Lote de exclusão da empresa.   (LOTE_EXCLUSAO)	smallint	1	7		I		0
+4	FOESOCIAL_LOTES	7	DATA_CRIACAO_REGISTRO	Data de inserção do registro no banco de dados.   (DATA_CRIACAO_REGISTRO)	timestamp	1	19	DD/MM/YYYY HH:MM:SS	I		0
+4	FOESOCIAL_LOTES	8	DATA_ALTERACAO_REGISTRO	Data da última alteração do registro no banco de dados.   (DATA_ALTERACAO_REGISTRO)	timestamp	1	19	DD/MM/YYYY HH:MM:SS	I		0
+4	FOESOCIAL_LOTES	9	DATA_PROCESSAMENTO_REGISTRO	Data de processamento do registro.   (DATA_PROCESSAMENTO_REGISTRO)	timestamp	1	19	DD/MM/YYYY HH:MM:SS	I		0
+4	FOESOCIAL_LOTES	10	VERSAO_SISTEMA	Versão do sistema no momento da inserção/alteração do registro.   (VERSAO_SISTEMA)	varchar	1	50		I		0
+4	FOESOCIAL_LOTES	11	POSSUI_EVENTOS_INVALIDADOS	Indica se o lote possui eventos invalidados.   (POSSUI_EVENTOS_INVALIDADOS)	bit	1	1		I		0

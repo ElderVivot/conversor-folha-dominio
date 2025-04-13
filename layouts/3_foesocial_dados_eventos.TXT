@@ -1,0 +1,58 @@
+4	FOESOCIAL_DADOS_EVENTOS	1	CODI_EMP	Código da empresa.   (CODI_EMP)	integer	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	2	I_DADOS_EVENTOS	Código do registro de envio.   (I_DADOS_EVENTOS)	integer	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	3	I_LOTE	Código do lote.   (I_LOTE)	integer	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	4	CODIGO_ESOCIAL	CODIGO_ESOCIAL   (CODIGO_ESOCIAL)	varchar	1	30		I		0
+4	FOESOCIAL_DADOS_EVENTOS	5	I_EVENTO_ESOCIAL	Código do evento do eSocial.   (I_EVENTO_ESOCIAL)	integer	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	6	TIPO_ENVIO	Tipo de envio. (1=Inclusão/2=Alteração/3=Exclusão/4=Retificação)   (TIPO_ENVIO)	smallint	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	7	TABELA_DADOS	Nome da tabela de dados que gerou o registro.   (TABELA_DADOS)	varchar	1	128		I		0
+4	FOESOCIAL_DADOS_EVENTOS	8	CHAVE_TABELA_DADOS	Chave do registro da tabela de dados.   (CHAVE_TABELA_DADOS)	varchar	1	256		I		0
+4	FOESOCIAL_DADOS_EVENTOS	9	ID	ID de envio ao eSocial.   (ID)	varchar	1	70		I		0
+4	FOESOCIAL_DADOS_EVENTOS	10	XML_EVENTO	XML do evento.   (XML_EVENTO)	long varchar	1	32767		I		0
+4	FOESOCIAL_DADOS_EVENTOS	11	NUMERO_RECIBO	Número do recibo.   (NUMERO_RECIBO)	varchar	1	50		I		0
+4	FOESOCIAL_DADOS_EVENTOS	12	I_RESPOSTA	Código da resposta para o evento.   (I_RESPOSTA)	integer	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	13	DESCRICAO_RESPOSTA	Descrição da resposta para o evento.   (DESCRICAO_RESPOSTA)	varchar	1	1000		I		0
+4	FOESOCIAL_DADOS_EVENTOS	14	VALIDADO	Evento validado. (0=Não/1=Sim)   (VALIDADO)	smallint	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	15	AGUARDANDO_AJUSTE	Quando invalidado, indica se o evento necessita de ajuste antes de ser reenviado. (0=Não/1=Sim)   (AGUARDANDO_AJUSTE)	smallint	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	16	DATA_HORA_CONCLUSAO	Data/hora da conclusão do evento.   (DATA_HORA_CONCLUSAO)	timestamp	1	19	DD/MM/YYYY HH:MM:SS	I		0
+4	FOESOCIAL_DADOS_EVENTOS	17	NOME_ARQUIVO	Nome do arquivo a ser exportado, coluna criada para GT/Suporte   (NOME_ARQUIVO)	varchar	1	128		I		0
+4	FOESOCIAL_DADOS_EVENTOS	18	DATA_ALTERACAO	Preencher com a data de alteração quando for um evento de alteração. Exemplo: 2205, 2206, 2306.   (DATA_ALTERACAO)	date	1	10	DD/MM/YYYY	I		0
+4	FOESOCIAL_DADOS_EVENTOS	19	I_EVENTO_ESOCIAL_EXCLUIDO	Código evento esocial excluido no evento 3000.   (I_EVENTO_ESOCIAL_EXCLUIDO)	integer	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	20	NUMERO_RECIBO_EXCLUIDO	Numero do recibo excluido no evento 3000.   (NUMERO_RECIBO_EXCLUIDO)	varchar	1	50		I		0
+4	FOESOCIAL_DADOS_EVENTOS	21	CODI_EMP_EVENTO_RETIFICADO	Empresa do evento esocial que esta sendo retificado.   (CODI_EMP_EVENTO_RETIFICADO)	integer	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	22	I_DADOS_EVENTOS_EVENTO_RETIFICADO	Codigo sequencial do evento esocial que esta sendo retificado.   (I_DADOS_EVENTOS_EVENTO_RETIFICADO)	integer	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	23	COMPETENCIA_CALCULO	Competência para gerar os dados do cálculo.   (COMPETENCIA_CALCULO)	date	1	10	DD/MM/YYYY	I		0
+4	FOESOCIAL_DADOS_EVENTOS	24	GERAR_REMUNERACAO_13_SALARIO	Gerar os dados do evento.   (GERAR_REMUNERACAO_13_SALARIO)	smallint	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	25	I_RESPONSAVEL	Responsável pelo envio do fechamento.   (I_RESPONSAVEL)	integer	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	26	EXISTE_MOVIMENTACAO_PERIODO	Existe movimentação no período. (0=Não/1=Sim)   (EXISTE_MOVIMENTACAO_PERIODO)	smallint	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	27	I_SERVICOS	Código do serviço.   (I_SERVICOS)	integer	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	28	TIPO_VALIDACAO	Tipo de validação. (1=Sistema/2=Manual/3=Conversão/4=Importação)   (TIPO_VALIDACAO)	smallint	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	29	XML_ALTERADO	Indica se o XML foi alterado pelo usuario. 0=Nao/1=Sim   (XML_ALTERADO)	smallint	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	30	MOSTRAR_PAINEL_ESOCIAL	**SEM USO**   (MOSTRAR_PAINEL_ESOCIAL)	smallint	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	31	NIS_EMPREGADO	Numero do NIS do empregado no momento do envio para o eSocial.   (NIS_EMPREGADO)	char	1	11		I		0
+4	FOESOCIAL_DADOS_EVENTOS	32	DATA_CRIACAO_REGISTRO	Data de inserção do registro no banco de dados.   (DATA_CRIACAO_REGISTRO)	timestamp	1	19	DD/MM/YYYY HH:MM:SS	I		0
+4	FOESOCIAL_DADOS_EVENTOS	33	DATA_ALTERACAO_REGISTRO	Data da última alteração do registro no banco de dados.   (DATA_ALTERACAO_REGISTRO)	timestamp	1	19	DD/MM/YYYY HH:MM:SS	I		0
+4	FOESOCIAL_DADOS_EVENTOS	34	DATA_PROCESSAMENTO_REGISTRO	Data de processamento do registro.   (DATA_PROCESSAMENTO_REGISTRO)	timestamp	1	19	DD/MM/YYYY HH:MM:SS	I		0
+4	FOESOCIAL_DADOS_EVENTOS	35	VERSAO_SISTEMA	Versão do sistema no momento da inserção/alteração do registro.   (VERSAO_SISTEMA)	varchar	1	50		I		0
+4	FOESOCIAL_DADOS_EVENTOS	36	INCLUSAO_DUPLICADA	Registro duplicado (retorno 537)   (INCLUSAO_DUPLICADA)	smallint	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	37	COMPETENCIA_REENVIAR_CALCULO_APOS_VALIDACAO	Competência pra reenviar os eventos 1200 e 1210 após validação desse evento.   (COMPETENCIA_REENVIAR_CALCULO_APOS_VALIDACAO)	date	1	10	DD/MM/YYYY	I		0
+4	FOESOCIAL_DADOS_EVENTOS	38	XSD_VALIDADO	XSD validado (0)-Não (1)-Sim   (XSD_VALIDADO)	smallint	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	39	INICIO_AFASTAMENTO	Inclusão do afastamento no evento S-2230. (0=Não/1=Sim)   (INICIO_AFASTAMENTO)	smallint	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	40	FIM_AFASTAMENTO	Fim do afastamento no evento S-2230. (0=Não/1=Sim)   (FIM_AFASTAMENTO)	smallint	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	41	REENVIAR	Evento marcado para reenviar. (0=Não/1=Sim)   (REENVIAR)	smallint	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	42	GERAR_LIMPEZA_DADOS_ESOCIAL	Gerar limpeza de dados no eSocial.   (GERAR_LIMPEZA_DADOS_ESOCIAL)	smallint	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	43	COMPETENCIA_INICIO_VALIDADE	Competencia da tag iniValid dos eventos de tabelas   (COMPETENCIA_INICIO_VALIDADE)	date	1	10	DD/MM/YYYY	I		0
+4	FOESOCIAL_DADOS_EVENTOS	44	UTILITARIO_CONVERSAO_REGISTROS_ENVIADOS_OUTRO_BANCO	Identifica se o registro de fila foi gerado pelo utilitário de conversão de outros bancos. (0=Não/1=Sim)   (UTILITARIO_CONVERSAO_REGISTROS_ENVIADOS_OUTRO_BANCO)	smallint	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	45	CODIGO_PROCESSO_AUDITOR	Código do processo da auditoria.   (CODIGO_PROCESSO_AUDITOR)	integer	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	46	CANCELAMENTO_AVISO_PREVIO	Cancelamento de aviso prévio do evento 2250. (0=Não/1=Sim)   (CANCELAMENTO_AVISO_PREVIO)	smallint	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	47	ID_DUPLICADO_ALTERADO	ID estava duplicado no banco de dados e foi alterado para a criação do índice único na tabela.   (ID_DUPLICADO_ALTERADO)	smallint	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	48	ADVERTENCIA_AJUSTADA	Registro validado com advertÃªncia ajustado pelo usuÃ¡rio. (0=NÃ£o/1=Sim)   (ADVERTENCIA_AJUSTADA)	smallint	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	49	POSSUI_VERBAS_RESCISORIAS_PERIODO	Possui verbas rescisórias (tag verbasResc) no S-2299/S-2399.   (POSSUI_VERBAS_RESCISORIAS_PERIODO)	smallint	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	50	EMPRESA_RESPONSAVEL	Código da empresa que o responsavel esta vinculado   (EMPRESA_RESPONSAVEL)	integer	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	51	VERSAO_LEIAUTE	Versão do leiaute do eSocial que foi gerado o evento.   (VERSAO_LEIAUTE)	varchar	1	12		I		0
+4	FOESOCIAL_DADOS_EVENTOS	52	ADMISSAO_TSVE_COM_MATRICULA	Evento de admissão trabalhador sem vinculo com matricula .   (ADMISSAO_TSVE_COM_MATRICULA)	smallint	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	53	EXISTE_ENVIO_AQUISICAO_RURAL	Empregado possui evento de aquisição rural enviado na competência do evento S-1299.   (EXISTE_ENVIO_AQUISICAO_RURAL)	smallint	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	54	EFETUAR_TRANSMISSAO_IMEDIATA_DCTFWEB	Efetuar a transmissão imediata da DCTF no 1299 para MEI.   (EFETUAR_TRANSMISSAO_IMEDIATA_DCTFWEB)	smallint	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	55	EXISTE_ENVIO_TREINAMENTOS	Existe envio de treinamentos. (0=Não/1=Sim)   (EXISTE_ENVIO_TREINAMENTOS)	smallint	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	56	NUMERO_RECIBO_RETIFICACAO	Número do recibo de retificação invalidados.   (NUMERO_RECIBO_RETIFICACAO)	varchar	1	40		I		0
+4	FOESOCIAL_DADOS_EVENTOS	57	REENVIAR_INVALIDADO	Reenviar um evento invalidado   (REENVIAR_INVALIDADO)	smallint	1	7		I		0
+4	FOESOCIAL_DADOS_EVENTOS	58	REENVIAR_EVENTO_AUTOMATICAMENTE	Reenviar o evento automaticamente. (0=Não/1=Sim)   (REENVIAR_EVENTO_AUTOMATICAMENTE)	smallint	1	7		I		0

@@ -1,0 +1,16 @@
+4	FOMEDICOS	1	I_MEDICOS	Código do médico/dentista.   (I_MEDICOS)	integer	1	7		I		0
+4	FOMEDICOS	2	NOME	Nome do médico/dentista.   (NOME)	varchar	1	100		I		0
+4	FOMEDICOS	3	ORGAO_CLASSE	Orgão de classe. (1=CRM/2=CRO/3=RMS)   (ORGAO_CLASSE)	smallint	1	7		I		0
+4	FOMEDICOS	4	NUMERO_ORGAO_CLASSE	Número do orgão de classe.   (NUMERO_ORGAO_CLASSE)	varchar	1	14		I		0
+4	FOMEDICOS	5	CODIGO_ESTADO	Código do estado.   (CODIGO_ESTADO)	integer	1	7		I		0
+4	FOMEDICOS	6	FORMA_CONTATO	Forma de contato.   (FORMA_CONTATO)	varchar	1	100		I		0
+4	FOMEDICOS	7	TELEFONE	Telefone.   (TELEFONE)	varchar	1	15		I		0
+4	FOMEDICOS	8	ORIGEM_REGISTRO	Origem do registro. (0=Sistema/1=Importação de tabelas/2=Importação de layout)   (ORIGEM_REGISTRO)	smallint	1	7		I		0
+4	FOMEDICOS	9	I_DADOS_EVENTOS_ESOCIAL	**SEM USO**   (I_DADOS_EVENTOS_ESOCIAL)	integer	1	7		I		0
+4	FOMEDICOS	10	I_LOTE_ESOCIAL	**SEM USO**   (I_LOTE_ESOCIAL)	integer	1	7		I		0
+4	FOMEDICOS	11	STATUS_ESOCIAL	**SEM USO**   (STATUS_ESOCIAL)	smallint	1	7		I		0
+4	FOMEDICOS	12	ENVIAR_ESOCIAL	Enviar para o eSocial. (0=Não/1=Sim)   (ENVIAR_ESOCIAL)	smallint	1	7		I		0
+4	FOMEDICOS	13	INCLUSAO_VALIDADA_ESOCIAL	**SEM USO**   (INCLUSAO_VALIDADA_ESOCIAL)	smallint	1	7		I		0
+4	FOMEDICOS	14	GERAR_RETIFICACAO_ESOCIAL	Gerar retificação para o eSocial. (0=Não/1=Sim)   (GERAR_RETIFICACAO_ESOCIAL)	smallint	1	7		I		0
+4	FOMEDICOS	15	PROCESSAR_EXCLUSAO_ESOCIAL	Marcação do evento para gerar o evento de exclusão no eSocial. (0=Não/1=Sim)   (PROCESSAR_EXCLUSAO_ESOCIAL)	smallint	1	7		I		0
+4	FOMEDICOS	16	CPF	CPF.   (CPF)	char	1	11		I		0

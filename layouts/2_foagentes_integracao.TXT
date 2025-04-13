@@ -1,0 +1,12 @@
+4	FOAGENTES_INTEGRACAO	1	I_AGENTES_INTEGRACAO	Código do agente de integração.   (I_AGENTES_INTEGRACAO)	integer	1	7		I		0
+4	FOAGENTES_INTEGRACAO	2	NOME	Nome do agente de integração.   (NOME)	varchar	1	80		I		0
+4	FOAGENTES_INTEGRACAO	3	DATA_CADASTRO	Data de cadastro do agente de integração.   (DATA_CADASTRO)	date	1	10	DD/MM/YYYY	I		0
+4	FOAGENTES_INTEGRACAO	4	CNPJ	CNPJ do agente de integração.   (CNPJ)	varchar	1	14		I		0
+4	FOAGENTES_INTEGRACAO	5	ENDERECO	Endereço do agente de integração.   (ENDERECO)	varchar	1	80		I		0
+4	FOAGENTES_INTEGRACAO	6	NUMERO	Número   (NUMERO)	integer	1	7		I		0
+4	FOAGENTES_INTEGRACAO	7	COMPLEMENTO	Complemento do endereço do agente de integração.   (COMPLEMENTO)	varchar	1	40		I		0
+4	FOAGENTES_INTEGRACAO	8	BAIRRO	Bairro do agente de integração.   (BAIRRO)	varchar	1	30		I		0
+4	FOAGENTES_INTEGRACAO	9	CEP	CEP   (CEP)	varchar	1	8		I		0
+4	FOAGENTES_INTEGRACAO	10	CODIGO_MUNICIPIO	Município do agente de integração.   (CODIGO_MUNICIPIO)	integer	1	7		I		0
+4	FOAGENTES_INTEGRACAO	11	CODIGO_PAIS	País do agente de integração.   (CODIGO_PAIS)	integer	1	7		I		0
+4	FOAGENTES_INTEGRACAO	12	ORIGEM_REGISTRO	Origem do registro (0=Sistema/ 1=Imp Tabelas/ 2=Imp Layout)   (ORIGEM_REGISTRO)	smallint	1	7		I		0
