@@ -16,6 +16,7 @@ sys.path.append(folderSrc)
 sys.path.append(folderBeforeSrc)
 
 from loop_sqls import LoopSqls
+from de_para_empresas import main as mainDeParaEmpresas
 
 logger = logging.getLogger()
 handler = logging.StreamHandler()
@@ -50,6 +51,8 @@ class MainExtrator:
         for codiEmp in COMPANIES_MIGRATE:
             logger.info(f'Exportando empresa {codiEmp}')
             LoopSqls(logger, folderSqlsFilterCompanie, {"codi_emp": str(codiEmp)}).main()
+
+        mainDeParaEmpresas()
 
 
 if __name__ == "__main__":

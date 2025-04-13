@@ -4,6 +4,7 @@ from __future__ import annotations
 from logging import Logger
 import sys
 import os
+import json
 from pyodbc import connect, Connection
 
 currentFolder = os.path.dirname(__file__)
@@ -13,10 +14,14 @@ sys.path.append(currentFolder)
 sys.path.append(folderSrc)
 sys.path.append(folderBeforeSrc)
 
-user = 'EXTERNO'
-password = 'externo'
-host = 'Contabil'
-port = '2638'
+# Load environment data
+dataEnv = json.load(open(os.path.join(folderBeforeSrc, 'env.json')))
+DB_CONFIG = dataEnv.get("database", {})
+
+user = DB_CONFIG.get('user', 'EXTERNO')
+password = DB_CONFIG.get('password', 'EXTERNO')
+host = DB_CONFIG.get('host', 'Contabil')
+port = DB_CONFIG.get('port', '2638')
 
 
 class ConnectionDB():
