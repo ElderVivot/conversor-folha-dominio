@@ -49,17 +49,23 @@ def process_csv_file(mapping: Dict[str, str], file_name: str):
                     if row[10] in mapping:
                         row[10] = mapping[row[10]]
                 elif file_name == '3_foesocial_dados_eventos.csv':
+                    row[7] = row[7].replace(f'codi_emp = {row[0]} ', f'codi_emp = {mapping[row[0]]} ')
                     if row[20] in mapping:
                         row[20] = mapping[row[20]]
                 elif file_name == '4_foparmto_alteracao_envios_esocial.csv':
                     if row[2] in mapping:
                         row[2] = mapping[row[2]]
-                elif file_name == '6_foempregados.csv' or file_name == '6_foempregados_transf_1.sql' or file_name == '6_foempregados_transf_2.sql':
+                elif file_name == '6_foempregados.csv' or file_name == '6_foempregados_transf_1.csv' or file_name == '6_foempregados_transf_2.csv':
                     if row[116] in mapping:
                         row[116] = mapping[row[116]]
+                    if row[55] == '2':
+                        row[55] = 9  # atualiza codigo sindicato
                 elif file_name == '5_focargos_alteracao_envios_esocial.csv' or file_name == '5_fohorarios_alteracao_envios_esocial.csv' or file_name == '5_fovigencias_servico_envios_esocial.csv':
                     if row[3] in mapping:
                         row[3] = mapping[row[3]]
+                elif file_name == '10_foempregados_envios_esocial.csv':
+                    if row[2] in mapping:
+                        row[2] = mapping[row[2]]
 
                 if updateColumn0 is True:
                     if row[0] in mapping:

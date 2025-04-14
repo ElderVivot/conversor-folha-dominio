@@ -60,7 +60,7 @@ COALESCE(STRING(bethadba.FOESOCIAL_DADOS_EVENTOS.REENVIAR_EVENTO_AUTOMATICAMENTE
 FROM bethadba.FOESOCIAL_DADOS_EVENTOS
 
 WHERE bethadba.FOESOCIAL_DADOS_EVENTOS.codi_emp = '#codi_emp#'
-  AND bethadba.FOESOCIAL_DADOS_EVENTOS.i_evento_esocial in (1000,1005)
+  AND bethadba.FOESOCIAL_DADOS_EVENTOS.i_evento_esocial in (/*1000,1005*/0)
   AND bethadba.FOESOCIAL_DADOS_EVENTOS.i_dados_eventos = ( SELECT MIN(FOESOCIAL_DADOS_EVENTOS2.i_dados_eventos)
                                                              FROM bethadba.FOESOCIAL_DADOS_EVENTOS AS FOESOCIAL_DADOS_EVENTOS2
                                                             WHERE FOESOCIAL_DADOS_EVENTOS2.codi_emp = bethadba.FOESOCIAL_DADOS_EVENTOS.codi_emp
@@ -132,8 +132,8 @@ COALESCE(STRING(bethadba.FOESOCIAL_DADOS_EVENTOS.REENVIAR_EVENTO_AUTOMATICAMENTE
 FROM bethadba.FOESOCIAL_DADOS_EVENTOS
 
 WHERE bethadba.FOESOCIAL_DADOS_EVENTOS.codi_emp = '#codi_emp#'
-  and (  bethadba.FOESOCIAL_DADOS_EVENTOS.i_evento_esocial in (1000,1005,1020,1030,1050,2200,2205,2206,2298,2299,2300,2306,2399)
-     or  bethadba.FOESOCIAL_DADOS_EVENTOS.I_EVENTO_ESOCIAL_excluido in (1000,1005,1020,1030,1050,2200,2205,2206,2298,2299,2300,2306,2399) )
+  and (  bethadba.FOESOCIAL_DADOS_EVENTOS.i_evento_esocial in (/*1000,1005,*/1020,1030,1050,2200,2205,2206,2298,2299,2300,2306,2399)
+     or  bethadba.FOESOCIAL_DADOS_EVENTOS.I_EVENTO_ESOCIAL_excluido in (/*1000,1005,*/1020,1030,1050,2200,2205,2206,2298,2299,2300,2306,2399) )
   AND bethadba.FOESOCIAL_DADOS_EVENTOS.i_dados_eventos <> ( SELECT MIN(FOESOCIAL_DADOS_EVENTOS2.i_dados_eventos)
                                                              FROM bethadba.FOESOCIAL_DADOS_EVENTOS AS FOESOCIAL_DADOS_EVENTOS2
                                                             WHERE FOESOCIAL_DADOS_EVENTOS2.codi_emp = bethadba.FOESOCIAL_DADOS_EVENTOS.codi_emp

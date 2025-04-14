@@ -1,0 +1,7 @@
+2	FOEMPREGADOS_PLANO_SAUDE	1	CODI_EMP	Código da empresa   (CODI_EMP)	integer	1	7		I		0
+2	FOEMPREGADOS_PLANO_SAUDE	2	I_EMPREGADOS	Código do empregado   (I_EMPREGADOS)	integer	1	7		I		0
+2	FOEMPREGADOS_PLANO_SAUDE	3	I_OPERADORAPLANOSAUDE	Código da operadora de plano de saúde   (I_OPERADORAPLANOSAUDE)	integer	1	7		I		0
+2	FOEMPREGADOS_PLANO_SAUDE	4	DATA_INICIO	Data início período   (DATA_INICIO)	date	1	10	DD/MM/YYYY	I		0
+2	FOEMPREGADOS_PLANO_SAUDE	5	DATA_FIM	Data fim período   (DATA_FIM)	date	1	10	DD/MM/YYYY	I		0
+2	FOEMPREGADOS_PLANO_SAUDE	6	TIPO_BENEFICIARIO	Tipo de beneficiário: 1=Somente titular/2=Titular e dependentes/3=Somente dependentes   (TIPO_BENEFICIARIO)	smallint	1	7		I		0
+2	FOEMPREGADOS_PLANO_SAUDE	7	ORIGEM_REG	Origem do registro: 0=Sistema/1=Importação de tabelas/2=Importação de leiaute   (ORIGEM_REG)	smallint	1	7		I		0

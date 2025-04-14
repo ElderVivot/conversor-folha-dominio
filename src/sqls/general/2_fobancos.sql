@@ -1,4 +1,4 @@
-SELECT COALESCE(STRING(bethadba.fobancos.i_bancos), 'NULO'),
+SELECT COALESCE(STRING(bethadba.fobancos.i_bancos + 10), 'NULO'),
 COALESCE(STRING(bethadba.fobancos.numero), 'NULO'),
 COALESCE(STRING(bethadba.fobancos.agencia), 'NULO'),
 COALESCE(STRING(bethadba.fobancos.dig_agencia), 'NULO'),
